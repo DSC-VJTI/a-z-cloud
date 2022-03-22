@@ -1,5 +1,4 @@
-baseURL = "https://dsc-vjti/github.io/a-z-cloud/"
-relativeURLs = true
+baseURL = "https://dsc-vjti.github.io/a-z-cloud/"
 title = "A-Z Cloud"
 
 # Language settings
