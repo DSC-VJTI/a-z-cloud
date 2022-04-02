@@ -3,7 +3,7 @@ title: "A"
 linkTitle: "A"
 weight: 4
 description: >
-  Day 1 
+  Day 1
 ---
 
 {{% pageinfo %}}
