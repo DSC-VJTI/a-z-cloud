@@ -28,8 +28,7 @@ An introduction to the A-Z of Cloud
 
 
 
-Under development
-">
+An initiative by the Cloud Computing Core Team at Google Developer Student Clubs, Veermata Jijabai …">
 <meta property="og:title" content="Documentation" />
 <meta property="og:description" content="Learn the A-Z of cloud in 26 days!" />
 <meta property="og:type" content="website" />
@@ -158,6 +157,22 @@ This is the multi-page printable view of this section.
   
 
   
+    
+    
+	
+<li>1.1: <a href="#pg-29e8203486014e155d6e1f40f1e93f02">Actions by GitHub</a></li>
+
+
+    
+  
+    
+    
+	
+<li>1.2: <a href="#pg-d533b10df9f7d070fd83b1f7333fb340">App Engine by Google Cloud Platform</a></li>
+
+
+    
+  
 
     </ul>
     
@@ -174,7 +189,9 @@ This is the multi-page printable view of this section.
 
 </div>
 
-<p>Under development</p>
+<p>An initiative by the Cloud Computing Core Team at Google Developer Student Clubs, Veermata Jijabai Technological Insitute, <strong>A-Z Cloud</strong> exposes you to 26 concepts and related cloud technologies from A-Z.</p>
+<p>Concepts like <strong>A</strong>utomation, <strong>B</strong>ig Data and more are covered with related cloud tech that begin with the same letter.</p>
+<p>Many services of Google Cloud Platform are mentioned with each concept. To get hands-on practice, the revelant codelaba on <a href="https://www.cloudskillsboost.google/">Google Cloud Skills Boost</a> are provided with each article.</p>
 
 </div>
 </div>
@@ -194,18 +211,29 @@ This is the multi-page printable view of this section.
 	
     
 
-<div class="td-content" style="">
+<div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-c932af89ce605b2db5de5e07126c1b48">1 - A</h1>
-    <div class="lead">Day 1</div>
-	
+    <div class="lead">Automation</div>
+	<!-- 
 
 <div class="pageinfo pageinfo-primary">
-<p>Coming soon!</p>
+<p>Automation</p>
 
 </div>
-
-<p>Till then, check out the project on <a href="https://github.com/dsc-vjti/a-z-cloud">GitHub</a></p>
+ -->
+<blockquote>
+<p>The rule of the cloud is to ruthlessly automate everything</p>
+<p>- Patrick Gelsinger, CEO Intel, ex-CEO VMWare</p>
+</blockquote>
+<p>Apart from taking advantage of compute resources, such as a remote server or a database, cloud computing in its essence deals with automation of the software delivery process. The following are the 3 steps that are automated in this delivery process:</p>
+<h3 id="application-development">Application Development</h3>
+<p>There are several tasks that a developer would like to include in their development workflow such as running unit tests, deploying the application on each new change, let&rsquo;s say this change is making a new commit to a GitHub repository. Such repetitive tasks can be automated on GitHub with the help of <strong>A</strong>ctions.</p>
+<h3 id="deployment-configuration">Deployment Configuration</h3>
+<p>Say you are building a Python or a Node.js web application. What software does your local machine need to run this project? Let&rsquo;s start from the basics, an operating system. Node.js or the Python interpreter to run the scripts that you&rsquo;ll write, <code>npm</code> or <code>pip</code> to install and manage the required dependencies and so on. Now what if you have to deploy this application, say on Heroku or Google <strong>A</strong>pp Engine. You only provide the source code and the list of dependencies to it. However, behind the scenes, there are a lot more configurations that are done for you. Such as the choice of the machine/server on which your code will run, the operating system it will run on, etc. All of this is part of deployment configuration which is automated for you. As a developer, you only provide the code and the platform does the configurations for you.</p>
+<p>This concept can also be extended to Infrastructure-as-Code. What if you want to specify the kind of machine your code should run on, the operating system that your code runs on, the version of Python or Node.js runtime that you need? With this, you have a lot more configurations to be done on your own. For big companies, with many such applications deployed, imagine how many such configurations they have to specify for each deployment? In order to automate configurations for Infrastructure-as-Code, many cloud technologies are available today, namely <strong>A</strong>nsible, Puppet, Chef.</p>
+<h3 id="scaling">Scaling</h3>
+<p>Imagine you have built a web application deployed using some cloud service and is accessed by hundreds of users every week. Let&rsquo;s say it is your personal blog. One of your stories becomes a major hit and now you get thousands of users visitng your website, interacting with it. We can say that now there is an increased <em>load</em> on your website. How will you deal with this? This additional load can be carried out by autoscaling which is provided out of the box by most cloud platforms providing compute resources. By autoscaling, the number of servers or virtual machines running on a single server can be <em>scaled</em> as per the load without requiring any manual intervention.</p>
 
 </div>
 
@@ -221,6 +249,93 @@ This is the multi-page printable view of this section.
   
   
 
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-29e8203486014e155d6e1f40f1e93f02">1.1 - Actions by GitHub</h1>
+    <div class="lead">Automate your development process with GitHub Actions</div>
+	<p>To quickly see GitHub Actions in <em>action</em>, check out the <code>.github</code> directory in the source code of this website <a href="https://github.com/DSC-VJTI/a-z-cloud/tree/main/.github">here</a>. You can see the following directory structure:</p>
+<pre tabindex="0"><code>.github
+├── dependabot.yml
+└── workflows
+    └── gh-pages.yaml
+</code></pre><p>There is a <code>.yaml</code> or YAML (which stands for YAML Ain&rsquo;t Markup Language) file that defines some workflow or a set of tasks that will be run on each <em>event</em> on the GitHub repository.</p>
+<h3 id="what-is-an-_event_">What is an <em>event</em>?</h3>
+<p>An event is a specific change made to your GitHub repository that should trigger your desired workflow. This event can be a new push, a new issue or a pull request made to the repository.</p>
+<h3 id="what-is-a-_workflow_">What is a <em>workflow</em>?</h3>
+<p>A set of automated tasks that are to be run of a specific event. A workflow is composed of several <em>jobs</em> and is defined in a YAML file such as specified above with <code>gh-pages.yaml</code>. This is how this file looks:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">GitHub Pages</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">on</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">push</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">branches</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#000">main</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># Set a branch to deploy</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">pull_request</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">jobs</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">deploy</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">runs-on</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">ubuntu-20.04</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">concurrency</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span><span style="color:#204a87;font-weight:bold">group</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">${{ github.workflow }}-${{ github.ref }}</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">steps</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#204a87;font-weight:bold">uses</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">actions/checkout@v3</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">        </span><span style="color:#204a87;font-weight:bold">with</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">          </span><span style="color:#204a87;font-weight:bold">submodules</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">true</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># Fetch Hugo themes (true OR recursive)</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">          </span><span style="color:#204a87;font-weight:bold">fetch-depth</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># Fetch all history for .GitInfo and .Lastmod</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Setup Hugo</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">        </span><span style="color:#204a87;font-weight:bold">uses</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">peaceiris/actions-hugo@v2</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">        </span><span style="color:#204a87;font-weight:bold">with</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">          </span><span style="color:#204a87;font-weight:bold">hugo-version</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#34;latest&#34;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">          </span><span style="color:#204a87;font-weight:bold">extended</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">true</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Build</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">        </span><span style="color:#204a87;font-weight:bold">run</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">git submodule update --init --recursive --depth 1 &amp;&amp; npm i &amp;&amp; hugo</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Deploy</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">        </span><span style="color:#204a87;font-weight:bold">uses</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">peaceiris/actions-gh-pages@v3</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">        </span><span style="color:#204a87;font-weight:bold">if</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">${{ github.ref == &#39;refs/heads/main&#39; }}</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">        </span><span style="color:#204a87;font-weight:bold">with</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">          </span><span style="color:#204a87;font-weight:bold">github_token</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">${{ secrets.GITHUB_TOKEN }}</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">          </span><span style="color:#204a87;font-weight:bold">publish_dir</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">./public</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p>There are 2 keywords to focus on in this file - <strong>on</strong> and <strong>jobs</strong>. <strong>on</strong> is where you define the event/s that should trigger this workflow and <strong>jobs</strong> are the set of tasks that should execute as a part of the workflow.</p>
+<h3 id="learn">Learn</h3>
+<p>GitHub Actions is a powerful tool to have in your development arsenal. Learn more from the official <a href="https://docs.github.com/en/actions">documentation</a>.</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-d533b10df9f7d070fd83b1f7333fb340">1.2 - App Engine by Google Cloud Platform</h1>
+    <div class="lead">Deployment configuration and more with Google App Engine</div>
+	<blockquote>
+<p>A fully managed environment lets you focus on code while App Engine manages infrastructure concerns.</p>
+</blockquote>
+<p>Google App Engine is a Platform-as-a-Service for deploying and managing web applications for Go, PHP, Python, Ruby, .NET, and Node.js runtimes along with custom runtimes. It offers autoscaling, cloud monitoring and logging services with the ability to define access rules for your web application.</p>
+<h3 id="learn">Learn</h3>
+<p>Try out App Engine by deploying a Flask web application with this <a href="https://codelabs.developers.google.com/codelabs/cloud-app-engine-python3#0">codelab</a>!</p>
+
+</div>
+
+
+
+    
+	
   
 
     

@@ -21,19 +21,19 @@
 <link rel="icon" type="image/png" href="/a-z-cloud/favicons/android-192x192.png" sizes="192x192">
 
 <title>A | A-Z Cloud</title>
-<meta name="description" content="Day 1
+<meta name="description" content="Automation
 ">
 <meta property="og:title" content="A" />
-<meta property="og:description" content="Day 1
+<meta property="og:description" content="Automation
 " />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://dsc-vjti.github.io/a-z-cloud/docs/a/" /><meta property="og:site_name" content="A-Z Cloud" />
 
 <meta itemprop="name" content="A">
-<meta itemprop="description" content="Day 1
+<meta itemprop="description" content="Automation
 "><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="A"/>
-<meta name="twitter:description" content="Day 1
+<meta name="twitter:description" content="Automation
 "/>
 
 
@@ -121,8 +121,15 @@ if (!doNotTrack) {
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-a-z-clouddocs-li">
   <a href="/a-z-cloud/docs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-a-z-clouddocs"><span class="">Documentation</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-a-z-clouddocsa-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-a-z-clouddocsa-li">
   <a href="/a-z-cloud/docs/a/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__section" id="m-a-z-clouddocsa"><span class="td-sidebar-nav-active-item">A</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-a-z-clouddocsaactions-li">
+  <a href="/a-z-cloud/docs/a/actions/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-a-z-clouddocsaactions"><span class="">Actions by GitHub</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-a-z-clouddocsaapp-engine-li">
+  <a href="/a-z-cloud/docs/a/app-engine/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-a-z-clouddocsaapp-engine"><span class="">App Engine by Google Cloud Platform</span></a>
+</li>
+  </ul>
 </li>
   </ul>
 </li>
@@ -145,6 +152,18 @@ if (!doNotTrack) {
 
             
 
+
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#application-development">Application Development</a></li>
+        <li><a href="#deployment-configuration">Deployment Configuration</a></li>
+        <li><a href="#scaling">Scaling</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
 
 
 
@@ -192,7 +211,7 @@ if (!doNotTrack) {
             
 <div class="td-content">
 	<h1>A</h1>
-  <div class="lead">Day 1</div>
+  <div class="lead">Automation</div>
 	<header class="article-meta">
 		
 		
@@ -208,14 +227,25 @@ if (!doNotTrack) {
 		
 		
 	</header>
-	
+	<!-- 
 
 <div class="pageinfo pageinfo-primary">
-<p>Coming soon!</p>
+<p>Automation</p>
 
 </div>
-
-<p>Till then, check out the project on <a href="https://github.com/dsc-vjti/a-z-cloud">GitHub</a></p>
+ -->
+<blockquote>
+<p>The rule of the cloud is to ruthlessly automate everything</p>
+<p>- Patrick Gelsinger, CEO Intel, ex-CEO VMWare</p>
+</blockquote>
+<p>Apart from taking advantage of compute resources, such as a remote server or a database, cloud computing in its essence deals with automation of the software delivery process. The following are the 3 steps that are automated in this delivery process:</p>
+<h3 id="application-development">Application Development</h3>
+<p>There are several tasks that a developer would like to include in their development workflow such as running unit tests, deploying the application on each new change, let&rsquo;s say this change is making a new commit to a GitHub repository. Such repetitive tasks can be automated on GitHub with the help of <strong>A</strong>ctions.</p>
+<h3 id="deployment-configuration">Deployment Configuration</h3>
+<p>Say you are building a Python or a Node.js web application. What software does your local machine need to run this project? Let&rsquo;s start from the basics, an operating system. Node.js or the Python interpreter to run the scripts that you&rsquo;ll write, <code>npm</code> or <code>pip</code> to install and manage the required dependencies and so on. Now what if you have to deploy this application, say on Heroku or Google <strong>A</strong>pp Engine. You only provide the source code and the list of dependencies to it. However, behind the scenes, there are a lot more configurations that are done for you. Such as the choice of the machine/server on which your code will run, the operating system it will run on, etc. All of this is part of deployment configuration which is automated for you. As a developer, you only provide the code and the platform does the configurations for you.</p>
+<p>This concept can also be extended to Infrastructure-as-Code. What if you want to specify the kind of machine your code should run on, the operating system that your code runs on, the version of Python or Node.js runtime that you need? With this, you have a lot more configurations to be done on your own. For big companies, with many such applications deployed, imagine how many such configurations they have to specify for each deployment? In order to automate configurations for Infrastructure-as-Code, many cloud technologies are available today, namely <strong>A</strong>nsible, Puppet, Chef.</p>
+<h3 id="scaling">Scaling</h3>
+<p>Imagine you have built a web application deployed using some cloud service and is accessed by hundreds of users every week. Let&rsquo;s say it is your personal blog. One of your stories becomes a major hit and now you get thousands of users visitng your website, interacting with it. We can say that now there is an increased <em>load</em> on your website. How will you deal with this? This additional load can be carried out by autoscaling which is provided out of the box by most cloud platforms providing compute resources. By autoscaling, the number of servers or virtual machines running on a single server can be <em>scaled</em> as per the load without requiring any manual intervention.</p>
 
         <div class="section-index">
     
@@ -226,6 +256,24 @@ if (!doNotTrack) {
     
     
     
+    <hr class="panel-line">
+        
+            
+            <div class="entry">
+                <h5>
+                    <a href="/a-z-cloud/docs/a/actions/">Actions by GitHub</a>
+                </h5>
+                <p>Automate your development process with GitHub Actions</p>
+            </div>
+        
+            
+            <div class="entry">
+                <h5>
+                    <a href="/a-z-cloud/docs/a/app-engine/">App Engine by Google Cloud Platform</a>
+                </h5>
+                <p>Deployment configuration and more with Google App Engine</p>
+            </div>
+        
     
 </div>
 
@@ -294,7 +342,7 @@ if (!doNotTrack) {
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified April 2, 2022: <a href="https://github.com/dsc-vjti/a-z-cloud/commit/f8d391bce7de829ce6957b27a6aa35d16004303c">docs: add installation instructions to README (f8d391b)</a>
+  Last modified April 3, 2022: <a href="https://github.com/dsc-vjti/a-z-cloud/commit/e95d4a1bc17ced4807c119265f5ed34385be3a64">feat: add section A (e95d4a1)</a>
 </div>
 
 </div>
