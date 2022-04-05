@@ -92,5 +92,65 @@
       </description>
     </item>
     
+    <item>
+      <title>Docs: BigQuery</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/b/bigquery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/b/bigquery/</guid>
+      <description>
+        
+        
+        &lt;p&gt;BigQuery&amp;rsquo;s serverless infrastructure lets you focus on your data instead of resource management. BigQuery combines a cloud-based data warehouse and powerful analytic tools.&lt;/p&gt;
+&lt;h3 id=&#34;bigquery-storage&#34;&gt;BigQuery storage&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;BigQuery stores data using a columnar storage format that is optimized for analytical queries.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;BigQuery presents data in tables, rows, and columns and provides full support for database transaction semantics (ACID).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;BigQuery storage is automatically replicated across multiple locations to provide high availability.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;bigquery-analytics&#34;&gt;BigQuery analytics&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Descriptive and prescriptive analysis uses include business intelligence, ad hoc analysis, geospatial analytics, and machine learning.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can query data stored in BigQuery or run queries on data where it lives using external tables or federated queries including Cloud Storage, Bigtable, Spanner, or Google Sheets stored in Google Drive.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;learn&#34;&gt;Learn&lt;/h3&gt;
+&lt;p&gt;Learn more from the official &lt;a href=&#34;https://cloud.google.com/bigquery/docs/storage_overview&#34;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: BigTable</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/b/bigtable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/b/bigtable/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Cloud Bigtable is a sparsely populated table that can scale to billions of rows and thousands of columns, enabling you to store terabytes or even petabytes of data. A single value in each row is indexed; this value is known as the row key. Bigtable is ideal for storing very large amounts of single-keyed data with very low latency. It supports high read and write throughput at low latency, and it is an ideal data source for MapReduce operations.&lt;/p&gt;
+&lt;p&gt;Bigtable is exposed to applications through multiple client libraries, including a supported extension to the Apache HBase library for Java. As a result, it integrates with the existing Apache ecosystem of open-source Big Data software.&lt;/p&gt;
+&lt;p&gt;Bigtable&amp;rsquo;s powerful back-end servers offer several key advantages over a self-managed HBase installation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Incredible scalability&lt;/strong&gt; Bigtable scales in direct proportion to the number of machines in your cluster. A self-managed HBase installation has a design bottleneck that limits the performance after a certain threshold is reached. Bigtable does not have this bottleneck, so you can scale your cluster up to handle more reads and writes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Simple administration&lt;/strong&gt; Bigtable handles upgrades and restarts transparently, and it automatically maintains high data durability. To replicate your data, simply add a second cluster to your instance, and replication starts automatically. No more managing replicas or regions; just design your table schemas, and Bigtable will handle the rest for you.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cluster resizing without downtime&lt;/strong&gt; You can increase the size of a Bigtable cluster for a few hours to handle a large load, then reduce the cluster&amp;rsquo;s size again—all without any downtime. After you change a cluster&amp;rsquo;s size, it typically takes just a few minutes under load for Bigtable to balance performance across all of the nodes in your cluster.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;learn&#34;&gt;Learn&lt;/h3&gt;
+&lt;p&gt;Learn more from the official &lt;a href=&#34;https://cloud.google.com/bigtable/docs/overview#what-its-good-for&#34;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
