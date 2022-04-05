@@ -12,9 +12,9 @@ CI/CD
 
 > As cloud native approaches gather steam, CI/CD practices have to evolve to maintain stability as you increase speed. Because without the right guard rails, it’s like attaching a rocket ship to a go kart. It’s not a very fun ride.
 >
-> \- Ravi Tharisayi - ex Team Lead and Principal Advisor at IBM
+> \- Ravi Tharisayi, ex-Team Lead and Principal Advisor at IBM
 
-Continuous integration (CI) and continuous delivery (CD) embody a culture, set of operating principles, and collection of practices that enable application development teams to deliver code changes more frequently and reliably. The implementation is also known as the CI/CD pipeline.
+Continuous Integration (CI) and Continuous Delivery (CD) embody a culture, set of operating principles, and collection of practices that enable application development teams to deliver code changes more frequently and reliably. The implementation is also known as the CI/CD pipeline.
 
 CI/CD tools help store the environment-specific parameters that must be packaged with each delivery. CI/CD automation then performs any necessary service calls to web servers, databases, and other services that may need to be restarted or follow other procedures when applications are deployed.
 
@@ -43,6 +43,9 @@ A typical CD pipeline has build, test, and deploy stages. More sophisticated pip
 ### Implementing CI/CD pipelines with Kubernetes and serverless architectures 
 
 Many teams operating CI/CD pipelines in cloud environments also use **c**ontainers such as **Docker** and orchestration systems such as **Kubernetes**. Containers allow for packaging and shipping applications in standard, portable ways. Containers make it easy to scale up or tear down environments that have variable workloads.
-There are many approaches to using containers, infrastructure as code, and CI/CD pipelines together. You can explore the options such as Kubernetes with Jenkins or Kubernetes with Azure DevOps.
+
+There are many approaches to using containers, infrastructure as code, and CI/CD pipelines together. You can explore options such as Kubernetes with Jenkins or Kubernetes with Azure DevOps.
+
+Serverless computing architectures present another avenue for deploying and scaling applications. In a serverless environment, the infrastructure is fully managed by the cloud service provider and the application consumes resources as needed based on its configuration. 
 
 
