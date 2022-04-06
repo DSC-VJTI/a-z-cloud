@@ -3,12 +3,8 @@ title: "B"
 linkTitle: "B"
 weight: 4
 description: >
-  Big Data
+  ## Big Data
 ---
-
-<!-- {{% pageinfo %}}
-Automation
-{{% /pageinfo %}} -->
 
 > The world is one big data problem.
 >
@@ -25,8 +21,6 @@ Following are a few examples of big data databases, just to give y'all an idea o
 - A single Jet engine can generate **10+ terabytes** of data in 30 minutes of flight time. With many thousand flights per day, generation of data reaches up to many Petabytes.
 
 ![Big Data](https://www.guru99.com/images/Big_Data/061114_0759_WhatIsBigDa1.jpg)
-
-
 
 ### Why is Big Data Important?
 
