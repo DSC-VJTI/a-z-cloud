@@ -212,6 +212,41 @@ This is the multi-page printable view of this section.
     </ul>
     
   
+    
+    
+	
+<li>3: <a href="#pg-b82d048ab2345e3684b0e3add9c972aa">C</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>3.1: <a href="#pg-8561bf978ec79814eeb798f78a9ed450">Cloud Build by Google Cloud Platform</a></li>
+
+
+    
+  
+    
+    
+	
+<li>3.2: <a href="#pg-6b98b460e29e9c81dce0e07fa47de95b">Containers</a></li>
+
+
+    
+  
+
+    </ul>
+    
+  
 
     </ul>
 
@@ -505,6 +540,135 @@ This is the multi-page printable view of this section.
 </ul>
 <h3 id="learn">Learn</h3>
 <p>Learn more from the official <a href="https://cloud.google.com/bigtable/docs/overview#what-its-good-for">documentation</a>.</p>
+
+</div>
+
+
+
+    
+	
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-b82d048ab2345e3684b0e3add9c972aa">3 - C</h1>
+    <div class="lead">Continuous Integration and Continuous Delivery (CI/CD)</div>
+	<!-- 
+
+<div class="pageinfo pageinfo-primary">
+<p>CI/CD</p>
+
+</div>
+ -->
+<blockquote>
+<p>As cloud native approaches gather steam, CI/CD practices have to evolve to maintain stability as you increase speed. Because without the right guard rails, it’s like attaching a rocket ship to a go kart. It’s not a very fun ride.</p>
+<p>- Ravi Tharisayi, ex-Team Lead and Principal Advisor at IBM</p>
+</blockquote>
+<p>Continuous Integration (CI) and Continuous Delivery (CD) embody a culture, set of operating principles, and collection of practices that enable application development teams to deliver code changes more frequently and reliably. The implementation is also known as the CI/CD pipeline.</p>
+<p>CI/CD tools help store the environment-specific parameters that must be packaged with each delivery. CI/CD automation then performs any necessary service calls to web servers, databases, and other services that may need to be restarted or follow other procedures when applications are deployed.</p>
+<h3 id="continuous-integration">Continuous Integration</h3>
+<p>It is a coding philosophy and set of practices that drive development teams to implement small changes and check in code to version control repositories frequently. Because most modern applications require developing code in different platforms and tools, the team needs a mechanism to integrate and validate its changes.</p>
+<p>The technical goal of CI is to establish a consistent and automated way to build, package, and test applications. With consistency in the integration process in place, teams are more likely to commit code changes more frequently, which leads to better collaboration and software quality.</p>
+<h3 id="continuous-delivery">Continuous Delivery </h3>
+<p>CD picks up where continuous integration ends. CD automates the delivery of applications to selected infrastructure environments. Most teams work with multiple environments other than the production, such as development and testing environments, and CD ensures there is an automated way to push code changes to them.</p>
+<p>A typical CD pipeline has build, test, and deploy stages. More sophisticated pipelines include many of these steps:</p>
+<ul>
+<li>Pulling code from version control and executing a build.</li>
+<li>Executing any required infrastructure steps that are automated as code to stand up or tear down cloud infrastructure.</li>
+<li>Moving code to the target computing environment.</li>
+<li>Managing the environment variables and configuring them for the target environment.</li>
+<li>Pushing application components to their appropriate services, such as web servers, API services, and database services.</li>
+<li>Executing any steps required to restarts services or call service endpoints that are needed for new code pushes.</li>
+<li>Executing continuous tests and rollback environments if tests fail.</li>
+<li>Providing log data and alerts on the state of the delivery</li>
+</ul>
+<h3 id="implementing-cicd-pipelines-with-kubernetes-and-serverless-architectures">Implementing CI/CD pipelines with Kubernetes and serverless architectures </h3>
+<p>Many teams operating CI/CD pipelines in cloud environments also use <strong>c</strong>ontainers such as <strong>Docker</strong> and orchestration systems such as <strong>Kubernetes</strong>. Containers allow for packaging and shipping applications in standard, portable ways. Containers make it easy to scale up or tear down environments that have variable workloads.</p>
+<p>There are many approaches to using containers, infrastructure as code, and CI/CD pipelines together. You can explore options such as Kubernetes with Jenkins or Kubernetes with Azure DevOps.</p>
+<p>Serverless computing architectures present another avenue for deploying and scaling applications. In a serverless environment, the infrastructure is fully managed by the cloud service provider and the application consumes resources as needed based on its configuration.</p>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-8561bf978ec79814eeb798f78a9ed450">3.1 - Cloud Build by Google Cloud Platform</h1>
+    <div class="lead">Use GCP Cloud Build to build, test and deploy container images.</div>
+	<blockquote>
+<p>Implementing containerization has inspired organizations to maximize managed cloud infrastructures like Cloud Build to speedily build, test and deploy container images.</p>
+</blockquote>
+<p>Cloud Build is a service that executes your builds on Google Cloud.</p>
+<p>Cloud Build can import source code from a variety of repositories or cloud storage spaces, execute a build to your specifications, and produce artifacts such as Docker containers or Java archives.</p>
+<h3 id="learn">Learn</h3>
+<p>Learn more about Cloud build in GCP from the official <a href="https://cloud.google.com/build/docs/overview">documentation</a>.</p>
+<p>Try out Continuous deployment to Google Kubernetes Engine (GKE) with Cloud Build from this <a href="https://codelabs.developers.google.com/codelabs/cloud-builder-gke-continuous-deploy#0">codelab</a></p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-6b98b460e29e9c81dce0e07fa47de95b">3.2 - Containers</h1>
+    <div class="lead">About Containers and their uses.</div>
+	<blockquote>
+<p>Containers are lightweight packages of your application code together with dependencies such as specific versions of programming language runtimes and libraries required to run your software services.</p>
+</blockquote>
+<h3 id="what-are-containers">What are containers?</h3>
+<p>Containers are packages of software that contain all of the necessary elements to run in any environment. In this way, containers virtualize the operating system and run anywhere, from a private data center to the public cloud or even on a developer’s personal laptop. From Gmail to YouTube to Search, everything at Google runs in containers. Containerization allows our development teams to move fast, deploy software efficiently, and operate at an unprecedented scale.</p>
+<h3 id="what-are-containers-used-for">What are containers used for?</h3>
+<p>Containers offer a logical packaging mechanism in which applications can be abstracted from the environment in which they actually run. This decoupling allows container-based applications to be deployed easily and consistently, regardless of whether the target environment is a private data center, the public cloud, or even a developer’s personal laptop.</p>
+<ul>
+<li>
+<h4 id="microservices">Microservices:</h4>
+<p>Containers are small and lightweight, which makes them a good match for microservice architectures where applications are constructed of many, loosely coupled and independently deployable smaller services.</p>
+</li>
+<li>
+<h4 id="devops">DevOps:</h4>
+<p>The combination of microservices as an architecture and containers as a platform is a common foundation for many teams that embrace DevOps as the way they build, ship and run software.</p>
+</li>
+<li>
+<h4 id="hybrid-multi-cloud">Hybrid, multi-cloud:</h4>
+<p>Because containers can run consistently anywhere, across laptop, on-premises and cloud environments, they are an ideal underlying architecture for hybrid cloud and multicloud scenarios where organizations find themselves operating across a mix of multiple public clouds in combination with their own data center.</p>
+</li>
+<li>
+<h4 id="application-modernizing-and-migration">Application modernizing and migration:</h4>
+<p>One of the most common approaches to application modernization starts by containerizing them so that they can be migrated to the cloud.</p>
+</li>
+</ul>
 
 </div>
 

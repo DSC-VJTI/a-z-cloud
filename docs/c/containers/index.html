@@ -18,25 +18,25 @@
 <link rel="icon" type="image/png" href="/a-z-cloud/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/a-z-cloud/favicons/android-192x192.png" sizes="192x192">
 
-<title>App Engine by Google Cloud Platform | A-Z Cloud</title>
-<meta name="description" content="Deployment configuration and more with Google App Engine
+<title>Containers | A-Z Cloud</title>
+<meta name="description" content="About Containers and their uses.
 ">
-<meta property="og:title" content="App Engine by Google Cloud Platform" />
-<meta property="og:description" content="Deployment configuration and more with Google App Engine
+<meta property="og:title" content="Containers" />
+<meta property="og:description" content="About Containers and their uses.
 " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dsc-vjti.github.io/a-z-cloud/docs/a/app-engine/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://dsc-vjti.github.io/a-z-cloud/docs/c/containers/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2022-04-06T13:34:59+05:30" /><meta property="og:site_name" content="A-Z Cloud" />
 
-<meta itemprop="name" content="App Engine by Google Cloud Platform">
-<meta itemprop="description" content="Deployment configuration and more with Google App Engine
+<meta itemprop="name" content="Containers">
+<meta itemprop="description" content="About Containers and their uses.
 ">
 <meta itemprop="dateModified" content="2022-04-06T13:34:59+05:30" />
-<meta itemprop="wordCount" content="73">
+<meta itemprop="wordCount" content="290">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="App Engine by Google Cloud Platform"/>
-<meta name="twitter:description" content="Deployment configuration and more with Google App Engine
+<meta name="twitter:title" content="Containers"/>
+<meta name="twitter:description" content="About Containers and their uses.
 "/>
 
 
@@ -124,13 +124,13 @@ if (!doNotTrack) {
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-a-z-clouddocs-li">
   <a href="/a-z-cloud/docs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-a-z-clouddocs"><span class="">Documentation</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-a-z-clouddocsa-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-a-z-clouddocsa-li">
   <a href="/a-z-cloud/docs/a/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-a-z-clouddocsa"><span class="">A</span></a>
   <ul class="ul-2 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-a-z-clouddocsaactions-li">
   <a href="/a-z-cloud/docs/a/actions/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-a-z-clouddocsaactions"><span class="">Actions by GitHub</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-a-z-clouddocsaapp-engine-li">
-  <a href="/a-z-cloud/docs/a/app-engine/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-a-z-clouddocsaapp-engine"><span class="td-sidebar-nav-active-item">App Engine by Google Cloud Platform</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-a-z-clouddocsaapp-engine-li">
+  <a href="/a-z-cloud/docs/a/app-engine/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-a-z-clouddocsaapp-engine"><span class="">App Engine by Google Cloud Platform</span></a>
 </li>
   </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-a-z-clouddocsb-li">
@@ -142,13 +142,13 @@ if (!doNotTrack) {
   <a href="/a-z-cloud/docs/b/bigtable/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-a-z-clouddocsbbigtable"><span class="">BigTable</span></a>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-a-z-clouddocsc-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-a-z-clouddocsc-li">
   <a href="/a-z-cloud/docs/c/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-a-z-clouddocsc"><span class="">C</span></a>
   <ul class="ul-2 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-a-z-clouddocsccloud_build-li">
   <a href="/a-z-cloud/docs/c/cloud_build/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-a-z-clouddocsccloud_build"><span class="">Cloud Build by Google Cloud Platform</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-a-z-clouddocsccontainers-li">
-  <a href="/a-z-cloud/docs/c/containers/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-a-z-clouddocsccontainers"><span class="">Containers</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-a-z-clouddocsccontainers-li">
+  <a href="/a-z-cloud/docs/c/containers/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-a-z-clouddocsccontainers"><span class="td-sidebar-nav-active-item">Containers</span></a>
 </li>
   </ul>
 </li>
@@ -162,17 +162,28 @@ if (!doNotTrack) {
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
             
 <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-<a href="https://github.com/dsc-vjti/a-z-cloud/tree/master/content/en/docs/A/app-engine.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa fa-file-alt fa-fw"></i> View page source</a>
-  <a href="https://github.com/dsc-vjti/a-z-cloud/edit/master/content/en/docs/A/app-engine.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
-  <a href="https://github.com/dsc-vjti/a-z-cloud/new/master/content/en/docs/A/app-engine.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Create child page</a>
-  <a href="https://github.com/dsc-vjti/a-z-cloud/issues/new?title=App%20Engine%20by%20Google%20Cloud%20Platform" class="td-page-meta--issue" target="_blank" rel="noopener"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+<a href="https://github.com/dsc-vjti/a-z-cloud/tree/master/content/en/docs/C/containers.md" class="td-page-meta--view" target="_blank" rel="noopener"><i class="fa fa-file-alt fa-fw"></i> View page source</a>
+  <a href="https://github.com/dsc-vjti/a-z-cloud/edit/master/content/en/docs/C/containers.md" class="td-page-meta--edit" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+  <a href="https://github.com/dsc-vjti/a-z-cloud/new/master/content/en/docs/C/containers.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" class="td-page-meta--child" target="_blank" rel="noopener"><i class="fa fa-edit fa-fw"></i> Create child page</a>
+  <a href="https://github.com/dsc-vjti/a-z-cloud/issues/new?title=Containers" class="td-page-meta--issue" target="_blank" rel="noopener"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
   <a href="https://github.com/dsc-vjti/a-z-cloud/issues/new" class="td-page-meta--project-issue" target="_blank" rel="noopener"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
-  <a id="print" href="https://dsc-vjti.github.io/a-z-cloud/docs/a/_print/"><i class="fa fa-print fa-fw"></i> Print entire section</a>
+  <a id="print" href="https://dsc-vjti.github.io/a-z-cloud/docs/c/_print/"><i class="fa fa-print fa-fw"></i> Print entire section</a>
 
 </div>
 
             
 
+
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#what-are-containers">What are containers?</a></li>
+        <li><a href="#what-are-containers-used-for">What are containers used for?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
 
 
 
@@ -213,17 +224,17 @@ if (!doNotTrack) {
     <a href="https://dsc-vjti.github.io/a-z-cloud/docs/">Documentation</a>
   </li>
   <li class="breadcrumb-item">
-    <a href="https://dsc-vjti.github.io/a-z-cloud/docs/a/">A</a>
+    <a href="https://dsc-vjti.github.io/a-z-cloud/docs/c/">C</a>
   </li>
   <li class="breadcrumb-item active" aria-current="page">
-    <a href="https://dsc-vjti.github.io/a-z-cloud/docs/a/app-engine/">App Engine by Google Cloud Platform</a>
+    <a href="https://dsc-vjti.github.io/a-z-cloud/docs/c/containers/">Containers</a>
   </li>
   </ol>
 </nav>
             
 <div class="td-content">
-	<h1>App Engine by Google Cloud Platform</h1>
-	<div class="lead">Deployment configuration and more with Google App Engine</div>
+	<h1>Containers</h1>
+	<div class="lead">About Containers and their uses.</div>
 	<header class="article-meta">
 		
 		
@@ -240,11 +251,30 @@ if (!doNotTrack) {
 		
 	</header>    
 	<blockquote>
-<p>A fully managed environment lets you focus on code while App Engine manages infrastructure concerns.</p>
+<p>Containers are lightweight packages of your application code together with dependencies such as specific versions of programming language runtimes and libraries required to run your software services.</p>
 </blockquote>
-<p>Google App Engine is a Platform-as-a-Service for deploying and managing web applications for Go, PHP, Python, Ruby, .NET, and Node.js runtimes along with custom runtimes. It offers autoscaling, cloud monitoring and logging services with the ability to define access rules for your web application.</p>
-<h3 id="learn">Learn</h3>
-<p>Try out App Engine by deploying a Flask web application with this <a href="https://codelabs.developers.google.com/codelabs/cloud-app-engine-python3#0">codelab</a>!</p>
+<h3 id="what-are-containers">What are containers?</h3>
+<p>Containers are packages of software that contain all of the necessary elements to run in any environment. In this way, containers virtualize the operating system and run anywhere, from a private data center to the public cloud or even on a developer’s personal laptop. From Gmail to YouTube to Search, everything at Google runs in containers. Containerization allows our development teams to move fast, deploy software efficiently, and operate at an unprecedented scale.</p>
+<h3 id="what-are-containers-used-for">What are containers used for?</h3>
+<p>Containers offer a logical packaging mechanism in which applications can be abstracted from the environment in which they actually run. This decoupling allows container-based applications to be deployed easily and consistently, regardless of whether the target environment is a private data center, the public cloud, or even a developer’s personal laptop.</p>
+<ul>
+<li>
+<h4 id="microservices">Microservices:</h4>
+<p>Containers are small and lightweight, which makes them a good match for microservice architectures where applications are constructed of many, loosely coupled and independently deployable smaller services.</p>
+</li>
+<li>
+<h4 id="devops">DevOps:</h4>
+<p>The combination of microservices as an architecture and containers as a platform is a common foundation for many teams that embrace DevOps as the way they build, ship and run software.</p>
+</li>
+<li>
+<h4 id="hybrid-multi-cloud">Hybrid, multi-cloud:</h4>
+<p>Because containers can run consistently anywhere, across laptop, on-premises and cloud environments, they are an ideal underlying architecture for hybrid cloud and multicloud scenarios where organizations find themselves operating across a mix of multiple public clouds in combination with their own data center.</p>
+</li>
+<li>
+<h4 id="application-modernizing-and-migration">Application modernizing and migration:</h4>
+<p>One of the most common approaches to application modernization starts by containerizing them so that they can be migrated to the cloud.</p>
+</li>
+</ul>
 
 	
 		<style>
