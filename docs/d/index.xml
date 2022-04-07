@@ -1,0 +1,63 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A-Z Cloud – D</title>
+    <link>https://dsc-vjti.github.io/a-z-cloud/docs/d/</link>
+    <description>Recent content in D on A-Z Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://dsc-vjti.github.io/a-z-cloud/docs/d/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Docker</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/d/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/d/docker/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Docker provides various services such as the Docker daemon (&lt;code&gt;dockerd&lt;/code&gt;), Docker CLI, and Docker Hub Registry that help package applications in containers and host them. As we learned in &lt;a href=&#34;https://dsc-vjti.github.io/a-z-cloud/a-z-cloud/docs/c/containers/&#34; title=&#34;Containers&#34;&gt;containers&lt;/a&gt;, the several problems of software not being able to run on some machine and portability of software are solved by containers and Docker provides salient tools to make it possible.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/915px-Docker_%28container_engine%29_logo.svg.png&#34; alt=&#34;Docker logo&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;docker-architecture&#34;&gt;Docker architecture&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s discuss the architecture of Docker Engine which comprises of Docker client (CLI), Docker Host that contains the Docker daemon which manages the different containers, and the software that needs to be packaged to a container i.e., an image made available on a registry.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.researchgate.net/profile/Yahya-Al-Dhuraibi/publication/308050257/figure/fig1/AS:433709594746881@1480415833510/High-level-overview-of-Docker-architecture.png&#34; alt=&#34;Docker architecture&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;docker-hub&#34;&gt;Docker Hub&lt;/h3&gt;
+&lt;p&gt;This is the default registry that Docker uses to fetch &lt;em&gt;images&lt;/em&gt; to be run inside containers. But what is an image? A Docker image is a template file that contains the instructions to create a container. Each image has a base image typically a minimal Linux-based operating system such as Alpine and on top of this image, we can add layers of our own images. This can be done using a &lt;code&gt;Dockerfile&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The following is an example &lt;code&gt;Dockerfile&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Dockerfile&#34; data-lang=&#34;Dockerfile&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;FROM&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt; python:3.7&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;LABEL&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;maintainer&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Pankaj Khushalani&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;COPY&lt;/span&gt; ./exercises/python-helloworld /app&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;WORKDIR&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt; /app&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;RUN&lt;/span&gt; pip install -r requirements.txt&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;CMD&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;python&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;app.py&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Each line contains a keyword following by a flag or a command to be run. In the first line of the &lt;code&gt;Dockerfile&lt;/code&gt;, the base image follows the &lt;code&gt;FROM&lt;/code&gt; keyword. Here, &lt;code&gt;python:3.7&lt;/code&gt; is the name of the base image, which is hosted on Docker Hub and is downloaded when this &lt;code&gt;Dockerfile&lt;/code&gt; is run. &lt;code&gt;python:3.7&lt;/code&gt; contains the Linux-based light-weight OS Alpine which comes with Python version 3.7 installed on it.&lt;/p&gt;
+&lt;h3 id=&#34;docker-daemon&#34;&gt;Docker daemon&lt;/h3&gt;
+&lt;p&gt;This is the server that hosts and manages the several Docker containers that we would like to run. The communication between different containers is also handled by the daemon. It also plays an important role in creating a Docker container from images pulled from Docker Hub.&lt;/p&gt;
+&lt;h3 id=&#34;docker-cli&#34;&gt;Docker CLI&lt;/h3&gt;
+&lt;p&gt;You can interact with the Docker daemon using Docker CLI. This includes creating a Docker container from a &lt;code&gt;Dockerfile&lt;/code&gt; or an image directly fetched from Docker Hub, interacting with a Docker container, managing them, etc. You can read the &lt;a href=&#34;https://docs.docker.com/engine/reference/commandline/cli/&#34;&gt;documentation&lt;/a&gt; for the list of available commands.&lt;/p&gt;
+&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install Docker and have a go at it! Docker Engine comes with Docker Desktop for Windows and macOS, while for Linux distributions, Docker Engine can directly be downloaded and used. You can find the installation guide &lt;a href=&#34;https://docs.docker.com/engine/install/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://devopswithdocker.com/&#34;&gt;DevOps with Docker&lt;/a&gt; is an MOOC by the University of Helsinki and a great resource to learn the ins and outs of Docker.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A &lt;a href=&#34;https://youtu.be/3c-iBn73dDE&#34;&gt;video tutorial&lt;/a&gt; on Docker from Tech World With Nana&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
