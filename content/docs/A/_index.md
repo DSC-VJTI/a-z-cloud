@@ -3,12 +3,8 @@ title: "A"
 linkTitle: "A"
 weight: 4
 description: >
-  Automation
+  ## Automation
 ---
-
-<!-- {{% pageinfo %}}
-Automation
-{{% /pageinfo %}} -->
 
 > The rule of the cloud is to ruthlessly automate everything
 >

@@ -3,12 +3,8 @@ title: "C"
 linkTitle: "C"
 weight: 4
 description: >
-  Continuous Integration and Continuous Delivery (CI/CD)
+  ## Continuous Integration and Continuous Delivery (CI/CD)
 ---
-
-<!-- {{% pageinfo %}}
-CI/CD
-{{% /pageinfo %}} -->
 
 > As cloud native approaches gather steam, CI/CD practices have to evolve to maintain stability as you increase speed. Because without the right guard rails, it’s like attaching a rocket ship to a go kart. It’s not a very fun ride.
 >
@@ -23,7 +19,6 @@ CI/CD tools help store the environment-specific parameters that must be packaged
 It is a coding philosophy and set of practices that drive development teams to implement small changes and check in code to version control repositories frequently. Because most modern applications require developing code in different platforms and tools, the team needs a mechanism to integrate and validate its changes.
 
 The technical goal of CI is to establish a consistent and automated way to build, package, and test applications. With consistency in the integration process in place, teams are more likely to commit code changes more frequently, which leads to better collaboration and software quality.
-
 
 ### Continuous Delivery 
 
@@ -46,6 +41,4 @@ Many teams operating CI/CD pipelines in cloud environments also use **c**ontaine
 
 There are many approaches to using containers, infrastructure as code, and CI/CD pipelines together. You can explore options such as Kubernetes with Jenkins or Kubernetes with Azure DevOps.
 
-Serverless computing architectures present another avenue for deploying and scaling applications. In a serverless environment, the infrastructure is fully managed by the cloud service provider and the application consumes resources as needed based on its configuration. 
-
-
+Serverless computing architectures present another avenue for deploying and scaling applications. In a serverless environment, the infrastructure is fully managed by the cloud service provider and the application consumes resources as needed based on its configuration.
