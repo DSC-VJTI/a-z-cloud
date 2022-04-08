@@ -274,6 +274,33 @@ This is the multi-page printable view of this section.
     </ul>
     
   
+    
+    
+	
+<li>5: <a href="#pg-a9003df6abcb1d95220c6e0f296f9283">E</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>5.1: <a href="#pg-b4cdd0a1d8d9b9c73158f45ba9422ad4">Eventarc</a></li>
+
+
+    
+  
+
+    </ul>
+    
+  
 
     </ul>
 
@@ -767,6 +794,83 @@ This is the multi-page printable view of this section.
 <p>A <a href="https://youtu.be/3c-iBn73dDE">video tutorial</a> on Docker from Tech World With Nana</p>
 </li>
 </ul>
+
+</div>
+
+
+
+    
+	
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-a9003df6abcb1d95220c6e0f296f9283">5 - E</h1>
+    <div class="lead"><h2 id="event-driven-architecture">Event-Driven Architecture</h2>
+</div>
+	<blockquote>
+<p>Microservices — is an architectural style that structures an application as a collection of loosely coupled services, which implement business capabilities.</p>
+<p>- Chris Richardson</p>
+</blockquote>
+<p>Before understanding Event-Driven Architecture (EDA), let&rsquo;s first understand what an event is,</p>
+<p>An <strong>event</strong> is a state change or an update within the system that triggers the action of other systems. It can be anything from a transaction and sensor input to a mouse click and a photo upload, etc.</p>
+<br>
+<p>With that said,</p>
+<p><strong>Event-driven architecture</strong> is a design model that connects distributed software systems and allows for efficient communication. EDA makes it possible to exchange information in real time or near real time. It is common in designing apps that rely on microservices (you&rsquo;ll get to know what this mean real soon but for now consider that <em>when each service runs its own process and communicates through APIs with other services, then these services are considered as microservices</em>.)</p>
+<p>The concept of event-driven architecture is mainly realized through the publish/subscribe communication model (We covered this during GCP'21, hope y&rsquo;all remember!).</p>
+<br>
+<p>Just to brief,</p>
+<p>Publish/subscribe is a flexible messaging pattern that allows disparate system components to interact with one another asynchronously.</p>
+<h3 id="how-does-event-driven-architecture-work">How does event-driven architecture work?</h3>
+<p>Event-driven architecture is made up of event producers and event consumers. An event producer detects or senses an event and represents the event as a message. It does not know the consumer of the event, or the outcome of an event.</p>
+<p>After an event has been detected, it is transmitted from the event producer to the event consumers through event channels, where an event processing platform processes the event asynchronously. Event consumers need to be informed when an event has occurred. They might process the event or may only be impacted by it.</p>
+<p>The event processing platform will execute the correct response to an event and send the activity downstream to the right consumers. This downstream activity is where the outcome of an event is seen.</p>
+<p><img src="EDA.svg" alt="EDA"></p>
+<h3 id="where-can-this-approach-be-used-in-your-next-project">Where can this approach be used in your next project?</h3>
+<p><strong>To monitor and receive alerts</strong> for any anomalies or changes to storage buckets, database tables, virtual machines, or other resources.</p>
+<p><strong>To fan out a single event to multiple consumers.</strong> The event router will push the event to all the appropriate consumers, without you having to write customized code. Each service can then process the event in parallel, yet differently.</p>
+<p><strong>To provide interoperability between different technology stacks</strong> while maintaining the independence of each stack.</p>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-b4cdd0a1d8d9b9c73158f45ba9422ad4">5.1 - Eventarc</h1>
+    <div class="lead">A unified eventing experience in Google Cloud.</div>
+	<p>Eventarc allows you to build event-driven architectures without having to implement, customize, or maintain the underlying infrastructure. Eventarc offers a standardized solution to manage the flow of state changes, called events, between decoupled microservices. When triggered, Eventarc routes these events through Pub/Sub subscriptions to various destinations while managing delivery, security, authorization, observability, and error-handling for you.</p>
+<p>You can manage Eventarc from the Google Cloud Console, from the command line using the gcloud CLI, or by using the Eventarc API.</p>
+<h3 id="benefits-of-eventarc">Benefits Of Eventarc</h3>
+<p>Eventarc provides an easier path to receive events not only from Pub/Sub topics but from a number of Google Cloud sources with its Audit Log and Pub/Sub integration. Any service with Audit Log integration or any application that can send a message to a Pub/Sub topic can be event sources for Eventarc. You don’t have to worry about the underlying infrastructure with Eventarc. It is a managed service with no clusters to set up or maintain.</p>
+<p>It also has some concrete benefits beyond the easy integration. It provides consistency and structure to how events are generated, routed, and consumed.</p>
+<h3 id="learn">Learn</h3>
+<p>Check out the <a href="https://cloud.google.com/eventarc/docs">Eventarc documentation</a> for more information.</p>
+<p>A few code samples are available <a href="https://cloud.google.com/eventarc/docs#code-samples">here</a>.</p>
 
 </div>
 

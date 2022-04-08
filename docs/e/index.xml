@@ -1,0 +1,38 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A-Z Cloud – E</title>
+    <link>https://dsc-vjti.github.io/a-z-cloud/docs/e/</link>
+    <description>Recent content in E on A-Z Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://dsc-vjti.github.io/a-z-cloud/docs/e/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Eventarc</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/e/eventarc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/e/eventarc/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Eventarc allows you to build event-driven architectures without having to implement, customize, or maintain the underlying infrastructure. Eventarc offers a standardized solution to manage the flow of state changes, called events, between decoupled microservices. When triggered, Eventarc routes these events through Pub/Sub subscriptions to various destinations while managing delivery, security, authorization, observability, and error-handling for you.&lt;/p&gt;
+&lt;p&gt;You can manage Eventarc from the Google Cloud Console, from the command line using the gcloud CLI, or by using the Eventarc API.&lt;/p&gt;
+&lt;h3 id=&#34;benefits-of-eventarc&#34;&gt;Benefits Of Eventarc&lt;/h3&gt;
+&lt;p&gt;Eventarc provides an easier path to receive events not only from Pub/Sub topics but from a number of Google Cloud sources with its Audit Log and Pub/Sub integration. Any service with Audit Log integration or any application that can send a message to a Pub/Sub topic can be event sources for Eventarc. You don’t have to worry about the underlying infrastructure with Eventarc. It is a managed service with no clusters to set up or maintain.&lt;/p&gt;
+&lt;p&gt;It also has some concrete benefits beyond the easy integration. It provides consistency and structure to how events are generated, routed, and consumed.&lt;/p&gt;
+&lt;h3 id=&#34;learn&#34;&gt;Learn&lt;/h3&gt;
+&lt;p&gt;Check out the &lt;a href=&#34;https://cloud.google.com/eventarc/docs&#34;&gt;Eventarc documentation&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;p&gt;A few code samples are available &lt;a href=&#34;https://cloud.google.com/eventarc/docs#code-samples&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
