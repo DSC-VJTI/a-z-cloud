@@ -5,47 +5,18 @@ description: >
   A unified eventing experience in Google Cloud.
 ---
 
-Docker provides various services such as the Docker daemon (`dockerd`), Docker CLI, and Docker Hub Registry that help package applications in containers and host them. As we learned in [containers]({{< relref "containers.md" >}} "Containers"), the several problems of software not being able to run on some machine and portability of software are solved by containers and Docker provides salient tools to make it possible.
+Eventarc allows you to build event-driven architectures without having to implement, customize, or maintain the underlying infrastructure. Eventarc offers a standardized solution to manage the flow of state changes, called events, between decoupled microservices. When triggered, Eventarc routes these events through Pub/Sub subscriptions to various destinations while managing delivery, security, authorization, observability, and error-handling for you.
 
-![Docker logo](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/915px-Docker_%28container_engine%29_logo.svg.png)
+You can manage Eventarc from the Google Cloud Console, from the command line using the gcloud CLI, or by using the Eventarc API.
 
-## Docker architecture
+### Benefits Of Eventarc
 
-Let's discuss the architecture of Docker Engine which comprises of Docker client (CLI), Docker Host that contains the Docker daemon which manages the different containers, and the software that needs to be packaged to a container i.e., an image made available on a registry.
+Eventarc provides an easier path to receive events not only from Pub/Sub topics but from a number of Google Cloud sources with its Audit Log and Pub/Sub integration. Any service with Audit Log integration or any application that can send a message to a Pub/Sub topic can be event sources for Eventarc. You don’t have to worry about the underlying infrastructure with Eventarc. It is a managed service with no clusters to set up or maintain.
 
-![Docker architecture](https://www.researchgate.net/profile/Yahya-Al-Dhuraibi/publication/308050257/figure/fig1/AS:433709594746881@1480415833510/High-level-overview-of-Docker-architecture.png)
+It also has some concrete benefits beyond the easy integration. It provides consistency and structure to how events are generated, routed, and consumed.
 
-### Docker Hub
+### Learn
 
-This is the default registry that Docker uses to fetch _images_ to be run inside containers. But what is an image? A Docker image is a template file that contains the instructions to create a container. Each image has a base image typically a minimal Linux-based operating system such as Alpine and on top of this image, we can add layers of our own images. This can be done using a `Dockerfile`.
+Check out the [Eventarc documentation](https://cloud.google.com/eventarc/docs) for more information.
 
-The following is an example `Dockerfile`:
-
-```Dockerfile
-FROM python:3.7
-LABEL maintainer="Pankaj Khushalani"
-
-COPY ./exercises/python-helloworld /app
-WORKDIR /app
-RUN pip install -r requirements.txt
-
-CMD [ "python", "app.py" ]
-```
-
-Each line contains a keyword following by a flag or a command to be run. In the first line of the `Dockerfile`, the base image follows the `FROM` keyword. Here, `python:3.7` is the name of the base image, which is hosted on Docker Hub and is downloaded when this `Dockerfile` is run. `python:3.7` contains the Linux-based light-weight OS Alpine which comes with Python version 3.7 installed on it.
-
-### Docker daemon
-
-This is the server that hosts and manages the several Docker containers that we would like to run. The communication between different containers is also handled by the daemon. It also plays an important role in creating a Docker container from images pulled from Docker Hub.
-
-### Docker CLI
-
-You can interact with the Docker daemon using Docker CLI. This includes creating a Docker container from a `Dockerfile` or an image directly fetched from Docker Hub, interacting with a Docker container, managing them, etc. You can read the [documentation](https://docs.docker.com/engine/reference/commandline/cli/) for the list of available commands.
-
-## Learn
-
-- Install Docker and have a go at it! Docker Engine comes with Docker Desktop for Windows and macOS, while for Linux distributions, Docker Engine can directly be downloaded and used. You can find the installation guide [here](https://docs.docker.com/engine/install/).
-
-- [DevOps with Docker](https://devopswithdocker.com/) is an MOOC by the University of Helsinki and a great resource to learn the ins and outs of Docker.
-
-- A [video tutorial](https://youtu.be/3c-iBn73dDE) on Docker from Tech World With Nana
+A few code samples are available [here](https://cloud.google.com/eventarc/docs#code-samples).
