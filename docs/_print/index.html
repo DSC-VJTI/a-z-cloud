@@ -301,6 +301,33 @@ This is the multi-page printable view of this section.
     </ul>
     
   
+    
+    
+	
+<li>6: <a href="#pg-3f4f14aca936209d67a66006c9ae2484">“F”</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>6.1: <a href="#pg-9018d142d3450384c3b34df2a520d8fb">“Firebase Cloud Functions”</a></li>
+
+
+    
+  
+
+    </ul>
+    
+  
 
     </ul>
 
@@ -871,6 +898,117 @@ This is the multi-page printable view of this section.
 <h3 id="learn">Learn</h3>
 <p>Check out the <a href="https://cloud.google.com/eventarc/docs">Eventarc documentation</a> for more information.</p>
 <p>A few code samples are available <a href="https://cloud.google.com/eventarc/docs#code-samples">here</a>.</p>
+
+</div>
+
+
+
+    
+	
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-3f4f14aca936209d67a66006c9ae2484">6 - “F”</h1>
+    <div class="lead">Function-as-a-Service(FaaS)</div>
+	<!-- 
+
+<div class="pageinfo pageinfo-primary">
+<p>FaaS</p>
+
+</div>
+ -->
+<blockquote>
+<p>In the serverless world, Function-as-a-Service allows to write small pieces of code that do something Just like any other function, but serverless. That means: The function is sleeping in a fluffy cloudy container and only when it is needed, it wakes up and does something, and the good news: A sleeping function doesn’t cause cost.</p>
+<p>- Carlos Roggan</p>
+</blockquote>
+<h3 id="what-is-function-as-a-service">What is Function-as-a-Service?</h3>
+<p>Function-as-a-Service (FaaS) is a serverless way to execute modular pieces of code on the edge. FaaS lets developers write and update a piece of code on the fly, which can then be executed in response to an event, such as a user clicking on an element in a web application. This makes it easy to scale code and is a cost-efficient way to implement microservices.</p>
+<p>Hosting a software application on the internet typically requires provisioning and managing a virtual or physical server and managing an operating system and web server hosting processes. With FaaS, the physical hardware, virtual machine operating system, and web server software management are all handled automatically by your cloud service provider. This allows you to focus solely on individual functions in your application code.</p>
+<h3 id="how-faas-works">How FaaS works?</h3>
+<p>FaaS gives developers an abstraction for running web applications in response to events, without managing servers. For example, uploading a file could trigger custom code that transcodes the file into a variety of formats.
+FaaS infrastructure is usually metered on-demand by the service provider, primarily through an event-driven execution model, so it’s there when you need it but it doesn’t require any server processes to be running constantly in the background, like platform-as-a-service (PaaS) would. </p>
+<p>Functions can be accessed through one of several triggers that you define when you create the function. For use in an app, functions can occur on events that happen in the database. For example, a function can be triggered when a new item is written to a database, changed, or deleted from the database.</p>
+<p>An “on-event” function might send an email to a user when their account is created. A function could also be written to send a notification to a user, or set of users, in a chatroom when a new message has been written to the room (equivalent to a new write on the database).</p>
+<h3 id="what-are-the-advantages-of-using-faas">What are the advantages of using FaaS?</h3>
+<ul>
+<li><strong>Improved developer velocity</strong>
+With FaaS, developers can spend more time writing application logic and less time worrying about servers and deploys. This typically means a much faster development turnaround.</li>
+<li><strong>Built-in scalability</strong>     <br>
+Since FaaS code is inherently scalable, developers don’t have to worry about creating contingencies for high traffic or heavy use. The serverless provider will handle all of the scaling concerns.</li>
+<li><strong>Cost efficiency</strong>      <br>
+Unlike traditional cloud providers, serverless FaaS providers do not charge their clients for idle computation time. Because of this, clients only pay for as much computation time as they use, and do not need to waste money
+over-provisioning cloud resources.</li>
+<li>Functions can be written in almost any programming language</li>
+</ul>
+<h3 id="what-are-the-drawbacks-of-faas">What are the drawbacks of FaaS?</h3>
+<ul>
+<li><strong>Less system control</strong>      <br>
+Having a third party manage part of the infrastructure makes it tough to understand the whole system
+and adds debugging challenges.</li>
+<li><strong>More complexity required for testing</strong>     <br>
+It can be very difficult to incorporate FaaS code into a local testing environment, making thorough testing 	of an application a more intensive task.</li>
+</ul>
+<h3 id="use-cases">Use Cases</h3>
+<p>Because it enables transactions to be isolated and scaled easily, FaaS is good for high-volume and embarrassingly parallel workloads. It can also be used to create backend systems or for activities such as data processing, format conversion, encoding, or data aggregation.
+FaaS is also a good tool for Web apps, backends, data/stream processing, or to create online chatbots or back ends for IoT devices.</p>
+<p>FaaS can help you manage and use third-party services. If you’re considering Android app development, for example, you can adopt a FaaS approach to keep your costs in check. Because you’re only charged when your app connects to the cloud for a specific function like batch processing, costs can be considerably lower than they would using a traditional approach.</p>
+<h3 id="faas-vs-serverless">FaaS vs Serverless</h3>
+<p>Serverless and Functions-as-a-Service (FaaS) are often conflated with one another but the truth is that FaaS is actually a subset of serverless. Serverless is focused on any service category, be it compute, storage, database, messaging, api gateways, etc. where configuration, management, and billing of servers are invisible to the end user. FaaS, on the other hand, while perhaps the most central technology in serverless architectures, is focused on the event-driven computing paradigm wherein application code, or containers, only run in response to events or requests.
+The combination of FaaS and common back-end services (such as databases, messaging, and authentication) connected primarily through an event-driven architecture is what provides the best benefits for serverless developers.</p>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-9018d142d3450384c3b34df2a520d8fb">6.1 - “Firebase Cloud Functions”</h1>
+    <div class="lead">Create functions that respond to events generated by Firebase and Google Cloud features.</div>
+	<blockquote>
+<p>Cloud Functions for Firebase is a serverless framework that lets you automatically run backend code in response to events triggered by Firebase features and HTTPS requests. Your JavaScript or TypeScript code is stored in Google&rsquo;s cloud and runs in a managed environment. There&rsquo;s no need to manage and scale your own servers.</p>
+</blockquote>
+<h3 id="what-is-firebase-cloud-functions">What is Firebase Cloud Functions?</h3>
+<p>Firebase Cloud Functions in particular are like Lego blocks that you can connect to any Firebase service. For example, a function can be triggered when an image is uploaded to Firebase Storage to create a thumbnail, or maybe clean some user data when a node is deleted in the Realtime Database. Pretty much anything of interest that happens in Firebase can trigger a function.
+If that isn’t enough, you can also use HTTP to trigger functions with GET, POST, etc.</p>
+<h3 id="how-does-it-work">How does it work?</h3>
+<p>Cloud Functions for Firebase lets you automatically run backend code in response to events triggered by Firebase features and HTTPS requests. Your code is stored in Google’s cloud and runs in a managed environment. There’s no need to manage and scale your own servers, for example, if we have a chatting mobile app that uses firebase to store the messages and we want to filter the messages before they are written to the database so as to make sure there are no bad words included in any message, before the cloud functions were made that was really hard to achieve and most probably we would need someone to write a backend code to do this check, but today, all we need to do is just write a simple cloud function that triggers whenever any message is added to our database and filter it out.</p>
+<p>It is very powerful especially for mobile developers that have no knowledge on how to write web apps or backend, you can also integrate with third-party APIs like Slack and Github.</p>
+<h3 id="use-cases">Use Cases</h3>
+<p>Cloud Functions allows developers access to Google Cloud events and Firebase, along with scalable computing power for running the code in response to those events. It is expected that Firebase applications will use Cloud Functions in unique ways to meet their unique and specific needs, use cases may fall into the following areas:</p>
+<ol>
+<li>Notifying users when something interesting happens.</li>
+<li>Performing Realtime Database maintenance and sanitization.</li>
+<li>Executing intensive tasks in the cloud rather than executing in our application.</li>
+<li>Integrate with APIs and third-party services.</li>
+</ol>
+<h3 id="learn">Learn</h3>
+<p>Learn more about Firebase Cloud Functions from the official <a href="https://firebase.google.com/docs/functions#:~:text=Cloud%20Functions%20for%20Firebase%20is,runs%20in%20a%20managed%20environment">documentation</a>.</p>
+<p>Learn Cloud Functions for Firebase with this <a href="https://firebase.google.com/codelabs/firebase-cloud-functions#0">codelab</a></p>
 
 </div>
 

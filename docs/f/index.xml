@@ -1,0 +1,50 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A-Z Cloud – “F”</title>
+    <link>https://dsc-vjti.github.io/a-z-cloud/docs/f/</link>
+    <description>Recent content in “F” on A-Z Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://dsc-vjti.github.io/a-z-cloud/docs/f/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: “Firebase Cloud Functions”</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/f/firebase_cloud_functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/f/firebase_cloud_functions/</guid>
+      <description>
+        
+        
+        &lt;blockquote&gt;
+&lt;p&gt;Cloud Functions for Firebase is a serverless framework that lets you automatically run backend code in response to events triggered by Firebase features and HTTPS requests. Your JavaScript or TypeScript code is stored in Google&amp;rsquo;s cloud and runs in a managed environment. There&amp;rsquo;s no need to manage and scale your own servers.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;what-is-firebase-cloud-functions&#34;&gt;What is Firebase Cloud Functions?&lt;/h3&gt;
+&lt;p&gt;Firebase Cloud Functions in particular are like Lego blocks that you can connect to any Firebase service. For example, a function can be triggered when an image is uploaded to Firebase Storage to create a thumbnail, or maybe clean some user data when a node is deleted in the Realtime Database. Pretty much anything of interest that happens in Firebase can trigger a function.
+If that isn’t enough, you can also use HTTP to trigger functions with GET, POST, etc.&lt;/p&gt;
+&lt;h3 id=&#34;how-does-it-work&#34;&gt;How does it work?&lt;/h3&gt;
+&lt;p&gt;Cloud Functions for Firebase lets you automatically run backend code in response to events triggered by Firebase features and HTTPS requests. Your code is stored in Google’s cloud and runs in a managed environment. There’s no need to manage and scale your own servers, for example, if we have a chatting mobile app that uses firebase to store the messages and we want to filter the messages before they are written to the database so as to make sure there are no bad words included in any message, before the cloud functions were made that was really hard to achieve and most probably we would need someone to write a backend code to do this check, but today, all we need to do is just write a simple cloud function that triggers whenever any message is added to our database and filter it out.&lt;/p&gt;
+&lt;p&gt;It is very powerful especially for mobile developers that have no knowledge on how to write web apps or backend, you can also integrate with third-party APIs like Slack and Github.&lt;/p&gt;
+&lt;h3 id=&#34;use-cases&#34;&gt;Use Cases&lt;/h3&gt;
+&lt;p&gt;Cloud Functions allows developers access to Google Cloud events and Firebase, along with scalable computing power for running the code in response to those events. It is expected that Firebase applications will use Cloud Functions in unique ways to meet their unique and specific needs, use cases may fall into the following areas:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Notifying users when something interesting happens.&lt;/li&gt;
+&lt;li&gt;Performing Realtime Database maintenance and sanitization.&lt;/li&gt;
+&lt;li&gt;Executing intensive tasks in the cloud rather than executing in our application.&lt;/li&gt;
+&lt;li&gt;Integrate with APIs and third-party services.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;learn&#34;&gt;Learn&lt;/h3&gt;
+&lt;p&gt;Learn more about Firebase Cloud Functions from the official &lt;a href=&#34;https://firebase.google.com/docs/functions#:~:text=Cloud%20Functions%20for%20Firebase%20is,runs%20in%20a%20managed%20environment&#34;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Learn Cloud Functions for Firebase with this &lt;a href=&#34;https://firebase.google.com/codelabs/firebase-cloud-functions#0&#34;&gt;codelab&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
