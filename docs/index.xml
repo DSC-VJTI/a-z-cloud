@@ -311,5 +311,56 @@ If that isn’t enough, you can also use HTTP to trigger functions with GET, POS
       </description>
     </item>
     
+    <item>
+      <title>Docs: Google Maps Platform</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/g/google-maps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/g/google-maps/</guid>
+      <description>
+        
+        
+        &lt;p&gt;One of the most prominent applications of GIS is Google Maps. Google Cloud Platform provides various services of Google Maps via the &lt;a href=&#34;https://mapsplatform.google.com/&#34;&gt;Google Maps Platform&lt;/a&gt;. It provides SDKs and APIs to effectively use Google Maps in our applications.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://developers.google.com/maps/images/google-maps-platform-1200x675.png&#34; alt=&#34;Google Maps Platform logo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The platform provides APIs in the following categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Maps&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dynamic Maps for JavaScript, Android, iOS&lt;/li&gt;
+&lt;li&gt;Dynamic Street View for JavaScript, Android, iOS&lt;/li&gt;
+&lt;li&gt;Static Maps API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Places&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Autocomplete API&lt;/li&gt;
+&lt;li&gt;Geocoding API&lt;/li&gt;
+&lt;li&gt;Geolocation API&lt;/li&gt;
+&lt;li&gt;Place Details API for Android and iOS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Routes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Directions API&lt;/li&gt;
+&lt;li&gt;Roads API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You can learn more about using these SDKs and APIs from the official &lt;a href=&#34;https://developers.google.com/maps/documentation&#34;&gt;documentation&lt;/a&gt; of Google Maps Platform.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://codelabs.developers.google.com/codelabs/advanced-android-kotlin-training-maps#0&#34;&gt;Codelab&lt;/a&gt; on how to add a Google Map to your Android mobile application.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
