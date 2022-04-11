@@ -1,0 +1,58 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A-Z Cloud – H</title>
+    <link>https://dsc-vjti.github.io/a-z-cloud/docs/h/</link>
+    <description>Recent content in H on A-Z Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://dsc-vjti.github.io/a-z-cloud/docs/h/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Cloud Monitoring</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/h/cloud_monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/h/cloud_monitoring/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Cloud monitoring is the process of reviewing and managing the operational workflow and processes within a cloud infrastructure or asset. These techniques confirm the performance of websites, servers, applications, and other cloud infrastructure.&lt;/p&gt;
+&lt;p&gt;Cloud Monitoring collects measurements of your service and of the Google Cloud resources that you use.&lt;/p&gt;
+&lt;h3 id=&#34;how-it-helps&#34;&gt;How it helps?&lt;/h3&gt;
+&lt;p&gt;It:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Monitor CPU and memory details.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Keep tabs on disk utilization.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Achieve maximum network efficiency.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Effectively track firewall metrics.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Track quota metrics with ease.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Helps you to plan ahead with insightful reports.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;You can learn more about this by visiting the &lt;a href=&#34;https://cloud.google.com/monitoring/docs/monitoring-overview&#34;&gt;official page&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
