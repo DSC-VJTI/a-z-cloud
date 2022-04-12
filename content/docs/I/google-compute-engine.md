@@ -20,7 +20,7 @@ GCE allows administrators to select the region and zone where certain data resou
 ### Applications Of Compute Engine
 
 Below are some of the use-cases or applications of the Google compute engine:
-1. **Virtual Machine (VM) migration to Comput Engine:** It provides tools to fast-track the migration process from on-premise or other clouds to GCP. If a user is starting with the public cloud, then they can leverage these tools to seamlessly transfer existing applications from their data center, AWS, or Azure to GCP. Users can have their applications running on Compute Engine within minutes while the data migrate transparently in the background.
+1. **Virtual Machine (VM) migration to Compute Engine:** It provides tools to fast-track the migration process from on-premise or other clouds to GCP. If a user is starting with the public cloud, then they can leverage these tools to seamlessly transfer existing applications from their data center, AWS, or Azure to GCP. Users can have their applications running on Compute Engine within minutes while the data migrate transparently in the background.
 2.  **Genomics Data Processing:** Processing genomic data is computationally-intensive because the information is enormous with vast sets of sequencing. With the Compute Engine’s potentials, users can process such large data sets. The platform is not only flexible but also scalable when it comes to processing genomic sequences.
 3. **BYOL or Bring Your Own License images:** A Compute Engine can help you run Windows apps in GCP by bringing their licenses to the platform as either license-included images or sole-tenant nodes. When users migrate to GCP, they can flexibly optimize their license and promote the bottom line.
 
