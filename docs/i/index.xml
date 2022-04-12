@@ -1,0 +1,70 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A-Z Cloud – I</title>
+    <link>https://dsc-vjti.github.io/a-z-cloud/docs/i/</link>
+    <description>Recent content in I on A-Z Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://dsc-vjti.github.io/a-z-cloud/docs/i/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: IaaS offering by GCP - Google Compute Engine</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/i/google-compute-engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/i/google-compute-engine/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;what-is-google-compute-engine&#34;&gt;What is Google Compute Engine?&lt;/h3&gt;
+&lt;p&gt;Google Compute Engine (GCE) is an Infrastructure as a Service (IaaS) offering that allows clients to run workloads on Google&amp;rsquo;s physical hardware. 
+Google Compute Engine provides a scalable number of virtual machines (VMs) to serve as large compute clusters for that purpose.  GCE can be managed through a RESTful API, command line interface (CLI) or Web console. Compute Engine is a pay-per-usage service with a 10-minute minimum. There are no up-front fees or time-period commitments. GCE competes with Amazon&amp;rsquo;s Elastic Compute Cloud (EC2) and Microsoft Azure.&lt;/p&gt;
+&lt;p&gt;GCE&amp;rsquo;s application program interface (API) provides administrators with virtual machine, DNS server and load balancing capabilities. VMs are available in a number of CPU and RAM configurations and Linux distributions, including Debian and CentOS. Customers may use their own system images for custom virtual machines. Data at rest is encrypted using the AEC-128-CBC algorithm.&lt;/p&gt;
+&lt;p&gt;GCE allows administrators to select the region and zone where certain data resources will be stored and used. Currently, GCE has three regions: United States, Europe and Asia. Each region has two availability zones and each zone supports either Ivy Bridge or Sandy Bridge processors. GCE also offers a suite of tools for administrators to create advanced networks on the regional level. 
+ &lt;/p&gt;
+&lt;h3 id=&#34;applications-of-compute-engine&#34;&gt;Applications Of Compute Engine&lt;/h3&gt;
+&lt;p&gt;Below are some of the use-cases or applications of the Google compute engine:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Virtual Machine (VM) migration to Compute Engine:&lt;/strong&gt; It provides tools to fast-track the migration process from on-premise or other clouds to GCP. If a user is starting with the public cloud, then they can leverage these tools to seamlessly transfer existing applications from their data center, AWS, or Azure to GCP. Users can have their applications running on Compute Engine within minutes while the data migrate transparently in the background.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Genomics Data Processing:&lt;/strong&gt; Processing genomic data is computationally-intensive because the information is enormous with vast sets of sequencing. With the Compute Engine’s potentials, users can process such large data sets. The platform is not only flexible but also scalable when it comes to processing genomic sequences.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BYOL or Bring Your Own License images:&lt;/strong&gt; A Compute Engine can help you run Windows apps in GCP by bringing their licenses to the platform as either license-included images or sole-tenant nodes. When users migrate to GCP, they can flexibly optimize their license and promote the bottom line.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;advantages-of-compute-engine&#34;&gt;Advantages Of Compute Engine&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Storage Efficiency:&lt;/strong&gt; The persistent disks support up to 257 TB of storage which is more than 10 times higher than what Amazon Elastic Block Storage (EBS) can accommodate. The organizations that require more scalable storage options can go for Compute Engine&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Cost:&lt;/strong&gt; Within the GCP ecosystem, users pay only for the computing time that they have consumed. The per-second billing plan is used by the Google compute engine.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Stability:&lt;/strong&gt; It offers more stable services because of its ability to provide live migration of VMs between the hosts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Backups:&lt;/strong&gt; Google Cloud Platform has a robust, inbuilt, and redundant backup system. The Compute Engine uses this system for flagship products like Search Engine and Gmail.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Scalability:&lt;/strong&gt; It makes reservations to help ensure that applications have the capacity they need as they scale.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Easy Integration:&lt;/strong&gt; It allows to easily integrate with other Google Cloud services like AI/ML and data analytics.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Security:&lt;/strong&gt; Google Compute Engine is a more secure and safe place for cloud applications.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;learn&#34;&gt;Learn&lt;/h3&gt;
+&lt;p&gt;Learn more about Google Compute Engine from the official &lt;a href=&#34;https://cloud.google.com/compute/docs&#34;&gt;documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Explore Google Compute Engine with this &lt;a href=&#34;https://codelabs.developers.google.com/codelabs/cloud-compute-engine#0&#34;&gt;codelab&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
