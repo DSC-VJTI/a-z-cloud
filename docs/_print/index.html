@@ -409,6 +409,33 @@ This is the multi-page printable view of this section.
     </ul>
     
   
+    
+    
+	
+<li>10: <a href="#pg-3c5c35483df7dc1632f436fc498f0609">J</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>10.1: <a href="#pg-35a4c900611cc04e96408c9d0cd546e8">Cloud Scheduler</a></li>
+
+
+    
+  
+
+    </ul>
+    
+  
 
     </ul>
 
@@ -1459,6 +1486,101 @@ Google Compute Engine provides a scalable number of virtual machines (VMs) to se
 <h3 id="learn">Learn</h3>
 <p>Learn more about Google Compute Engine from the official <a href="https://cloud.google.com/compute/docs">documentation</a></p>
 <p>Explore Google Compute Engine with this <a href="https://codelabs.developers.google.com/codelabs/cloud-compute-engine#0">codelab</a></p>
+
+</div>
+
+
+
+    
+	
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-3c5c35483df7dc1632f436fc498f0609">10 - J</h1>
+    <div class="lead"><h2 id="job-scheduling">Job Scheduling</h2>
+</div>
+	<p>We often have repetitive tasks to perform such as checking internet connection every few hours, maybe checking stock prices every few hours, or checking if that one product has gone on sale on an e-commerce site. Instead of having to do this manually, you can <em>schedule</em> these tasks to run at regular intervals.</p>
+<p>For example, consider this <code>check_internt.sh</code> Bash script to check if you are connected to the internet or not by pinging Google&rsquo;s webpage:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#204a87">echo</span> -e <span style="color:#4e9a06">&#34;GET http://google.com HTTP/1.0\n\n&#34;</span> <span style="color:#000;font-weight:bold">|</span> nc google.com <span style="color:#0000cf;font-weight:bold">80</span> &gt; /dev/null 2&gt;<span style="color:#000;font-weight:bold">&amp;</span><span style="color:#0000cf;font-weight:bold">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">if</span> <span style="color:#ce5c00;font-weight:bold">[</span> <span style="color:#000">$?</span> -eq <span style="color:#0000cf;font-weight:bold">0</span> <span style="color:#ce5c00;font-weight:bold">]</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#204a87;font-weight:bold">then</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87">echo</span> <span style="color:#4e9a06">&#34;Online&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">else</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87">echo</span> <span style="color:#4e9a06">&#34;Offline&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">fi</span>
+</span></span></code></pre></div><p>Now, to run this script say, every 2 hours to check for internet connection, we use the <code>crontab</code> utility in Linux.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># enters the configuration file that contains cron jobs to be scheduled</span>
+</span></span><span style="display:flex;"><span>crontab -e
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># run this script every 2 hours</span>
+</span></span><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">0</span> */2 * * *  check_internet.sh
+</span></span></code></pre></div><p>Let&rsquo;s not get ahead of ourselves and first see what is a <strong>cron job</strong> and what does this terrible syntax <code>0 */2 * * *</code> mean.</p>
+<h3 id="what-is-a-cron-job">What is a cron job?</h3>
+<p>Derived from the Greek God of Time, Chronos, a cron job is a task that is scheduled by a job scheduler such as <code>crontab</code> on Linux-based operating systems and by <code>cron</code> on a Unix-like operating system.</p>
+<p>To learn more about the uncommon asterisk syntax, refer <a href="https://crontab.guru/">crontab.guru</a></p>
+<p>Though checking the internet connection is a trivial example, we have seen in <a href="/a-z-cloud/docs/h/" title="Health Checks">health checks</a> how important it is to check if a server or an application is healthy (alive) or not.</p>
+<h3 id="why-do-you-need-cloud-for-scheduling-cron-jobs">Why do you need cloud for scheduling cron jobs?</h3>
+<p>From health checks to thousands of repetitive tasks such as fetching data from several APIs, to scheduling a job based on an event trigger, manually managing so many jobs becomes impossible. Hence, to manage jobs at scale, cloud is at our behest.</p>
+<p>Job scheduling tools such as Google Cloud&rsquo;s Cloud Scheduler enable automation of execution of tasks based on date-time scheduling or other methods of execution such as event-based triggers. It eliminates the need for manual kick-offs, reducing delays and avoiding repetitive tasks.</p>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-35a4c900611cc04e96408c9d0cd546e8">10.1 - Cloud Scheduler</h1>
+    <div class="lead">Schedule virtually everything</div>
+	<p>Cloud Scheduler is a fully managed enterprise-grade cron <strong>j</strong>ob scheduler. It allows you to schedule virtually any job, including batch, big data jobs such as ETL, and cloud infrastructure operations. You can automate everything, including retries in case of failure to reduce manual toil and intervention.</p>
+<p align="center">
+<img src="https://storage.googleapis.com/gweb-cloudblog-publish/images/cloud-scheduler-512-color.max-600x600.png" alt="Cloud Scheduler logo" width="250" height="250" />
+</p>
+<h3 id="leveraging-cloud-scheduler">Leveraging Cloud Scheduler</h3>
+<p>Cloud Scheduler can be used in the following ways:</p>
+<ul>
+<li>
+<p>Reduce minimal manual effort by scheduling repetitive Big Data tasks such as fetching and preprocessing of data for a data pipeline</p>
+</li>
+<li>
+<p>Downscale or upscaling cloud infrastructure when needed in a reliable manner</p>
+</li>
+<li>
+<p>Automate health checks, trigger a Cloud Pub/Sub pipeline, and a lot more with integration with our GCP services</p>
+</li>
+</ul>
+<h3 id="learn">Learn</h3>
+<ul>
+<li>
+<p>Read the <a href="https://cloud.google.com/scheduler/docs">documentation</a> to get started.</p>
+</li>
+<li>
+<p>Check out several <a href="https://cloud.google.com/scheduler/docs/tut-pub-sub">tutorials</a> and give Cloud Scheduler a try!</p>
+</li>
+</ul>
 
 </div>
 

@@ -1,0 +1,56 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A-Z Cloud – J</title>
+    <link>https://dsc-vjti.github.io/a-z-cloud/docs/j/</link>
+    <description>Recent content in J on A-Z Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://dsc-vjti.github.io/a-z-cloud/docs/j/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Cloud Scheduler</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/j/cloud-scheduler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/j/cloud-scheduler/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Cloud Scheduler is a fully managed enterprise-grade cron &lt;strong&gt;j&lt;/strong&gt;ob scheduler. It allows you to schedule virtually any job, including batch, big data jobs such as ETL, and cloud infrastructure operations. You can automate everything, including retries in case of failure to reduce manual toil and intervention.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;https://storage.googleapis.com/gweb-cloudblog-publish/images/cloud-scheduler-512-color.max-600x600.png&#34; alt=&#34;Cloud Scheduler logo&#34; width=&#34;250&#34; height=&#34;250&#34; /&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;leveraging-cloud-scheduler&#34;&gt;Leveraging Cloud Scheduler&lt;/h3&gt;
+&lt;p&gt;Cloud Scheduler can be used in the following ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Reduce minimal manual effort by scheduling repetitive Big Data tasks such as fetching and preprocessing of data for a data pipeline&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Downscale or upscaling cloud infrastructure when needed in a reliable manner&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Automate health checks, trigger a Cloud Pub/Sub pipeline, and a lot more with integration with our GCP services&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;learn&#34;&gt;Learn&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Read the &lt;a href=&#34;https://cloud.google.com/scheduler/docs&#34;&gt;documentation&lt;/a&gt; to get started.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Check out several &lt;a href=&#34;https://cloud.google.com/scheduler/docs/tut-pub-sub&#34;&gt;tutorials&lt;/a&gt; and give Cloud Scheduler a try!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
