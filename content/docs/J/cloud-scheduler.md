@@ -15,11 +15,11 @@ Cloud Scheduler is a fully managed enterprise-grade cron **j**ob scheduler. It a
 
 Cloud Scheduler can be used in the following ways:
 
-- Reduce minimal manual effort by scheduling repetitive big data tasks such as fetching and preprocessing of data for a data pipeline
+- Reduce minimal manual effort by scheduling repetitive Big Data tasks such as fetching and preprocessing of data for a data pipeline
 
 - Downscale or upscaling cloud infrastructure when needed in a reliable manner
 
-- Automate health checks, trigger a Cloud Pub/Sub pipeline, and a lot more with integration with our GCP services.
+- Automate health checks, trigger a Cloud Pub/Sub pipeline, and a lot more with integration with our GCP services
 
 ### Learn
 
