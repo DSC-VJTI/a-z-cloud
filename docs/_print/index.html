@@ -436,6 +436,33 @@ This is the multi-page printable view of this section.
     </ul>
     
   
+    
+    
+	
+<li>11: <a href="#pg-02f7ee06a30407aade2bcfe2a89fde53">K</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>11.1: <a href="#pg-49d00af9e7a9eb3a106f301987f93fb4">Google Kubernetes Engine</a></li>
+
+
+    
+  
+
+    </ul>
+    
+  
 
     </ul>
 
@@ -1580,6 +1607,90 @@ Google Compute Engine provides a scalable number of virtual machines (VMs) to se
 <li>
 <p>Check out several <a href="https://cloud.google.com/scheduler/docs/tut-pub-sub">tutorials</a> and give Cloud Scheduler a try!</p>
 </li>
+</ul>
+
+</div>
+
+
+
+    
+	
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-02f7ee06a30407aade2bcfe2a89fde53">11 - K</h1>
+    <div class="lead"><h2 id="kubernetes">Kubernetes</h2>
+</div>
+	<p>Before starting with the technical jargon related to K8s, I would like to redirect y&rsquo;all to <a href="https://www.linkedin.com/posts/stevenouri_mlops-devops-activity-6857456996527022080-TBeF">this post</a> which explains the usecase of kubernetes.</p>
+<p>Hope y&rsquo;all now have a basic understanding of what it does. So, now let&rsquo;s move to some technical terminologies.</p>
+<h3 id="what-is-kubernetesor-simply-k8s">What is Kubernetes(or simply K8s)?</h3>
+<p>Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.</p>
+<p>There are two main words here: <em>container</em> and <em>orchestration</em>. We need to understand what each one is to understand Kubernetes.</p>
+<h3 id="what-are-containers">What are Containers?</h3>
+<p>Containers are a technology for packaging the (compiled) code for an application along with the dependencies it needs at run time. Each container that you run is repeatable; the standardisation from having dependencies included means that you get the same behaviour wherever you run it.</p>
+<p>Pretty Complicated right? Let me explain it.</p>
+<p>If we need to spin up a stack of applications in a server, such as a web application, database, messaging layer, etc., this will result in the following scenario.</p>
+<p><img src="1.png" alt=""></p>
+<p>There is a hardware infrastructure on which an operating system (OS) runs, and libraries and application dependencies are installed over the OS. Different applications then share the same libraries and dependencies to run.</p>
+<p>If you look into the design described, there are bound to be multiple problems. If you’ve rightly guessed, a web server might need a different version of a library as compared to the database server, for example, and one version of dependency can be compatible with one application but incompatible with another. If we need to upgrade one of the dependencies, we need to ensure that we do not impact another application that might not support it. This scenario is known as the Matrix of Hell and is a nightmare for developers and admins alike.</p>
+<h4 id="solutions-1">Solutions 1:</h4>
+<p><strong>Virtual Machines (VMs):</strong></p>
+<p>A virtual machine is an emulation of a computer system. Virtual machines are based on computer architectures and provide the functionality of a physical computer using software called a hypervisor. Some of the popular hypervisors in the market are VMWare and Oracle Virtual Box. A typical VM-based stack looks like this:</p>
+<p><img src="2.png" alt=""></p>
+<p>We have resolved the dependency problem, and now we are out of the Matrix of Hell. However, this introduces another issue. Instead of running a single OS within a machine, we now have multiple guest OSs running within a physical device.</p>
+<h4 id="solutions-2">Solutions 2:</h4>
+<p>Containers balance the problem out by treating servers as servers. We no longer have a separate VM for the webserver, database, and messaging. Instead, we have different containers for them.</p>
+<p><img src="3.png" alt=""></p>
+<p>We have now got rid of the guest OS dependency, and containers now run as separate processes within the same OS. Containers make use of container runtimes. One of the famous container runtimes is Docker. I won&rsquo;t be talking about Docker here as it is a big concept in itself, however attaching a <a href="https://www.linkedin.com/posts/stevenouri_buildwithai-programming-activity-6857289563795279872-ol7s?utm_source=linkedin_share&amp;utm_medium=member_desktop_web">post</a> which gives a quick overview.</p>
+<p>The idea of having multiple containers running within a server sounds tempting, but they come with their own set of problems. How you scale containers? How do you ensure that containers run and heal when they are unhealthy? What would happen if you suddenly see a spike and want to scale up your containers automatically? and many more&hellip;</p>
+<p>Now this is where K8s comes to rescue.</p>
+<h3 id="container-orchestration-using-kubernetes">Container Orchestration Using Kubernetes</h3>
+<p>The idea of using Kubernetes is simple. You have a cluster of servers that are managed by Kubernetes, and Kubernetes is responsible for orchestrating your containers within the servers. You treat servers as servers, and you run applications within self-contained units called containers.</p>
+<p>Since containers can run the same in any server, it does not matter on what server your container is running, as long as the client can reach it. If you need to scale your cluster, you can add or remove nodes to the cluster without worrying about the application architecture, zoning, roles, etc. You handle all of these at the Kubernetes level.</p>
+<p>Kubernetes uses a simple concept to manage containers. There are master nodes (control plane) which control and orchestrate the container workloads, and the worker nodes where the containers run. Kubernetes run containers in pods, which form the basic building block in Kubernetes.</p>
+<p>Following is a high-level architecture of a Kubernetes cluster:</p>
+<p><img src="4.png" alt=""></p>
+<p>Feel free to read more about the K8s architecture <a href="https://avinetworks.com/glossary/kubernetes-architecture/#:~:text=Basic%20Kubernetes%20architecture%20exists%20in,which%20are%20composed%20of%20containers.">here</a></p>
+<p>Know more about this concept through these documentries - <a href="https://youtu.be/BE77h7dmoQU">Part1</a> and <a href="https://youtu.be/318elIq37PE">Part2</a></p>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-49d00af9e7a9eb3a106f301987f93fb4">11.1 - Google Kubernetes Engine</h1>
+    <div class="lead">Manage your containers with GKE</div>
+	<p><img src="https://techolution.com/wp-content/uploads/2019/05/file-3.png" alt=""></p>
+<p>Google Kubernetes Engine (GKE) provides a managed environment for deploying, managing, and scaling your containerized applications using Google infrastructure. The GKE environment consists of multiple machines (specifically, Compute Engine instances) grouped together to form a cluster.</p>
+<h3 id="learn">Learn</h3>
+<ul>
+<li>Read the <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview">documentation</a> to get started.</li>
 </ul>
 
 </div>

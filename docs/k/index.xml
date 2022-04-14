@@ -1,0 +1,36 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A-Z Cloud – K</title>
+    <link>https://dsc-vjti.github.io/a-z-cloud/docs/k/</link>
+    <description>Recent content in K on A-Z Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://dsc-vjti.github.io/a-z-cloud/docs/k/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Google Kubernetes Engine</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/k/google-k8s-engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/k/google-k8s-engine/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;https://techolution.com/wp-content/uploads/2019/05/file-3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Google Kubernetes Engine (GKE) provides a managed environment for deploying, managing, and scaling your containerized applications using Google infrastructure. The GKE environment consists of multiple machines (specifically, Compute Engine instances) grouped together to form a cluster.&lt;/p&gt;
+&lt;h3 id=&#34;learn&#34;&gt;Learn&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Read the &lt;a href=&#34;https://cloud.google.com/kubernetes-engine/docs/concepts/kubernetes-engine-overview&#34;&gt;documentation&lt;/a&gt; to get started.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
