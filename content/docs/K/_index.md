@@ -40,7 +40,7 @@ A virtual machine is an emulation of a computer system. Virtual machines are bas
 
 We have resolved the dependency problem, and now we are out of the Matrix of Hell. However, this introduces another issue. Instead of running a single OS within a machine, we now have multiple guest OSs running within a physical device.
 
-#### Solutions 1:
+#### Solutions 2:
 
 Containers balance the problem out by treating servers as servers. We no longer have a separate VM for the webserver, database, and messaging. Instead, we have different containers for them.
 
