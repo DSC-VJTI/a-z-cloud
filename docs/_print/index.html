@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.96.0" />
+<meta name="generator" content="Hugo 0.97.0" />
 <link rel="canonical" type="text/html" href="https://dsc-vjti.github.io/a-z-cloud/docs/">
 <link rel="alternate" type="application/rss&#43;xml" href="https://dsc-vjti.github.io/a-z-cloud/docs/index.xml">
 <meta name="robots" content="noindex, nofollow">
@@ -455,6 +455,33 @@ This is the multi-page printable view of this section.
     
 	
 <li>11.1: <a href="#pg-49d00af9e7a9eb3a106f301987f93fb4">Google Kubernetes Engine</a></li>
+
+
+    
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>12: <a href="#pg-78d79b43bcb49126218f6b945a6dc76e">L</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>12.1: <a href="#pg-0c7e0abf05357d95ed26df02c4b15351">Cloud Load Balancing</a></li>
 
 
     
@@ -1704,6 +1731,180 @@ Google Compute Engine provides a scalable number of virtual machines (VMs) to se
     
 	
   
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-78d79b43bcb49126218f6b945a6dc76e">12 - L</h1>
+    <div class="lead">Load Balancing</div>
+	<!-- 
+
+<div class="pageinfo pageinfo-primary">
+<p>Load Balancing</p>
+
+</div>
+ -->
+<h3 id="what-is-load-balancing">What is Load Balancing?</h3>
+<p>Imagine you’re in charge of a complex website, and it’s an online hit! It continues to face high amounts of traffic and you’re not sure your website backend can handle the amount of traffic from all over the world. You know you need to use load balancers, but the options are confusing. It can be hard to know exactly how to settle on a load balancing architecture that meets your needs, and figure out the prerequisites you need, for the best performance, without making too much of a dent in your wallet.
+To start, you need to know what load balancing is and why it’s so important to the long-lasting success of your application.</p>
+<blockquote>
+<p>Load balancing is the process of distributing traffic across your network of servers to ensure that the system does not get overwhelmed and all requests are handled easily and efficiently.</p>
+</blockquote>
+<p>Modern high‑traffic websites serve hundreds of thousands, if not millions, of concurrent requests from users or clients and return the correct text, images, video, or application data, all in a fast and reliable manner. You’ve probably all experienced visiting your favorite website, only to get long wait times, connection timeout errors, or images and videos buffering. And a lot of the times, this is because the website backend is unable to cost‑effectively scale to meet these high volumes.
+The logical answer here is to add more backend servers to help serve traffic. But the next question becomes, how do you distribute traffic to those backend servers based on capacity and health?
+This is where load balancing makes a splash.</p>
+<p>In the seven-layer Open System Interconnection (OSI) model, network firewalls are at levels one to three (L1-Physical Wiring, L2-Data Link and L3-Network). Meanwhile, load balancing happens between layers four to seven (L4-Transport, L5-Session, L6-Presentation and L7-Application).</p>
+<p><img src="1.jpeg" alt=""></p>
+<h3 id="load-balancers">Load Balancers</h3>
+<p>As an organization meets demand for its applications, the load balancer decides which servers can handle that traffic. This maintains a good user experience.
+Load balancers manage the flow of information between the server and an endpoint device (PC, laptop, tablet or smartphone). The server could be on-premises, in a data center or the public cloud. The server can also be physical or virtualized. The load balancer helps servers move data efficiently, optimizes the use of application delivery resources and prevents server overloads. Load balancers conduct continuous health checks on servers to ensure they can handle requests. If necessary, the load balancer removes unhealthy servers from the pool until they are restored. Some load balancers even trigger the creation of new virtualized application servers to cope with increased demand.
+Traditionally, load balancers consist of a hardware appliance. Yet they are increasingly becoming software-defined. This is why load balancers are an essential part of an organization’s digital strategy.</p>
+<p>Load balancers have different capabilities, which include:</p>
+<ul>
+<li><strong>L4</strong> — directs traffic based on data from network and transport layer protocols, such as IP address and TCP port.</li>
+<li><strong>L7</strong> — adds content switching to load balancing. This allows routing decisions based on attributes like HTTP header, uniform resource identifier, SSL session ID and HTML form data.</li>
+<li><strong>GSLB</strong> — Global Server Load Balancing extends L4 and L7 capabilities to servers in different geographic locations.</li>
+</ul>
+<h3 id="why-load-balancing">Why Load Balancing?</h3>
+<p>There is a limitation to the number of requests a single computer can handle at a given time. When faced with a sudden surge in requests, your application will load slowly, the network will time out, and your server will creak. You have two options: scale up or scale out.</p>
+<p>When you scale up (vertical scale), you increase the capacity of a single machine by adding more storage (Disk) or processing power (RAM, CPU) to an existing single machine as needed on demand. But scaling up has a limit — you’ll get to a point where you cannot add more RAM or CPUs.</p>
+<p>A better strategy is to scale out (horizontal scale), which involves the distribution of loads across as many servers as necessary to handle the workload. In this case, you can scale infinitely by adding more physical machines to an existing pool of resources.</p>
+<h3 id="load-balancing-and-security">Load Balancing and Security</h3>
+<p>Load Balancing plays an important security role as computing moves evermore to the cloud. The off-loading function of a load balancer defends an organization against distributed denial-of-service (DDoS) attacks. It does this by shifting attack traffic from the corporate server to a public cloud provider. DDoS attacks represent a large portion of cybercrime as their number and size continues to rise. Hardware defense, such as a perimeter firewall, can be costly and require significant maintenance. Software load balancers with cloud offload provide efficient and cost-effective protection.</p>
+<h3 id="load-balancing-algorithms">Load Balancing Algorithms</h3>
+<p>There are a variety of load balancing methods, which use different algorithms best suited for a particular situation.</p>
+<ul>
+<li>
+<p><strong>Least Connection Method</strong> — directs traffic to the server with the fewest active connections. Most useful when there are a large number of persistent connections in the traffic unevenly distributed between the servers.</p>
+</li>
+<li>
+<p><strong>Least Response Time Method</strong> — directs traffic to the server with the fewest active connections and the lowest average response time.</p>
+</li>
+<li>
+<p><strong>Round Robin Method</strong> — rotates servers by directing traffic to the first available server and then moves that server to the bottom of the queue. Most useful when servers are of equal specification and there are not many persistent connections.</p>
+</li>
+<li>
+<p><strong>IP Hash</strong> — the IP address of the client determines which server receives the request.</p>
+</li>
+</ul>
+<h3 id="the-benefits">The Benefits</h3>
+<p>Load balancing can do more than just act as a network traffic cop. Software load balancers provide benefits like predictive analytics that determine traffic bottlenecks before they happen. As a result, the software load balancer gives an organization actionable insights. These are key to automation and can help drive business decisions.
+The benefits of load balancing include the following:</p>
+<ul>
+<li>
+<p><strong>Prevents Network Server Overload</strong>     <br>
+When using load balancers in the cloud, you can distribute your workload among several servers, network units, data centers, and cloud providers. This lets you effectively prevent network server overload during traffic surges. </p>
+</li>
+<li>
+<p><strong>High Availability</strong>            <br>
+The concept of high availability means that your entire system won’t be shut down whenever a system component goes down or fails. You can use load balancers to simply redirect requests to healthy nodes in the event that one fails.</p>
+</li>
+<li>
+<p><strong>Better Resource Utilization</strong>             <br>
+Load balancing is centered around the principle of efficiently distributing workloads across data centers and through multiple resources, such as disks, servers, clusters, or computers. It maximizes throughput, optimizes the use of available resources, avoids overload of any single resource, and minimizes response time.</p>
+</li>
+<li>
+<p><strong>Prevent a Single Source of Failure</strong>          <br>
+Load balancers are able to detect unhealthy nodes in your cluster through various algorithmic and health-checking techniques. In the event of failure, loads can be transferred to a different node without affecting your users, affording you the time to address the problem rather than treating it as an emergency.</p>
+</li>
+</ul>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-0c7e0abf05357d95ed26df02c4b15351">12.1 - Cloud Load Balancing</h1>
+    <div class="lead">High performance, scalable load balancing on Google Cloud Platform.</div>
+	<p>Load balancers are managed services on GCP that distribute traffic across multiple instances of your application. GCP bears the burden of managing operational overhead and reduces the risk of having a non-functional, slow, or overburdened application.
+With Google Cloud Load Balancing, you can serve content as close as possible to your users, on a system that can respond to over 1 million queries per second!</p>
+<h3 id="different-load-balancing-options">Different load balancing options</h3>
+<p>To decide which load balancer best suits your implementation, you need to think about whether you need</p>
+<ol>
+<li><strong>Global</strong> or <strong>regional</strong> load balancing. Global load balancing means backend endpoints live in multiple regions. Regional load balancing means backend endpoints live in a single region.</li>
+<li><strong>External</strong> or <strong>internal</strong> load balancing</li>
+<li>What <strong>type of traffic</strong> you are serving? HTTP, HTTPS, SSL, TCP, UDP etc.</li>
+</ol>
+<h4 id="external-load-balancer">External load balancer</h4>
+<p>External load balancing includes four options:</p>
+<ul>
+<li>HTTP(S) Load Balancing for HTTP or HTTPS traffic,</li>
+<li>TCP Proxy for TCP traffic for ports other than 80 and 8080, without SSL offload</li>
+<li>SSL Proxy for SSL offload on ports other than 80 or 8080.</li>
+<li>Network Load Balancing for TCP/UDP traffic.</li>
+</ul>
+<ol>
+<li>
+<h5 id="https-load-balancers">HTTP(S) load balancers</h5>
+<p>Global HTTP(S) load balancing if for layer-7 traffic
+Google pushed load balancing out to the edge network on front-end servers, as opposed to using the traditional DNS-based approach. Thus, global load-balancing capacity can be behind a single Anycast virtual IPv4 or IPv6 address. This means you can deploy capacity in multiple regions without having to modify the DNS entries or add new load balancer IP address for new regions. So, it is clear that with global HTTP(S) load balancing, you get cross-region failover and overflow!</p>
+<p>With global HTTP(S) load balancing, you get cross-region failover and overflow!
+The distribution algorithm automatically directs traffic to the next closest instance with available capacity in the event of failure of or lack of capacity for instances in the region closest to end user.</p>
+</li>
+<li>
+<h5 id="proxy-based-load-balancers-tcp-and-ssl">Proxy based load balancers (TCP and SSL)</h5>
+<p>Google Cloud also offers proxy-based load balancers for TCP and SSL traffic, and they use the same globally distributed infrastructure.
+Use TCP proxy load balancer when you are dealing with TCP traffic and do not need SSL offload.
+Generally speaking, your decision to use them would depend on whether you require SSL offload or not. You can find out more in the links below.
+Use SSL proxy load balancer when you are dealing with TCP traffic and need SSL offload.</p>
+</li>
+<li>
+<h5 id="network-load-balancer">Network load balancer</h5>
+<p>While the global HTTP(S) load balancer is for Layer-7 traffic and is built using the Google Front End Engines at the edge of Google’s network, the regional Network Load Balancer is for Layer-4 traffic and is built using Maglev.
+Network load balancer is for the Layer-4 traffic.</p>
+</li>
+</ol>
+<h4 id="internal-load-balancer">Internal Load Balancer</h4>
+<p>With internal load balancing, you can run your applications behind an internal IP address and disperse HTTP/HTTPs traffic to your backend application hosted either on Google Kubernetes Engine (GKE) or Google Compute Engine (GCE).
+The internal load balancer is a managed service that can only be accessed on an internal IP address and in the chosen region of your Virtual Private Cloud network. You can use it to route and balance load traffic to your virtual machines.</p>
+<p>Similar to the HTTP(S) Load Balancer and Network Load Balancer, Internal L7 load balancer is neither a hardware appliance nor an instance-based solution, and can support as many connections per second as you need since there’s no load balancer in the path between your client and backend instances.
+Internal layer 7 load balancer can support as many connections per second as your need!</p>
+<p align = "center">
+<img src = "https://miro.medium.com/max/1400/1*TTUArfpyYhGvsoLJaLrzaA.png" alt="load balancing architecture" width="800" height="500">
+</p>
+<p align = "center">
+The architecture for your website Beyond Treat (your one stop shop for vegan dog treats) would look something like this with an internal load balancer for the internal traffic, external global HTTPS load balancer for the incoming traffic.
+</p>   
+<br/>
+<h3 id="learn">Learn</h3>
+<p>Learn more about Cloud Load Balancing from the official <a href="https://cloud.google.com/load-balancing/docs/load-balancing-overview">documentation</a></p>
+<p>Explore Cloud Load Balancing with the following codelabs:</p>
+<ol>
+<li><a href="https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce#5">Host and scale a web app in Google Cloud with Compute Engine</a></li>
+<li><a href="https://kiosk-dot-codelabs-site.appspot.com/codelabs/cloud-load-balancers/index.html?index=..%2F..index#0">Setup Network and HTTP Load Balancers</a></li>
+</ol>
+
+</div>
+
+
+
+    
+	
+  
+
+    
+	
+  
 
 
 
@@ -1809,7 +2010,7 @@ Google Compute Engine provides a scalable number of virtual machines (VMs) to se
 
 
 
-<script src="/a-z-cloud/js/main.min.6c3d46cf08e766fd4bf8b61318f218d01110b6c53a7b44d2115264bbbab418f5.js" integrity="sha256-bD1GzwjnZv1L&#43;LYTGPIY0BEQtsU6e0TSEVJku7q0GPU=" crossorigin="anonymous"></script>
+<script src="/a-z-cloud/js/main.min.e0444eab4d71550c9b8c9a19b65cbb9147b9cbd10c3987d9da37d13088dd0783.js" integrity="sha256-4EROq01xVQybjJoZtly7kUe5y9EMOYfZ2jfRMIjdB4M=" crossorigin="anonymous"></script>
 
 
 

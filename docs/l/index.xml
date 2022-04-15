@@ -1,0 +1,87 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A-Z Cloud – L</title>
+    <link>https://dsc-vjti.github.io/a-z-cloud/docs/l/</link>
+    <description>Recent content in L on A-Z Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://dsc-vjti.github.io/a-z-cloud/docs/l/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Cloud Load Balancing</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/l/cloud-load-balancing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/l/cloud-load-balancing/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Load balancers are managed services on GCP that distribute traffic across multiple instances of your application. GCP bears the burden of managing operational overhead and reduces the risk of having a non-functional, slow, or overburdened application.
+With Google Cloud Load Balancing, you can serve content as close as possible to your users, on a system that can respond to over 1 million queries per second!&lt;/p&gt;
+&lt;h3 id=&#34;different-load-balancing-options&#34;&gt;Different load balancing options&lt;/h3&gt;
+&lt;p&gt;To decide which load balancer best suits your implementation, you need to think about whether you need&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Global&lt;/strong&gt; or &lt;strong&gt;regional&lt;/strong&gt; load balancing. Global load balancing means backend endpoints live in multiple regions. Regional load balancing means backend endpoints live in a single region.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;External&lt;/strong&gt; or &lt;strong&gt;internal&lt;/strong&gt; load balancing&lt;/li&gt;
+&lt;li&gt;What &lt;strong&gt;type of traffic&lt;/strong&gt; you are serving? HTTP, HTTPS, SSL, TCP, UDP etc.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;external-load-balancer&#34;&gt;External load balancer&lt;/h4&gt;
+&lt;p&gt;External load balancing includes four options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;HTTP(S) Load Balancing for HTTP or HTTPS traffic,&lt;/li&gt;
+&lt;li&gt;TCP Proxy for TCP traffic for ports other than 80 and 8080, without SSL offload&lt;/li&gt;
+&lt;li&gt;SSL Proxy for SSL offload on ports other than 80 or 8080.&lt;/li&gt;
+&lt;li&gt;Network Load Balancing for TCP/UDP traffic.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;h5 id=&#34;https-load-balancers&#34;&gt;HTTP(S) load balancers&lt;/h5&gt;
+&lt;p&gt;Global HTTP(S) load balancing if for layer-7 traffic
+Google pushed load balancing out to the edge network on front-end servers, as opposed to using the traditional DNS-based approach. Thus, global load-balancing capacity can be behind a single Anycast virtual IPv4 or IPv6 address. This means you can deploy capacity in multiple regions without having to modify the DNS entries or add new load balancer IP address for new regions. So, it is clear that with global HTTP(S) load balancing, you get cross-region failover and overflow!&lt;/p&gt;
+&lt;p&gt;With global HTTP(S) load balancing, you get cross-region failover and overflow!
+The distribution algorithm automatically directs traffic to the next closest instance with available capacity in the event of failure of or lack of capacity for instances in the region closest to end user.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h5 id=&#34;proxy-based-load-balancers-tcp-and-ssl&#34;&gt;Proxy based load balancers (TCP and SSL)&lt;/h5&gt;
+&lt;p&gt;Google Cloud also offers proxy-based load balancers for TCP and SSL traffic, and they use the same globally distributed infrastructure.
+Use TCP proxy load balancer when you are dealing with TCP traffic and do not need SSL offload.
+Generally speaking, your decision to use them would depend on whether you require SSL offload or not. You can find out more in the links below.
+Use SSL proxy load balancer when you are dealing with TCP traffic and need SSL offload.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h5 id=&#34;network-load-balancer&#34;&gt;Network load balancer&lt;/h5&gt;
+&lt;p&gt;While the global HTTP(S) load balancer is for Layer-7 traffic and is built using the Google Front End Engines at the edge of Google’s network, the regional Network Load Balancer is for Layer-4 traffic and is built using Maglev.
+Network load balancer is for the Layer-4 traffic.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;internal-load-balancer&#34;&gt;Internal Load Balancer&lt;/h4&gt;
+&lt;p&gt;With internal load balancing, you can run your applications behind an internal IP address and disperse HTTP/HTTPs traffic to your backend application hosted either on Google Kubernetes Engine (GKE) or Google Compute Engine (GCE).
+The internal load balancer is a managed service that can only be accessed on an internal IP address and in the chosen region of your Virtual Private Cloud network. You can use it to route and balance load traffic to your virtual machines.&lt;/p&gt;
+&lt;p&gt;Similar to the HTTP(S) Load Balancer and Network Load Balancer, Internal L7 load balancer is neither a hardware appliance nor an instance-based solution, and can support as many connections per second as you need since there’s no load balancer in the path between your client and backend instances.
+Internal layer 7 load balancer can support as many connections per second as your need!&lt;/p&gt;
+&lt;p align = &#34;center&#34;&gt;
+&lt;img src = &#34;https://miro.medium.com/max/1400/1*TTUArfpyYhGvsoLJaLrzaA.png&#34; alt=&#34;load balancing architecture&#34; width=&#34;800&#34; height=&#34;500&#34;&gt;
+&lt;/p&gt;
+&lt;p align = &#34;center&#34;&gt;
+The architecture for your website Beyond Treat (your one stop shop for vegan dog treats) would look something like this with an internal load balancer for the internal traffic, external global HTTPS load balancer for the incoming traffic.
+&lt;/p&gt;   
+&lt;br/&gt;
+&lt;h3 id=&#34;learn&#34;&gt;Learn&lt;/h3&gt;
+&lt;p&gt;Learn more about Cloud Load Balancing from the official &lt;a href=&#34;https://cloud.google.com/load-balancing/docs/load-balancing-overview&#34;&gt;documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Explore Cloud Load Balancing with the following codelabs:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce#5&#34;&gt;Host and scale a web app in Google Cloud with Compute Engine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kiosk-dot-codelabs-site.appspot.com/codelabs/cloud-load-balancers/index.html?index=..%2F..index#0&#34;&gt;Setup Network and HTTP Load Balancers&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
