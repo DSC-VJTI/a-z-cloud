@@ -48,7 +48,15 @@ The internal load balancer is a managed service that can only be accessed on an 
 Similar to the HTTP(S) Load Balancer and Network Load Balancer, Internal L7 load balancer is neither a hardware appliance nor an instance-based solution, and can support as many connections per second as you need since there’s no load balancer in the path between your client and backend instances.
 Internal layer 7 load balancer can support as many connections per second as your need!
  
- ![](1.jpeg)
+ 
+
+<p align = "center">
+<img src = "https://miro.medium.com/max/1400/1*TTUArfpyYhGvsoLJaLrzaA.png" alt="load balancing architecture" width="800" height="500">
+</p>
+<p align = "center">
+The architecture for your website Beyond Treat (your one stop shop for vegan dog treats) would look something like this with an internal load balancer for the internal traffic, external global HTTPS load balancer for the incoming traffic.
+</p>   
+<br/>
 
 ### Learn
 

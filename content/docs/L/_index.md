@@ -24,10 +24,7 @@ This is where load balancing makes a splash.
 
 In the seven-layer Open System Interconnection (OSI) model, network firewalls are at levels one to three (L1-Physical Wiring, L2-Data Link and L3-Network). Meanwhile, load balancing happens between layers four to seven (L4-Transport, L5-Session, L6-Presentation and L7-Application).
 
-<p align = "center">
-<img src = "https://freeloadbalancer.com/wp-content/uploads/2015/02/FreeLoadBalancerLayer4Layer7.jpg" alt="Layer 4 and 7 load balancing" width="800" height="500">
-</p>  
-<br/>
+![](1.jpeg)
 
 
 ### Load Balancers
