@@ -24,6 +24,12 @@ This is where load balancing makes a splash.
 
 In the seven-layer Open System Interconnection (OSI) model, network firewalls are at levels one to three (L1-Physical Wiring, L2-Data Link and L3-Network). Meanwhile, load balancing happens between layers four to seven (L4-Transport, L5-Session, L6-Presentation and L7-Application).
 
+<p align = "center">
+<img src = "https://freeloadbalancer.com/wp-content/uploads/2015/02/FreeLoadBalancerLayer4Layer7.jpg" alt="Layer 4 and 7 load balancing" width="800" height="500">
+</p>  
+<br/>
+
+
 ### Load Balancers
 As an organization meets demand for its applications, the load balancer decides which servers can handle that traffic. This maintains a good user experience.
 Load balancers manage the flow of information between the server and an endpoint device (PC, laptop, tablet or smartphone). The server could be on-premises, in a data center or the public cloud. The server can also be physical or virtualized. The load balancer helps servers move data efficiently, optimizes the use of application delivery resources and prevents server overloads. Load balancers conduct continuous health checks on servers to ensure they can handle requests. If necessary, the load balancer removes unhealthy servers from the pool until they are restored. Some load balancers even trigger the creation of new virtualized application servers to cope with increased demand.

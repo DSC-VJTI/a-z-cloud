@@ -14,7 +14,7 @@ To decide which load balancer best suits your implementation, you need to think 
 
 1. **Global** or **regional** load balancing. Global load balancing means backend endpoints live in multiple regions. Regional load balancing means backend endpoints live in a single region.
 2. **External** or **internal** load balancing
-4. What **type of traffic** you are serving? HTTP, HTTPS, SSL, TCP, UDP etc.
+3. What **type of traffic** you are serving? HTTP, HTTPS, SSL, TCP, UDP etc.
 
 #### External load balancer
 External load balancing includes four options:
@@ -48,15 +48,7 @@ The internal load balancer is a managed service that can only be accessed on an 
 Similar to the HTTP(S) Load Balancer and Network Load Balancer, Internal L7 load balancer is neither a hardware appliance nor an instance-based solution, and can support as many connections per second as you need since there’s no load balancer in the path between your client and backend instances.
 Internal layer 7 load balancer can support as many connections per second as your need!
  
- 
-
-<p align = "center">
-<img src = "https://miro.medium.com/max/1400/1*TTUArfpyYhGvsoLJaLrzaA.png" alt="load balancing architecture" width="800" height="500">
-</p>
-<p align = "center">
-The architecture for your website Beyond Treat (your one stop shop for vegan dog treats) would look something like this with an internal load balancer for the internal traffic, external global HTTPS load balancer for the incoming traffic.
-</p>   
-<br/>
+ ![](1.jpeg)
 
 ### Learn
 
