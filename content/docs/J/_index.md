@@ -8,7 +8,7 @@ description: >
 
 We often have repetitive tasks to perform such as checking internet connection every few hours, maybe checking stock prices every few hours, or checking if that one product has gone on sale on an e-commerce site. Instead of having to do this manually, you can _schedule_ these tasks to run at regular intervals.
 
-For example, consider this `check_internt.sh` Bash script to check if you are connected to the internet or not by pinging Google's webpage:
+For example, consider this `check_internet.sh` Bash script to check if you are connected to the internet or not by pinging Google's webpage:
 
 ```bash
 echo -e "GET http://google.com HTTP/1.0\n\n" | nc google.com 80 > /dev/null 2>&1
