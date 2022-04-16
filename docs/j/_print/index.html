@@ -154,7 +154,7 @@ This is the multi-page printable view of this section.
 
 <div class="content">
       <p>We often have repetitive tasks to perform such as checking internet connection every few hours, maybe checking stock prices every few hours, or checking if that one product has gone on sale on an e-commerce site. Instead of having to do this manually, you can <em>schedule</em> these tasks to run at regular intervals.</p>
-<p>For example, consider this <code>check_internt.sh</code> Bash script to check if you are connected to the internet or not by pinging Google&rsquo;s webpage:</p>
+<p>For example, consider this <code>check_internet.sh</code> Bash script to check if you are connected to the internet or not by pinging Google&rsquo;s webpage:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#204a87">echo</span> -e <span style="color:#4e9a06">&#34;GET http://google.com HTTP/1.0\n\n&#34;</span> <span style="color:#000;font-weight:bold">|</span> nc google.com <span style="color:#0000cf;font-weight:bold">80</span> &gt; /dev/null 2&gt;<span style="color:#000;font-weight:bold">&amp;</span><span style="color:#0000cf;font-weight:bold">1</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">if</span> <span style="color:#ce5c00;font-weight:bold">[</span> <span style="color:#000">$?</span> -eq <span style="color:#0000cf;font-weight:bold">0</span> <span style="color:#ce5c00;font-weight:bold">]</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#204a87;font-weight:bold">then</span>

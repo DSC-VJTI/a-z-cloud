@@ -285,6 +285,55 @@ The architecture for your website Beyond Treat (your one stop shop for vegan do
     </item>
     
     <item>
+      <title>Docs: Cloud Run</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/m/cloud-run/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/m/cloud-run/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Cloud Run is a fully-managed compute environment for deploying and scaling serverless HTTP containers without worrying about provisioning machines, configuring clusters, or autoscaling.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;https://repository-images.githubusercontent.com/189295422/f294aa00-838c-11e9-8e27-a1fdc651371f&#34; alt=&#34;Cloud Run logo&#34; height=&#34;30%&#34; width=&#34;30%&#34; /&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;benefits-of-cloud-run&#34;&gt;Benefits of Cloud Run&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;No vendor lock-in - Because Cloud Run takes standard OCI containers and implements the standard &lt;a href=&#34;https://cloud.google.com/knative&#34;&gt;Knative&lt;/a&gt; Serving API, you can easily port over your applications to on-premises or any other cloud environment.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fast autoscaling - Microservices deployed in Cloud Run scale automatically based on the number of incoming requests, without you having to configure or manage a full-fledged Kubernetes cluster. Cloud Run scales to zero— that is, uses no resources—if there are no requests.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Split traffic - Cloud Run enables you to split traffic between multiple revisions, so you can perform gradual rollout such as canary deployments or blue/green deployments.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Custom domains - You can set up custom domain mapping in Cloud Run and it will provision a TLS certificate for your domain.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Automatic redundancy - Cloud Run offers automatic redundancy so you don’t have to worry about creating multiple instances for high availability&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following is an example of a microservices architecture using Cloud Run and several GCP services:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://storage.googleapis.com/gweb-cloudblog-publish/images/example_ms_a_callout.max-1700x1700.png&#34; alt=&#34;Cloud Run use cases&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;learn&#34;&gt;Learn&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Cloud Run &lt;a href=&#34;https://cloud.google.com/run/docs&#34;&gt;documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hello Cloud Run with Python &lt;a href=&#34;https://codelabs.developers.google.com/codelabs/cloud-run-hello-python3&#34;&gt;codelab&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Deploy a website with Cloud Run &lt;a href=&#34;https://codelabs.developers.google.com/codelabs/cloud-run-deploy&#34;&gt;codelab&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Cloud Scheduler</title>
       <link>https://dsc-vjti.github.io/a-z-cloud/docs/j/cloud-scheduler/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

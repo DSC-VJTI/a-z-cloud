@@ -490,6 +490,33 @@ This is the multi-page printable view of this section.
     </ul>
     
   
+    
+    
+	
+<li>13: <a href="#pg-8487bfb992dfc3f06a4e1ef854612967">M</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>13.1: <a href="#pg-0dcf38f7449a024e00557e28ef4be68d">Cloud Run</a></li>
+
+
+    
+  
+
+    </ul>
+    
+  
 
     </ul>
 
@@ -1563,7 +1590,7 @@ Google Compute Engine provides a scalable number of virtual machines (VMs) to se
     <div class="lead"><h2 id="job-scheduling">Job Scheduling</h2>
 </div>
 	<p>We often have repetitive tasks to perform such as checking internet connection every few hours, maybe checking stock prices every few hours, or checking if that one product has gone on sale on an e-commerce site. Instead of having to do this manually, you can <em>schedule</em> these tasks to run at regular intervals.</p>
-<p>For example, consider this <code>check_internt.sh</code> Bash script to check if you are connected to the internet or not by pinging Google&rsquo;s webpage:</p>
+<p>For example, consider this <code>check_internet.sh</code> Bash script to check if you are connected to the internet or not by pinging Google&rsquo;s webpage:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#204a87">echo</span> -e <span style="color:#4e9a06">&#34;GET http://google.com HTTP/1.0\n\n&#34;</span> <span style="color:#000;font-weight:bold">|</span> nc google.com <span style="color:#0000cf;font-weight:bold">80</span> &gt; /dev/null 2&gt;<span style="color:#000;font-weight:bold">&amp;</span><span style="color:#0000cf;font-weight:bold">1</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">if</span> <span style="color:#ce5c00;font-weight:bold">[</span> <span style="color:#000">$?</span> -eq <span style="color:#0000cf;font-weight:bold">0</span> <span style="color:#ce5c00;font-weight:bold">]</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#204a87;font-weight:bold">then</span>
@@ -1893,6 +1920,170 @@ The architecture for your website Beyond Treat (your one stop shop for vegan do
 <li><a href="https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce#5">Host and scale a web app in Google Cloud with Compute Engine</a></li>
 <li><a href="https://kiosk-dot-codelabs-site.appspot.com/codelabs/cloud-load-balancers/index.html?index=..%2F..index#0">Setup Network and HTTP Load Balancers</a></li>
 </ol>
+
+</div>
+
+
+
+    
+	
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-8487bfb992dfc3f06a4e1ef854612967">13 - M</h1>
+    <div class="lead"><h2 id="microservices">Microservices</h2>
+</div>
+	<blockquote>
+<p>&hellip;the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API.</p>
+<p>- Martin Fowler, Renowned author, Chief Scientist at ThoughtWorks</p>
+</blockquote>
+<p>The above quote on microservices architecture is often deemed to be the textbook definition. Before we dive into what is a microservice, let&rsquo;s look at the traditional practice of designing and developing software i.e., as a monolith.</p>
+<h2 id="monolithic-architecture">Monolithic Architecture</h2>
+<p>In a monolithic architecture, application tiers can be described as:</p>
+<ul>
+<li>part of the same unit</li>
+<li>managed in a single repository</li>
+<li>sharing existing resources (e.g. CPU and memory)</li>
+<li>developed in one programming language</li>
+<li>released using a single binary</li>
+</ul>
+<p align="center">
+<img src="monolith-example.png" alt="Monolithic Architecture Example" height="30%" width="30%" />
+</p>
+<p>As student developers, we tend to follow this approach with a web framework such as Django or Spring where the UI and business logic are part of one repository. Thus, when we deploy such an application, we need to package the entire application as a single unit. Hence, if multiple people were to contribute on the application, their changes won&rsquo;t be reflected unless the entire application is deployed again.</p>
+<h2 id="microservices-architecture">Microservices Architecture</h2>
+<p>In a microservice architecture, application tiers are managed independently, as different units. Each unit has the following characteristics:</p>
+<ul>
+<li>managed in a separate repository</li>
+<li>own allocated resources (e.g. CPU and memory)</li>
+<li>well-defined API for connection to other units</li>
+<li>implemented using the programming language of choice</li>
+<li>released using its own binary</li>
+</ul>
+<p align="center">
+<img src="microservice-example.png" alt="Microservices Architecture Example" height="75%" width="75%" />
+</p>
+<p>To gain agility in the development cycle, several concerns (independent features) of a monolith can be split into microservices that can be developed and deployed individually. With such an architecture, the application becomes fault tolerant as there is no single point of failure - even if one microservice goes down or crashes, other microservices will still work at their concerns are independent.</p>
+<h2 id="trade-offs">Trade-offs</h2>
+<ul>
+<li>Development Complexity: represents the effort required to deploy and manage an application.</li>
+<li>Scalability: captures how an application is able to scales up and down, based on the incoming traffic.</li>
+<li>Time to Deploy: encapsulates the build of a delivery pipeline that is used to ship features.</li>
+<li>Flexibility: implies the ability to adapt to new technologies and introduce new functionalities.</li>
+<li>Operational Cost: represents the cost of necessary resources to release a product.</li>
+<li>Reliability: captures practices for an application to recover from failure and tools to monitor an application.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Trade-off</th>
+<th>Monolith</th>
+<th>Microservices</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Development Complexity</td>
+<td>one programming language, one repository, enables sequential development</td>
+<td>multiple programming languages, multiple repositories, enables concurrent development</td>
+</tr>
+<tr>
+<td>Scalability</td>
+<td>replication of the entire stack; hence it&rsquo;s heavy on resource consumption</td>
+<td>replication of a single unit, providing on-demand consumption of resources</td>
+</tr>
+<tr>
+<td>Time to Deploy</td>
+<td>one delivery pipeline that deploys the entire stack; more risk with each deployment leading to a lower velocity rate</td>
+<td>multiple delivery pipelines that deploy separate units; less risk with each deployment leading to a higher feature development rate</td>
+</tr>
+<tr>
+<td>Flexibility</td>
+<td>low rate, since the entire application stack might need restructuring to incorporate new functionalities</td>
+<td>high rate, since changing an independent unit is straightforward</td>
+</tr>
+<tr>
+<td>Operational Cost</td>
+<td>low initial cost, since one code base and one pipeline should be managed. However, the cost increases exponentially when the application needs to operate at scale</td>
+<td>high initial cost, since multiple repositories and pipelines require management. However, at scale, the cost remains proportional to the consumed resources at that point in time.</td>
+</tr>
+<tr>
+<td>Reliability</td>
+<td>in a failure scenario, the entire stack needs to be recovered. Also, the visibility into each functionality is low, since all the logs and metrics are aggregated together.</td>
+<td>in a failure scenario, only the failed unit needs to be recovered. Also, there is high visibility into the logs and metrics for each unit.</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-0dcf38f7449a024e00557e28ef4be68d">13.1 - Cloud Run</h1>
+    <div class="lead">Run your microservices effortlessly</div>
+	<p>Cloud Run is a fully-managed compute environment for deploying and scaling serverless HTTP containers without worrying about provisioning machines, configuring clusters, or autoscaling.</p>
+<p align="center">
+<img src="https://repository-images.githubusercontent.com/189295422/f294aa00-838c-11e9-8e27-a1fdc651371f" alt="Cloud Run logo" height="30%" width="30%" />
+</p>
+<h3 id="benefits-of-cloud-run">Benefits of Cloud Run</h3>
+<ul>
+<li>
+<p>No vendor lock-in - Because Cloud Run takes standard OCI containers and implements the standard <a href="https://cloud.google.com/knative">Knative</a> Serving API, you can easily port over your applications to on-premises or any other cloud environment.</p>
+</li>
+<li>
+<p>Fast autoscaling - Microservices deployed in Cloud Run scale automatically based on the number of incoming requests, without you having to configure or manage a full-fledged Kubernetes cluster. Cloud Run scales to zero— that is, uses no resources—if there are no requests.</p>
+</li>
+<li>
+<p>Split traffic - Cloud Run enables you to split traffic between multiple revisions, so you can perform gradual rollout such as canary deployments or blue/green deployments.</p>
+</li>
+<li>
+<p>Custom domains - You can set up custom domain mapping in Cloud Run and it will provision a TLS certificate for your domain.</p>
+</li>
+<li>
+<p>Automatic redundancy - Cloud Run offers automatic redundancy so you don’t have to worry about creating multiple instances for high availability</p>
+</li>
+</ul>
+<p>The following is an example of a microservices architecture using Cloud Run and several GCP services:</p>
+<p><img src="https://storage.googleapis.com/gweb-cloudblog-publish/images/example_ms_a_callout.max-1700x1700.png" alt="Cloud Run use cases"></p>
+<h3 id="learn">Learn</h3>
+<ul>
+<li>
+<p>Cloud Run <a href="https://cloud.google.com/run/docs">documentation</a></p>
+</li>
+<li>
+<p>Hello Cloud Run with Python <a href="https://codelabs.developers.google.com/codelabs/cloud-run-hello-python3">codelab</a></p>
+</li>
+<li>
+<p>Deploy a website with Cloud Run <a href="https://codelabs.developers.google.com/codelabs/cloud-run-deploy">codelab</a></p>
+</li>
+</ul>
 
 </div>
 
