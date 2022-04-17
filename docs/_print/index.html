@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.97.0" />
+<meta name="generator" content="Hugo 0.97.1" />
 <link rel="canonical" type="text/html" href="https://dsc-vjti.github.io/a-z-cloud/docs/">
 <link rel="alternate" type="application/rss&#43;xml" href="https://dsc-vjti.github.io/a-z-cloud/docs/index.xml">
 <meta name="robots" content="noindex, nofollow">
@@ -509,6 +509,33 @@ This is the multi-page printable view of this section.
     
 	
 <li>13.1: <a href="#pg-0dcf38f7449a024e00557e28ef4be68d">Cloud Run</a></li>
+
+
+    
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>14: <a href="#pg-a52bc1958c61f39616fc1833611d1fc7">N</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>14.1: <a href="#pg-6d1e6eebc33462277f15fbf7b9adc170">Nginx in GCP</a></li>
 
 
     
@@ -2082,6 +2109,96 @@ The architecture for your website Beyond Treat (your one stop shop for vegan do
 </li>
 <li>
 <p>Deploy a website with Cloud Run <a href="https://codelabs.developers.google.com/codelabs/cloud-run-deploy">codelab</a></p>
+</li>
+</ul>
+
+</div>
+
+
+
+    
+	
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-a52bc1958c61f39616fc1833611d1fc7">14 - N</h1>
+    <div class="lead"><h2 id="nginx">Nginx</h2>
+</div>
+	<blockquote>
+<p>Note: Nginx is pronounced as &ldquo;engine-ex&rdquo;.</p>
+</blockquote>
+<p>Nginx is an open-source web server that, since its initial success as a web server, is now also used as a reverse proxy, HTTP cache, and load balancer.</p>
+<p>Some high-profile companies using Nginx include Autodesk, Atlassian, Intuit, T-Mobile, GitLab, DuckDuckGo, Microsoft, IBM, Google, Adobe, Salesforce, VMWare, Xerox, LinkedIn, Cisco, Facebook, Target, Citrix Systems, Twitter, Apple, Intel, and many more.</p>
+<p>Nginx was originally created by Igor Sysoev, with its first public release in October 2004. Igor initially conceived the software as an answer to the C10k problem, which is a problem regarding the performance issue of handling 10,000 concurrent connections.</p>
+<p>Because its roots are in performance optimization under scale, Nginx often outperforms other popular web servers in benchmark tests, especially in situations with static content and/or high concurrent requests.</p>
+<h3 id="how-does-nginx-work">How Does Nginx Work?</h3>
+<p>Nginx is built to offer low memory usage and high concurrency. Rather than creating new processes for each web request, Nginx uses an asynchronous, event-driven approach where requests are handled in a single thread.</p>
+<p>With Nginx, one master process can control multiple worker processes. The master maintains the worker processes, while the workers do the actual processing. Because Nginx is asynchronous, each request can be executed by the worker concurrently without blocking other requests.</p>
+<h3 id="benefits-of-using-nginx">Benefits Of Using Nginx</h3>
+<ul>
+<li>
+<p>Installations and configurations are simple and easy</p>
+</li>
+<li>
+<p>Fastest and the best for serving static files</p>
+</li>
+<li>
+<p>Compatibility with commonly-used web apps</p>
+</li>
+<li>
+<p>Load Balancing Support</p>
+</li>
+<li>
+<p>No risk in switching over to Nginx</p>
+</li>
+<li>
+<p>Support from Nginx service professionals</p>
+</li>
+</ul>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-6d1e6eebc33462277f15fbf7b9adc170">14.1 - Nginx in GCP</h1>
+    <div class="lead">Get High-Performance, High-Availability App Delivery with Nginx configured servers.</div>
+	<p><img src="nginx-gcp.jpg" alt="gcp nginx"></p>
+<p>NGINX brings power and control to your Google Cloud Platform (GCP) environment so you can operate services and deliver content at the high standard your customers and developers demand.</p>
+<p>NGINX Plus operates stand‑alone or can integrate with GCP services – such as existing load balancing solutions – to reduce your application delivery and management costs. NGINX Plus provides enterprise‑grade features such as session persistence, configuration via API, and active health checks so that you can add advanced application load balancing, monitoring, and management to your GCP application stack. Use Packer, Terraform, and NGINX Plus to implement high‑availability, all‑active, autoscaling solutions on Google Compute Engine.</p>
+<h3 id="learn">Learn</h3>
+<ul>
+<li>
+<p>This <a href="https://cloud.google.com/community/tutorials/https-load-balancing-nginx">article</a> gives an overview of how Nginx can be used in Load Balancing.</p>
+</li>
+<li>
+<p>Read more about <a href="https://www.nginx.com/partners/google-cloud-platform/">Nginx in GCP</a></p>
 </li>
 </ul>
 
