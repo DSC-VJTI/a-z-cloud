@@ -5,6 +5,7 @@ description: >
   Get High-Performance, High-Availability App Delivery with Nginx configured servers.
 ---
 
+
 ![gcp nginx](nginx-gcp.jpg)
 
 NGINX brings power and control to your Google Cloud Platform (GCP) environment so you can operate services and deliver content at the high standard your customers and developers demand.
