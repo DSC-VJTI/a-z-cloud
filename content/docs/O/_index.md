@@ -3,12 +3,8 @@ title: "O"
 linkTitle: "O"
 weight: 4
 description: >
- Observability
+ ## Observability
 ---
-
-<!-- {{% pageinfo %}}
-Observability
-{{% /pageinfo %}} -->
 
 ### What is Observability?
 
@@ -61,8 +57,3 @@ Organizations also frequently run into the following challenges with observabili
 - **Wasting time troubleshooting:** — Application, operations, infrastructure, development, and digital experience teams are pulled in to troubleshoot and try to identify the root cause of problems, wasting valuable time guessing and trying to make sense of telemetry and come up with answers.
 
 Also, not all types of telemetry data are equally useful for determining the root cause of a problem or understanding its impact on the user experience. As a result, teams are still left with the time-consuming task of digging for answers across multiple solutions and painstakingly interpreting the telemetry data, when they could be applying their expertise toward fixing the problem right away. However, with a single source of truth, teams can get answers and troubleshoot issues much faster.
-
-
-
-
-

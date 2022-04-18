@@ -3,12 +3,8 @@ title: "L"
 linkTitle: "L"
 weight: 4
 description: >
- Load Balancing
+ ## Load Balancing
 ---
-
-<!-- {{% pageinfo %}}
-Load Balancing
-{{% /pageinfo %}} -->
 
 ### What is Load Balancing?
 
