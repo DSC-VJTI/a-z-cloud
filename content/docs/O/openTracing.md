@@ -23,7 +23,7 @@ It’s a vendor-agnostic API to help developers easily instrument tracing into t
 OpenTracing wants to form a common language around what a trace is and how to instrument them in our applications. In OpenTracing, a trace is a directed acyclic graph of Spans with References that may look like this
 
 <p align = "center">
-<img src = "https://github.com/DSC-VJTI/a-z-cloud/blob/main/content/docs/O/1.png">
+<img src = "https://raw.githubusercontent.com/DSC-VJTI/a-z-cloud/main/content/docs/O/1.png">
 </p>
 <br/>
 
@@ -32,7 +32,7 @@ This allows us to model how our application calls out to other applications, int
 For example, if I have a consumer website where a customer places orders, I make a call to my payment system and my inventory system before asynchronously acknowledging the order. I can trace the entire order process through every system with an OpenTracing library and can render it like this:
 
 <p align = "center">
-<img src = "https://github.com/DSC-VJTI/a-z-cloud/blob/main/content/docs/O/2.png">
+<img src = "https://raw.githubusercontent.com/DSC-VJTI/a-z-cloud/main/content/docs/O/2.png">
 </p>
 <br/>
 
