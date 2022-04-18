@@ -32,7 +32,11 @@ This allows us to model how our application calls out to other applications, int
 For example, if I have a consumer website where a customer places orders, I make a call to my payment system and my inventory system before asynchronously acknowledging the order. I can trace the entire order process through every system with an OpenTracing library and can render it like this:
 
 <p align = "center">
+<<<<<<< HEAD
 <img src = "https://github.com/DSC-VJTI/a-z-cloud/raw/main/content/docs/O/2.png">
+=======
+<img src = "https://raw.githubusercontent.com/DSC-VJTI/a-z-cloud/main/content/docs/O/2.png">
+>>>>>>> 16d224249125fbd40f3e7deb1666f3d78fee4231
 </p>
 <br/>
 
