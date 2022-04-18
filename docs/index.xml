@@ -658,5 +658,156 @@ Google Compute Engine provides a scalable number of virtual machines (VMs) to se
       </description>
     </item>
     
+    <item>
+      <title>Docs: OpenMetrics</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/o/openmetrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/o/openmetrics/</guid>
+      <description>
+        
+        
+        &lt;blockquote&gt;
+&lt;p&gt;Creating OpenMetrics within CNCF was a given.&lt;/p&gt;
+&lt;p&gt;- Richard &amp;ldquo;RichiH&amp;rdquo; Hartmann, director of community at Grafana Labs and OpenMetrics founder.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;what-is-openmetrics&#34;&gt;What is OpenMetrics?&lt;/h3&gt;
+&lt;p&gt;It specifies the de-facto standard for transmitting cloud-native metrics at scale, with support for both text representation and Protocol Buffers. OpenMetrics is a Cloud Native Computing Foundation sandbox project.
+OpenMetrics creates an open standard for transmitting cloud-native metrics at scale. It acts as an open standard for Prometheus and is the officially supported exposition format for the project and compatible solutions.&lt;/p&gt;
+&lt;p&gt;Metrics are a specific kind of telemetry data, and when combined with logs and traces, provide a comprehensive view of the performance of cloud native applications.&lt;/p&gt;
+&lt;p&gt;OpenMetrics was spun out of Prometheus to provide a specification and de-facto standard format for metrics.&lt;/p&gt;
+&lt;p&gt;It is used or supported by most CNCF projects and many wider cloud native ecosystem projects. Furthermore, any changes are considered closely with Cortex, Prometheus, Kubernetes, and Thanos.&lt;/p&gt;
+&lt;p&gt;OpenMetrics is used in production by many large enterprises, including GitLab, DoorDash, Grafana Labs, Chronosphere, Everquote, and SoundCloud. &lt;/p&gt;
+&lt;p&gt;OpenMetrics stems from the stats formats used inside of Prometheus and Google’s Monarch time-series infrastructure, which underpins both Stackdriver and internal monitoring applications.&lt;/p&gt;
+&lt;h3 id=&#34;learn&#34;&gt;Learn&lt;/h3&gt;
+&lt;p&gt;Learn more about OpenMetrics from the official &lt;a href=&#34;https://openmetrics.io/&#34;&gt;documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Learn more about Prometheus from the official &lt;a href=&#34;https://prometheus.io/&#34;&gt;documentation&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: OpenTelemetry</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/o/opentelemetry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/o/opentelemetry/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;what-is-opentelemetry&#34;&gt;What is OpenTelemetry?&lt;/h3&gt;
+&lt;p&gt;OpenTelemetry (also referred to as OTel) is an open-source observability framework made up of a collection of tools, APIs, and SDKs. Otel enables IT teams to instrument, generate, collect, and export telemetry data for analysis and to understand software performance and behavior.&lt;/p&gt;
+&lt;p&gt;Having a common format for how observability data is collected and sent is where OpenTelemetry comes into play. As a Cloud Native Computing Foundation (CNCF) incubating project, OTel aims to provide unified sets of vendor-agnostic libraries and APIs — mainly for collecting data and transferring it somewhere. Since the project’s start, many vendors have come on board to help make rich data collection easier and more consumable.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-telemetry-data&#34;&gt;What is telemetry data?&lt;/h3&gt;
+&lt;p&gt;Capturing data is critical to understanding how your applications and infrastructure are performing at any given time. This information is gathered from remote, often inaccessible points within your ecosystem and processed by some sort of tool or equipment. Monitoring begins here. The data is incredibly plentiful and difficult to store over long periods due to capacity limitations — a reason why private and public cloud storage services have been a boon to DevOps teams.&lt;/p&gt;
+&lt;p&gt;Logs, metrics, and traces make up the bulk of all telemetry data.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Logs&lt;/strong&gt; are important because you’ll naturally want an event-based record of any notable anomalies across the system. Structured, unstructured, or in plain text, these readable files can tell you the results of any transaction involving an endpoint within your multicloud environment. However, not all logs are inherently reviewable — a problem that’s given rise to external log analysis tools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Metrics&lt;/strong&gt; are numerical data points represented as counts or measures that are often calculated or aggregated over a period of time. Metrics originate from several sources including infrastructure, hosts, and third-party sources. While logs aren’t always accessible, most metrics tend to be reachable via query. Timestamps, values, and even event names can preemptively uncover a growing problem that needs remediation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Traces&lt;/strong&gt; are the act of following a process (for example, an API request or other system activity) from start to finish, showing how services connect. Keeping a watch over this pathway is critical to understanding how your ecosystem works, if it’s working effectively, and if any troubleshooting is necessary. Span data is a hallmark of tracing — which includes information such as unique identifiers, operation names, timestamps, logs, events, and indexes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-does-opentelemetry-work&#34;&gt;How does OpenTelemetry work?&lt;/h3&gt;
+&lt;p&gt;OTel is a specialized protocol for collecting telemetry data and exporting it to a target system. Since the CNCF project itself is open source, the end goal is making data collection more system-agnostic than it currently is. But how is that data generated?&lt;/p&gt;
+&lt;p&gt;The data life cycle has multiple steps from start to finish. Here are the steps the solution takes, and the data it generates along the way:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Instruments your code with APIs, telling system components what metrics to gather and how to gather them&lt;/li&gt;
+&lt;li&gt;Pools the data using SDKs, and transports it for processing and exporting&lt;/li&gt;
+&lt;li&gt;Breaks down the data, samples it, filters it to reduce noise or errors, and enriches it using multi-source contextualization&lt;/li&gt;
+&lt;li&gt;Converts and exports the data&lt;/li&gt;
+&lt;li&gt;Conducts more filtering in time-based batches, then moves the data onward to a predetermined backend.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;opentelemetry-components&#34;&gt;OpenTelemetry components&lt;/h3&gt;
+&lt;p&gt;OTel consists of a few different components as depicted in the following figure. Let’s take a high-level look at each one from left to right:&lt;/p&gt;
+&lt;p align = &#34;center&#34;&gt;
+&lt;img src = &#34;https://marvel-b1-cdn.bc0a.com/f00000000236551/dt-cdn.net/wp-content/uploads/2020/07/OT.png&#34; alt=&#34;OpenTelemetry Components&#34; &gt;
+&lt;/p&gt;
+&lt;p align = &#34;center&#34;&gt;
+OpenTelemetry Components
+&lt;/p&gt;   
+&lt;br/&gt;
+&lt;h5 id=&#34;apis&#34;&gt;APIs&lt;/h5&gt;
+&lt;p&gt;These are core components and language-specific (such as Java, Python, .Net, and so on). APIs provide the basic “plumbing” for your application.&lt;/p&gt;
+&lt;h5 id=&#34;sdk&#34;&gt;SDK&lt;/h5&gt;
+&lt;p&gt;This is also a language-specific component and is the middleman that provides the bridge between the APIs and the exporter. The SDK allows for additional configuration, such as request filtering and transaction sampling.&lt;/p&gt;
+&lt;h5 id=&#34;in-process-exporter&#34;&gt;In-process exporter&lt;/h5&gt;
+&lt;p&gt;This allows you to configure which backend(s) you want it sent to. The exporter decouples the instrumentation from the backend configuration. This makes it easy to switch backends without the pain of re-instrumenting your code.&lt;/p&gt;
+&lt;h5 id=&#34;collector&#34;&gt;Collector&lt;/h5&gt;
+&lt;p&gt;The collector receives, processes, and exports telemetry data. While not technically required, it is an extremely useful component to the OpenTelemetry architecture because it allows greater flexibility for receiving and sending the application telemetry to the backend(s).
+The collector has two deployment models:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;An agent that resides on the same host as the application (for example, binary, DaemonSet, sidecar, and so on)&lt;/li&gt;
+&lt;li&gt;A standalone process completely separate from the application
+Since the collector is just a specification for collecting and sending telemetry, it still requires a backend to receive and store the data.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;benefits-of-opentelemetry&#34;&gt;Benefits of OpenTelemetry&lt;/h3&gt;
+&lt;p&gt;OTel provides a de facto standard for adding observable instrumentation to cloud-native applications. This means companies don’t need to spend valuable time developing a mechanism for collecting critical application data and can spend more time delivering new features instead.
+It’s akin to how Kubernetes became the standard for container orchestration. This broad adoption has made it easier for organizations to implement container deployments since they don’t need to build their own enterprise-grade orchestration platform. Using Kubernetes as the analog for what it can become, it’s easy to see the benefits it can provide to the entire industry.&lt;/p&gt;
+&lt;h3 id=&#34;learn&#34;&gt;Learn&lt;/h3&gt;
+&lt;p&gt;Learn more about OpenTelemetry from the official &lt;a href=&#34;https://opentelemetry.io/docs/&#34;&gt;documentation&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: OpenTracing</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/o/opentracing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/o/opentracing/</guid>
+      <description>
+        
+        
+        &lt;blockquote&gt;
+&lt;p&gt;Ideas about distributed tracing and monitoring across multiple systems have certainly generated quite a buzz. It’s becoming more important than ever before to be able to see what’s going on inside our requests as they span across multiple software services. Aiming to harness this importance, the OpenTracing initiative has sprung up to help developers avoid vendor lock-in.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;what-is-distributed-tracing&#34;&gt;What Is Distributed Tracing?&lt;/h3&gt;
+&lt;p&gt;Distributed tracing is a mechanism you can use to profile and monitor applications. Unlike regular tracing, distributed tracing is more suited to applications built using a microservice architecture, hence the name.&lt;/p&gt;
+&lt;p&gt;Distributed tracing tracks a single request through all of its journey, from its source to its destination, unlike traditional forms of tracing which just follow a request through a single application domain.
+In other words, we can say that distributed tracing is the stitching of multiple requests across multiple systems. The stitching is often done by one or more correlation IDs, and the tracing is often a set of recorded, structured log events across all the systems, stored in a central place.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-opentracing&#34;&gt;What is OpenTracing?&lt;/h3&gt;
+&lt;p&gt;It’s a vendor-agnostic API to help developers easily instrument tracing into their code base. It’s open because no one company owns it. &lt;/p&gt;
+&lt;p&gt;OpenTracing wants to form a common language around what a trace is and how to instrument them in our applications. In OpenTracing, a trace is a directed acyclic graph of Spans with References that may look like this&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This allows us to model how our application calls out to other applications, internal functions, asynchronous jobs, etc. All of these can be modeled as Spans, as we’ll see below.&lt;/p&gt;
+&lt;p&gt;For example, if I have a consumer website where a customer places orders, I make a call to my payment system and my inventory system before asynchronously acknowledging the order. I can trace the entire order process through every system with an OpenTracing library and can render it like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Each one of these bracketed blocks is a Span representing a separate software system communicating over messaging or HTTP.&lt;/p&gt;
+&lt;h3 id=&#34;terminology&#34;&gt;Terminology&lt;/h3&gt;
+&lt;p&gt;Let’s talk a bit about the components of the OpenTracing API.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Tracer&lt;/strong&gt;    &lt;br&gt;
+This tracer is the entry point into the tracing API. It gives us the ability to create Spans. It also lets us extract tracing information from external sources and inject information to external destinations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Span&lt;/strong&gt;    &lt;br&gt;
+This represents a unit of work in the Trace. For example, a web request that initiates a new Trace is called the root Span. If it calls out to another web service, that HTTP request would be wrapped within a new child Span. Spans carry around a set of tags of information pertinent to the request being carried out. You can also log events within the context of a Span. They can support more complex workflows than web requests, such as asynchronous messaging. They have timestamps attached to them so we can easily construct a timeline of events for the Trace.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;SpanContext&lt;/strong&gt;   &lt;br&gt;
+The SpanContext is the serializable form of a Span. It lets Span information transfer easily across the wire to other systems.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;      &lt;br&gt;
+So far, Spans can connect to each other via two types of relationship: ChildOf and FollowsFrom. ChildOf Spans are spans like in our previous example, where our ordering website sent child requests to both our payment system and inventory system. FollowsFrom Spans are just a chain of sequential Spans. So, a FollowsFrom Span is just saying, “I started after this other Span.”&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;is-opentracing-still-in-use&#34;&gt;Is OpenTracing still in Use?&lt;/h3&gt;
+&lt;p&gt;OpenTracing is an open-source CNCF (Cloud Native Computing Foundation) project which provides vendor-neutral APIs and instrumentation for distributed tracing. Although OpenTracing and OpenCensus have merged to form OpenTelemetry in early 2019, third-party libraries and frameworks like Hazelcast IMDG still come equipped with OpenTracing pre-instrumentation.&lt;/p&gt;
+&lt;p&gt;OpenTracing became a CNCF project back in 2016, with the goal of providing a vendor-agnostic specification for distributed tracing, offering developers the ability to trace a request from start to finish by instrumenting their code. Then, Google made the OpenCensus project open source in 2018. This was based on Google’s Census library that was used internally for gathering traces and metrics from their distributed systems. Like the OpenTracing project, the goal of OpenCensus was to give developers a vendor-agnostic library for collecting traces and metrics.
+This led to two competing tracing frameworks, which led to the informal reference “the Tracing Wars.” Usually, competition is a good thing for end-users since it breeds innovation. However, in the open-source specification world, competition can lead to poor adoption, contribution, and support.
+Going back to the Kubernetes example, imagine how much more disjointed and slow-moving container adoption would be if everybody was using a different orchestration solution. To avoid this, it was announced at KubeCon 2019 in Barcelona that the OpenTracing and OpenCensus projects would converge into one project called OpenTelemetry and join the CNCF.&lt;/p&gt;
+&lt;h3 id=&#34;learn&#34;&gt;Learn&lt;/h3&gt;
+&lt;p&gt;Learn more about OpenTracing from the official &lt;a href=&#34;https://opentracing.io/&#34;&gt;documentation&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
