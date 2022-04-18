@@ -1177,15 +1177,9 @@ This is the multi-page printable view of this section.
 <div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-3f4f14aca936209d67a66006c9ae2484">6 - F</h1>
-    <div class="lead">Function-as-a-Service(FaaS)</div>
-	<!-- 
-
-<div class="pageinfo pageinfo-primary">
-<p>FaaS</p>
-
+    <div class="lead"><h2 id="function-as-a-servicefaas">Function-as-a-Service(FaaS)</h2>
 </div>
- -->
-<blockquote>
+	<blockquote>
 <p>In the serverless world, Function-as-a-Service allows to write small pieces of code that do something Just like any other function, but serverless. That means: The function is sleeping in a fluffy cloudy container and only when it is needed, it wakes up and does something, and the good news: A sleeping function doesn’t cause cost.</p>
 <p>- Carlos Roggan</p>
 </blockquote>
@@ -1500,7 +1494,8 @@ If that isn’t enough, you can also use HTTP to trigger functions with GET, POS
 <div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-e74d48a9398e56c2befa765d119b1cad">9 - I</h1>
-    <div class="lead">Infrastructure-as-a-Service(IaaS)</div>
+    <div class="lead"><h2 id="infrastructure-as-a-serviceiaas">Infrastructure-as-a-Service(IaaS)</h2>
+</div>
 	<!-- 
 
 <div class="pageinfo pageinfo-primary">
@@ -1836,15 +1831,9 @@ Google Compute Engine provides a scalable number of virtual machines (VMs) to se
 <div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-78d79b43bcb49126218f6b945a6dc76e">12 - L</h1>
-    <div class="lead">Load Balancing</div>
-	<!-- 
-
-<div class="pageinfo pageinfo-primary">
-<p>Load Balancing</p>
-
+    <div class="lead"><h2 id="load-balancing">Load Balancing</h2>
 </div>
- -->
-<h3 id="what-is-load-balancing">What is Load Balancing?</h3>
+	<h3 id="what-is-load-balancing">What is Load Balancing?</h3>
 <p>Imagine you’re in charge of a complex website, and it’s an online hit! It continues to face high amounts of traffic and you’re not sure your website backend can handle the amount of traffic from all over the world. You know you need to use load balancers, but the options are confusing. It can be hard to know exactly how to settle on a load balancing architecture that meets your needs, and figure out the prerequisites you need, for the best performance, without making too much of a dent in your wallet.
 To start, you need to know what load balancing is and why it’s so important to the long-lasting success of your application.</p>
 <blockquote>
@@ -2232,7 +2221,10 @@ The architecture for your website Beyond Treat (your one stop shop for vegan do
     
 	<h1 id="pg-6d1e6eebc33462277f15fbf7b9adc170">14.1 - Nginx in GCP</h1>
     <div class="lead">Get High-Performance, High-Availability App Delivery with Nginx configured servers.</div>
-	<p><img src="nginx-gcp.jpg" alt="gcp nginx"></p>
+	<p align="center">
+<img src="https://github.com/DSC-VJTI/a-z-cloud/raw/main/content/docs/N/nginx-gcp.jpg" a;t="Nginx in Google Cloud Platform">
+</p>
+<br/>
 <p>NGINX brings power and control to your Google Cloud Platform (GCP) environment so you can operate services and deliver content at the high standard your customers and developers demand.</p>
 <p>NGINX Plus operates stand‑alone or can integrate with GCP services – such as existing load balancing solutions – to reduce your application delivery and management costs. NGINX Plus provides enterprise‑grade features such as session persistence, configuration via API, and active health checks so that you can add advanced application load balancing, monitoring, and management to your GCP application stack. Use Packer, Terraform, and NGINX Plus to implement high‑availability, all‑active, autoscaling solutions on Google Compute Engine.</p>
 <h3 id="learn">Learn</h3>
@@ -2264,15 +2256,9 @@ The architecture for your website Beyond Treat (your one stop shop for vegan do
 <div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-d047ce1a675c55d9c44e4720b6af4144">15 - O</h1>
-    <div class="lead">Observability</div>
-	<!-- 
-
-<div class="pageinfo pageinfo-primary">
-<p>Observability</p>
-
+    <div class="lead"><h2 id="observability">Observability</h2>
 </div>
- -->
-<h3 id="what-is-observability">What is Observability?</h3>
+	<h3 id="what-is-observability">What is Observability?</h3>
 <p>In IT and cloud computing, observability is the ability to measure a system’s current state based on the data it generates, such as logs, metrics, and traces.</p>
 <p>Observability relies on telemetry derived from instrumentation that comes from the endpoints and services in your multi-cloud computing environments. In these modern environments, every hardware, software, and cloud infrastructure component and every container, open-source tool, and microservice generates records of every activity. The goal of observability is to understand what’s happening across all these environments and among the technologies, so you can detect and resolve issues to keep your systems efficient and reliable and your customers happy.
 Organizations usually implement observability using a combination of instrumentation methods including open-source instrumentation tools, such as OpenTelemetry.</p>
@@ -2455,13 +2441,17 @@ In other words, we can say that distributed tracing is the stitching of multiple
 <p>It’s a vendor-agnostic API to help developers easily instrument tracing into their code base. It’s open because no one company owns it. </p>
 <p>OpenTracing wants to form a common language around what a trace is and how to instrument them in our applications. In OpenTracing, a trace is a directed acyclic graph of Spans with References that may look like this</p>
 <p align = "center">
-<img src = "https://raw.githubusercontent.com/DSC-VJTI/a-z-cloud/main/content/docs/O/1.png">
+<img src = "https://github.com/DSC-VJTI/a-z-cloud/raw/main/content/docs/O/1.png">
 </p>
 <br/>
 <p>This allows us to model how our application calls out to other applications, internal functions, asynchronous jobs, etc. All of these can be modeled as Spans, as we’ll see below.</p>
 <p>For example, if I have a consumer website where a customer places orders, I make a call to my payment system and my inventory system before asynchronously acknowledging the order. I can trace the entire order process through every system with an OpenTracing library and can render it like this:</p>
 <p align = "center">
+<<<<<<< HEAD
+<img src = "https://github.com/DSC-VJTI/a-z-cloud/raw/main/content/docs/O/2.png">
+=======
 <img src = "https://raw.githubusercontent.com/DSC-VJTI/a-z-cloud/main/content/docs/O/2.png">
+>>>>>>> 16d224249125fbd40f3e7deb1666f3d78fee4231
 </p>
 <br/>
 <p>Each one of these bracketed blocks is a Span representing a separate software system communicating over messaging or HTTP.</p>

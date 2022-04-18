@@ -21,19 +21,19 @@
 <link rel="icon" type="image/png" href="/a-z-cloud/favicons/android-192x192.png" sizes="192x192">
 
 <title>O | A-Z Cloud</title>
-<meta name="description" content="Observability
+<meta name="description" content="## Observability
 ">
 <meta property="og:title" content="O" />
-<meta property="og:description" content="Observability
+<meta property="og:description" content="## Observability
 " />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://dsc-vjti.github.io/a-z-cloud/docs/o/" /><meta property="og:site_name" content="A-Z Cloud" />
 
 <meta itemprop="name" content="O">
-<meta itemprop="description" content="Observability
+<meta itemprop="description" content="## Observability
 "><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="O"/>
-<meta name="twitter:description" content="Observability
+<meta name="twitter:description" content="## Observability
 "/>
 
 
@@ -126,7 +126,8 @@ This is the multi-page printable view of this section.
 
 
 <h1 class="title">O</h1>
-<div class="lead">Observability</div>
+<div class="lead"><h2 id="observability">Observability</h2>
+</div>
 
 
 
@@ -168,14 +169,7 @@ This is the multi-page printable view of this section.
 
 
 <div class="content">
-      <!-- 
-
-<div class="pageinfo pageinfo-primary">
-<p>Observability</p>
-
-</div>
- -->
-<h3 id="what-is-observability">What is Observability?</h3>
+      <h3 id="what-is-observability">What is Observability?</h3>
 <p>In IT and cloud computing, observability is the ability to measure a system’s current state based on the data it generates, such as logs, metrics, and traces.</p>
 <p>Observability relies on telemetry derived from instrumentation that comes from the endpoints and services in your multi-cloud computing environments. In these modern environments, every hardware, software, and cloud infrastructure component and every container, open-source tool, and microservice generates records of every activity. The goal of observability is to understand what’s happening across all these environments and among the technologies, so you can detect and resolve issues to keep your systems efficient and reliable and your customers happy.
 Organizations usually implement observability using a combination of instrumentation methods including open-source instrumentation tools, such as OpenTelemetry.</p>
@@ -356,13 +350,17 @@ In other words, we can say that distributed tracing is the stitching of multiple
 <p>It’s a vendor-agnostic API to help developers easily instrument tracing into their code base. It’s open because no one company owns it. </p>
 <p>OpenTracing wants to form a common language around what a trace is and how to instrument them in our applications. In OpenTracing, a trace is a directed acyclic graph of Spans with References that may look like this</p>
 <p align = "center">
-<img src = "https://raw.githubusercontent.com/DSC-VJTI/a-z-cloud/main/content/docs/O/1.png">
+<img src = "https://github.com/DSC-VJTI/a-z-cloud/raw/main/content/docs/O/1.png">
 </p>
 <br/>
 <p>This allows us to model how our application calls out to other applications, internal functions, asynchronous jobs, etc. All of these can be modeled as Spans, as we’ll see below.</p>
 <p>For example, if I have a consumer website where a customer places orders, I make a call to my payment system and my inventory system before asynchronously acknowledging the order. I can trace the entire order process through every system with an OpenTracing library and can render it like this:</p>
 <p align = "center">
+<<<<<<< HEAD
+<img src = "https://github.com/DSC-VJTI/a-z-cloud/raw/main/content/docs/O/2.png">
+=======
 <img src = "https://raw.githubusercontent.com/DSC-VJTI/a-z-cloud/main/content/docs/O/2.png">
+>>>>>>> 16d224249125fbd40f3e7deb1666f3d78fee4231
 </p>
 <br/>
 <p>Each one of these bracketed blocks is a Span representing a separate software system communicating over messaging or HTTP.</p>

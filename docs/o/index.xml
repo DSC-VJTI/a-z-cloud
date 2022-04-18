@@ -129,13 +129,17 @@ In other words, we can say that distributed tracing is the stitching of multiple
 &lt;p&gt;It’s a vendor-agnostic API to help developers easily instrument tracing into their code base. It’s open because no one company owns it. &lt;/p&gt;
 &lt;p&gt;OpenTracing wants to form a common language around what a trace is and how to instrument them in our applications. In OpenTracing, a trace is a directed acyclic graph of Spans with References that may look like this&lt;/p&gt;
 &lt;p align = &#34;center&#34;&gt;
-&lt;img src = &#34;https://raw.githubusercontent.com/DSC-VJTI/a-z-cloud/main/content/docs/O/1.png&#34;&gt;
+&lt;img src = &#34;https://github.com/DSC-VJTI/a-z-cloud/raw/main/content/docs/O/1.png&#34;&gt;
 &lt;/p&gt;
 &lt;br/&gt;
 &lt;p&gt;This allows us to model how our application calls out to other applications, internal functions, asynchronous jobs, etc. All of these can be modeled as Spans, as we’ll see below.&lt;/p&gt;
 &lt;p&gt;For example, if I have a consumer website where a customer places orders, I make a call to my payment system and my inventory system before asynchronously acknowledging the order. I can trace the entire order process through every system with an OpenTracing library and can render it like this:&lt;/p&gt;
 &lt;p align = &#34;center&#34;&gt;
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+&lt;img src = &#34;https://github.com/DSC-VJTI/a-z-cloud/raw/main/content/docs/O/2.png&#34;&gt;
+=======
 &lt;img src = &#34;https://raw.githubusercontent.com/DSC-VJTI/a-z-cloud/main/content/docs/O/2.png&#34;&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 16d224249125fbd40f3e7deb1666f3d78fee4231
 &lt;/p&gt;
 &lt;br/&gt;
 &lt;p&gt;Each one of these bracketed blocks is a Span representing a separate software system communicating over messaging or HTTP.&lt;/p&gt;

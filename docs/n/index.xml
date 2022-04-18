@@ -22,7 +22,10 @@
       <description>
         
         
-        &lt;p&gt;&lt;img src=&#34;nginx-gcp.jpg&#34; alt=&#34;gcp nginx&#34;&gt;&lt;/p&gt;
+        &lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;https://github.com/DSC-VJTI/a-z-cloud/raw/main/content/docs/N/nginx-gcp.jpg&#34; a;t=&#34;Nginx in Google Cloud Platform&#34;&gt;
+&lt;/p&gt;
+&lt;br/&gt;
 &lt;p&gt;NGINX brings power and control to your Google Cloud Platform (GCP) environment so you can operate services and deliver content at the high standard your customers and developers demand.&lt;/p&gt;
 &lt;p&gt;NGINX Plus operates stand‑alone or can integrate with GCP services – such as existing load balancing solutions – to reduce your application delivery and management costs. NGINX Plus provides enterprise‑grade features such as session persistence, configuration via API, and active health checks so that you can add advanced application load balancing, monitoring, and management to your GCP application stack. Use Packer, Terraform, and NGINX Plus to implement high‑availability, all‑active, autoscaling solutions on Google Compute Engine.&lt;/p&gt;
 &lt;h3 id=&#34;learn&#34;&gt;Learn&lt;/h3&gt;
