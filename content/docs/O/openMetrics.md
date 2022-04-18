@@ -23,8 +23,6 @@ It is used or supported by most CNCF projects and many wider cloud native ecosys
 
 OpenMetrics is used in production by many large enterprises, including GitLab, DoorDash, Grafana Labs, Chronosphere, Everquote, and SoundCloud. 
 
-OpenMetrics stems from the stats formats used inside of Prometheus and Google’s Monarch time-series infrastructure, which underpins both Stackdriver and internal monitoring applications
-
 ### What’s new in OpenMetrics?
 
 The good news? OpenMetrics is largely the same as the Prometheus text format.
