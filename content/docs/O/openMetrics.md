@@ -23,31 +23,7 @@ It is used or supported by most CNCF projects and many wider cloud native ecosys
 
 OpenMetrics is used in production by many large enterprises, including GitLab, DoorDash, Grafana Labs, Chronosphere, Everquote, and SoundCloud. 
 
-### What’s new in OpenMetrics?
-
-The good news? OpenMetrics is largely the same as the Prometheus text format.
-One of the biggest changes was to implement the convention for counters to end in *_total*, which is now mandatory on time series.
-If you are already following that convention, it will be a seamless change, If not, then when your client libraries switch, your metrics names are going to change. 
-
-For example, if you have a metric called *cpu_seconds*, inside Prometheus it would end up being called *cpu_seconds_total* once it has migrated over.
-
-Another recent change is that time stamps are now in seconds.
-
-Other improvements and interoperability functions include:
-- There is only one way of escaping rather than two.
-- There are new ways to detect incomplete scrapes.
-- There are higher resolution time stamps. 
-- There are 64-bit integer values.
-- *_created* was added for metric creation and resets. 
-- There are considerations for both push and pull, to make sure OpenMetrics works for everyone.
-- The text format is still mandatory, but historically Prometheus also had the protobuf format that went by the wayside with Prometheus v2.0, so OpenMetrics reintroduced protobuf as optional.
-
-One of the biggest features that OpenMetrics introduced is exemplars to link certain metrics to example traces.
-
-<p align = "center">
-<img src = "https://grafana.com/static/assets/img/blog/kubecon_openmetrics_grafana_exemplar.png" alt="OpenTelemetry Components" >
-</p>
-</br>
+OpenMetrics stems from the stats formats used inside of Prometheus and Google’s Monarch time-series infrastructure, which underpins both Stackdriver and internal monitoring applications.
 
 ### Learn
 
