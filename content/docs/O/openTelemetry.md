@@ -77,10 +77,3 @@ It’s akin to how Kubernetes became the standard for container orchestration. T
 ### Learn
 
 Learn more about OpenTelemetry from the official [documentation](https://opentelemetry.io/docs/)
-
-
-
-
-
-
-
