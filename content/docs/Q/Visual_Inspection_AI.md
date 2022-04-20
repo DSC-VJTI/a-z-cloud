@@ -9,7 +9,9 @@ The Google Cloud Visual Inspection AI solution automates visual inspection tasks
 
 Here's a demo use-case in the chip manufacturing industry:
 
-![Demo](Demo.gif)
+<p align="center">
+<img src="https://github.com/rakesh-201/a-z-cloud-1/blob/main/content/docs/Q/Demo.gif?raw=true" a;t="Demo">
+</p>
 
 ### Other Use-cases
 
