@@ -822,5 +822,28 @@ Going back to the Kubernetes example, imagine how much more disjointed and slow-
       </description>
     </item>
     
+    <item>
+      <title>Docs: Visual Inspection AI</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/q/visual_inspection_ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/q/visual_inspection_ai/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The Google Cloud Visual Inspection AI solution automates visual inspection tasks using a set of AI and computer vision technologies that enable manufacturers to transform quality control processes by automatically detecting product defects.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a demo use-case in the chip manufacturing industry:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Demo.gif&#34; alt=&#34;Demo&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;other-use-cases&#34;&gt;Other Use-cases&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Automotive manufacturing&lt;/strong&gt;: Paint shop surface inspection, body shop welding seam inspection, press shop inspection (scratch, dents, cracks, staining), foundry engine block inspection (cracks, deformation, anomaly)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Semiconductor manufacturing&lt;/strong&gt;: Wafer level anomaly and defect localization, die crack inspection, pre-place inspection, SoC packaging inspection, board assembly inspection&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Electronics manufacturing&lt;/strong&gt;: Defective or missing printed circuit board (PCB) components (screw, spring, foam, connector, shield, etc.), PCB soldering and gluing (insufficient solder, Icicle, shift, exceeding tin, etc.), product surface check (glue spill, mesh deformation, scratches, bubbles, etc.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;General-purpose manufacturing&lt;/strong&gt;: Packaging and label inspection, fabric inspection (mesh, tear, yarn), metal and plastic welding seam inspection, surface inspection&lt;/p&gt;
+&lt;h3 id=&#34;learn&#34;&gt;Learn&lt;/h3&gt;
+&lt;p&gt;Learn more about &lt;a href=&#34;https://cloud.google.com/blog/products/ai-machine-learning/improve-manufacturing-quality-control-with-visual-inspection-ai&#34;&gt;Visual Inspection AI&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
