@@ -833,7 +833,9 @@ Going back to the Kubernetes example, imagine how much more disjointed and slow-
         
         &lt;p&gt;The Google Cloud Visual Inspection AI solution automates visual inspection tasks using a set of AI and computer vision technologies that enable manufacturers to transform quality control processes by automatically detecting product defects.&lt;/p&gt;
 &lt;p&gt;Here&amp;rsquo;s a demo use-case in the chip manufacturing industry:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;Demo.gif&#34; alt=&#34;Demo&#34;&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;img src=&#34;https://github.com/rakesh-201/a-z-cloud-1/blob/main/content/docs/Q/Demo.gif?raw=true&#34; a;t=&#34;Demo&#34;&gt;
+&lt;/p&gt;
 &lt;h3 id=&#34;other-use-cases&#34;&gt;Other Use-cases&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Automotive manufacturing&lt;/strong&gt;: Paint shop surface inspection, body shop welding seam inspection, press shop inspection (scratch, dents, cracks, staining), foundry engine block inspection (cracks, deformation, anomaly)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Semiconductor manufacturing&lt;/strong&gt;: Wafer level anomaly and defect localization, die crack inspection, pre-place inspection, SoC packaging inspection, board assembly inspection&lt;/p&gt;
