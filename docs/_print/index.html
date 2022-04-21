@@ -652,6 +652,25 @@ This is the multi-page printable view of this section.
     </ul>
     
   
+    
+    
+	
+<li>19: <a href="#pg-b412368267c35ca5cef16c51ba289c43">S</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
 
     </ul>
 
@@ -2807,6 +2826,84 @@ Because each zone is an independent entity, zone failures do not affect other zo
 <li><strong>Canaries:</strong> Rolling out changes to a small set of the entire infrastructure allows you to observe the impact in production. This step is absent from previous Google outages but is now a specific step. Unfortunately, although the canary deploy did show the problem, the rollout was not aborted due to a separate software bug.</li>
 </ol>
 <p>Google Compute Engine guarantees 99.95% uptime which equates to 4 hours and 23 minutes of downtime per year.</p>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-b412368267c35ca5cef16c51ba289c43">19 - S</h1>
+    <div class="lead"><h2 id="scalability">Scalability</h2>
+</div>
+	<p>Simply put, scalability refers to the ability to increase or decrease compute resources to meet changing demand or load.</p>
+<p>Several Google Cloud Platform services such as <a href="/a-z-cloud/docs/m/cloud-run/" title="Cloud Run">Cloud Run</a> and <a href="/a-z-cloud/docs/f/firebase_cloud_functions/" title="Cloud Functions">Cloud Functions</a> automatically scale up or down depending upon changing demands.</p>
+<h3 id="horizontal-and-vertical-scaling">Horizontal and Vertical Scaling</h3>
+<p align="center">
+    <img src="scalability.avif" alt="Horizontal and Vertical Scaling" height="80%" width="80%" />
+</p>
+<p>In the early 2000s or before cloud computing became accessible to an individual, a website would typically be hosted on a Linux machine, exposed to the internet via an IP address, and networking handled by an Apache or Nginx server. Thus, the web application was deployed <em>on-premises</em>. Say this web app is Facebook, which was first deployed on a server belonging to Harvard University in the US.</p>
+<h4 id="vertical-scaling">Vertical scaling</h4>
+<p>Soon the social media platform becomes a hit and the standalone server cannot handle the increased demand. A more powerful machine/server is needed that can run the same copy of code for the web app. Thus, the infrastructure needed to <em>scale up</em> with the changing demand; this kind of scaling is called as <strong>vertical scaling</strong>, where more compute resources are added to the same machine such as RAM or storage.</p>
+<p>External storage can easily be added to a running machine. However, as RAM cannot be added externally, the machine first needs to be shut down and the existing RAM needs to be replaced with a larger RAM. This means that the website will no longer be available to anyone and there will be a disruption of service.</p>
+<h4 id="horizontal-scaling">Horizontal scaling</h4>
+<p>Now students outside the Harvard University campus are using Facebook, as far as in the UK! Their requests and data are all managed in this one big machine at Harvard University. With a further increase in load and unavailability of an even powerful machine, what can be done? If not a more powerful machine, a smaller machine that can run the same instance of the web app can be used. Here, the infrastructure is <em>scaled out</em> and this kind of scaling is called as <strong>horizontal scaling</strong>.</p>
+<p>An entire new machine needs to be purchased/rented and configured for the web app to be run on it. Thus, the cost increases exponentially as more and more machines are used.</p>
+<h4 id="comparison">Comparison</h4>
+<table>
+<thead>
+<tr>
+<th>Horizontal Scaling</th>
+<th>Vertical Scaling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A load balancer such as Nginx is required to route incoming requests to multiple servers</td>
+<td>Since there is only one machine, all the load is bear by it and no load balancer is needed</td>
+</tr>
+<tr>
+<td>Reliable as failure of one server does not affect other servers</td>
+<td>Single point of failure as there is only one server</td>
+</tr>
+<tr>
+<td>If a shared database is being used, data consistency needs to be taken care of</td>
+<td>No issue of data inconsistency</td>
+</tr>
+<tr>
+<td>Scales out without any disruption of service</td>
+<td>Scales up with downtime depending upon compute resource to be added</td>
+</tr>
+<tr>
+<td>Cost increases exponentially</td>
+<td>Cost increase linearly</td>
+</tr>
+<tr>
+<td>Desirable for a microservices architecture</td>
+<td>Desirable for a monolithic architecture</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 
