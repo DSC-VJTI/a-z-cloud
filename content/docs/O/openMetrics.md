@@ -30,8 +30,3 @@ OpenMetrics stems from the stats formats used inside of Prometheus and Google’
 Learn more about OpenMetrics from the official [documentation](https://openmetrics.io/)
 
 Learn more about Prometheus from the official [documentation](https://prometheus.io/)
-
-
-
-
-

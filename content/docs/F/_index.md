@@ -3,12 +3,8 @@ title: "F"
 linkTitle: "F"
 weight: 4
 description: >
-  Function-as-a-Service(FaaS)
+  ## Function-as-a-Service(FaaS)
 ---
-
-<!-- {{% pageinfo %}}
-FaaS
-{{% /pageinfo %}} -->
 
 > In the serverless world, Function-as-a-Service allows to write small pieces of code that do something Just like any other function, but serverless. That means: The function is sleeping in a fluffy cloudy container and only when it is needed, it wakes up and does something, and the good news: A sleeping function doesn’t cause cost.
 >

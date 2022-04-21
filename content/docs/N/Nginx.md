@@ -6,7 +6,10 @@ description: >
 ---
 
 
-![gcp nginx](nginx-gcp.jpg)
+<p align="center">
+<img src="https://github.com/DSC-VJTI/a-z-cloud/raw/main/content/docs/N/nginx-gcp.jpg" a;t="Nginx in Google Cloud Platform">
+</p>
+<br/>
 
 NGINX brings power and control to your Google Cloud Platform (GCP) environment so you can operate services and deliver content at the high standard your customers and developers demand.
 
