@@ -46,4 +46,4 @@ Telemetry is clearly a fantastic technology, but it’s not without its challeng
 
 That means the experience of those users won’t be accounted for when it comes to planning your future roadmap, fixing bugs, or addressing other issues in your app. Although this isn’t necessarily a problem by itself, the issue is that users who tend to disallow these types of technologies can tend to fall into the more tech-savvy portion of your user base. According to Jack Schofield, can result in the dumbing-down of software. Other users, on the other hand, take no notice to telemetry happening behind the scenes or simply ignore it if they do.
 
-It’s a problem without a clear solution — and it doesn’t negate the overall power of telemetry for driving development — but one to keep in mind as you analyze your data.
+It’s a problem without a clear solution — and it doesn’t negate the overall power of telemetry for driving development — but one to keep in mind as you analyze your data. 
