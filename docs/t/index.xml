@@ -1,0 +1,85 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A-Z Cloud – T</title>
+    <link>https://dsc-vjti.github.io/a-z-cloud/docs/t/</link>
+    <description>Recent content in T on A-Z Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://dsc-vjti.github.io/a-z-cloud/docs/t/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: OpenTelemetry</title>
+      <link>https://dsc-vjti.github.io/a-z-cloud/docs/t/opentelemetry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsc-vjti.github.io/a-z-cloud/docs/t/opentelemetry/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;what-is-opentelemetry&#34;&gt;What is OpenTelemetry?&lt;/h3&gt;
+&lt;p&gt;OpenTelemetry (also referred to as OTel) is an open-source observability framework made up of a collection of tools, APIs, and SDKs. Otel enables IT teams to instrument, generate, collect, and export telemetry data for analysis and to understand software performance and behavior.&lt;/p&gt;
+&lt;p&gt;Having a common format for how observability data is collected and sent is where OpenTelemetry comes into play. As a Cloud Native Computing Foundation (CNCF) incubating project, OTel aims to provide unified sets of vendor-agnostic libraries and APIs — mainly for collecting data and transferring it somewhere. Since the project’s start, many vendors have come on board to help make rich data collection easier and more consumable.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-telemetry-data&#34;&gt;What is telemetry data?&lt;/h3&gt;
+&lt;p&gt;Capturing data is critical to understanding how your applications and infrastructure are performing at any given time. This information is gathered from remote, often inaccessible points within your ecosystem and processed by some sort of tool or equipment. Monitoring begins here. The data is incredibly plentiful and difficult to store over long periods due to capacity limitations — a reason why private and public cloud storage services have been a boon to DevOps teams.&lt;/p&gt;
+&lt;p&gt;Logs, metrics, and traces make up the bulk of all telemetry data.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Logs&lt;/strong&gt; are important because you’ll naturally want an event-based record of any notable anomalies across the system. Structured, unstructured, or in plain text, these readable files can tell you the results of any transaction involving an endpoint within your multicloud environment. However, not all logs are inherently reviewable — a problem that’s given rise to external log analysis tools.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Metrics&lt;/strong&gt; are numerical data points represented as counts or measures that are often calculated or aggregated over a period of time. Metrics originate from several sources including infrastructure, hosts, and third-party sources. While logs aren’t always accessible, most metrics tend to be reachable via query. Timestamps, values, and even event names can preemptively uncover a growing problem that needs remediation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Traces&lt;/strong&gt; are the act of following a process (for example, an API request or other system activity) from start to finish, showing how services connect. Keeping a watch over this pathway is critical to understanding how your ecosystem works, if it’s working effectively, and if any troubleshooting is necessary. Span data is a hallmark of tracing — which includes information such as unique identifiers, operation names, timestamps, logs, events, and indexes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-does-opentelemetry-work&#34;&gt;How does OpenTelemetry work?&lt;/h3&gt;
+&lt;p&gt;OTel is a specialized protocol for collecting telemetry data and exporting it to a target system. Since the CNCF project itself is open source, the end goal is making data collection more system-agnostic than it currently is. But how is that data generated?&lt;/p&gt;
+&lt;p&gt;The data life cycle has multiple steps from start to finish. Here are the steps the solution takes, and the data it generates along the way:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Instruments your code with APIs, telling system components what metrics to gather and how to gather them&lt;/li&gt;
+&lt;li&gt;Pools the data using SDKs, and transports it for processing and exporting&lt;/li&gt;
+&lt;li&gt;Breaks down the data, samples it, filters it to reduce noise or errors, and enriches it using multi-source contextualization&lt;/li&gt;
+&lt;li&gt;Converts and exports the data&lt;/li&gt;
+&lt;li&gt;Conducts more filtering in time-based batches, then moves the data onward to a predetermined backend.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;opentelemetry-components&#34;&gt;OpenTelemetry components&lt;/h3&gt;
+&lt;p&gt;OTel consists of a few different components as depicted in the following figure. Let’s take a high-level look at each one from left to right:&lt;/p&gt;
+&lt;p align = &#34;center&#34;&gt;
+&lt;img src = &#34;https://marvel-b1-cdn.bc0a.com/f00000000236551/dt-cdn.net/wp-content/uploads/2020/07/OT.png&#34; alt=&#34;OpenTelemetry Components&#34; &gt;
+&lt;/p&gt;
+&lt;p align = &#34;center&#34;&gt;
+OpenTelemetry Components
+&lt;/p&gt;   
+&lt;br/&gt;
+&lt;h5 id=&#34;apis&#34;&gt;APIs&lt;/h5&gt;
+&lt;p&gt;These are core components and language-specific (such as Java, Python, .Net, and so on). APIs provide the basic “plumbing” for your application.&lt;/p&gt;
+&lt;h5 id=&#34;sdk&#34;&gt;SDK&lt;/h5&gt;
+&lt;p&gt;This is also a language-specific component and is the middleman that provides the bridge between the APIs and the exporter. The SDK allows for additional configuration, such as request filtering and transaction sampling.&lt;/p&gt;
+&lt;h5 id=&#34;in-process-exporter&#34;&gt;In-process exporter&lt;/h5&gt;
+&lt;p&gt;This allows you to configure which backend(s) you want it sent to. The exporter decouples the instrumentation from the backend configuration. This makes it easy to switch backends without the pain of re-instrumenting your code.&lt;/p&gt;
+&lt;h5 id=&#34;collector&#34;&gt;Collector&lt;/h5&gt;
+&lt;p&gt;The collector receives, processes, and exports telemetry data. While not technically required, it is an extremely useful component to the OpenTelemetry architecture because it allows greater flexibility for receiving and sending the application telemetry to the backend(s).
+The collector has two deployment models:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;An agent that resides on the same host as the application (for example, binary, DaemonSet, sidecar, and so on)&lt;/li&gt;
+&lt;li&gt;A standalone process completely separate from the application
+Since the collector is just a specification for collecting and sending telemetry, it still requires a backend to receive and store the data.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;benefits-of-opentelemetry&#34;&gt;Benefits of OpenTelemetry&lt;/h3&gt;
+&lt;p&gt;OTel provides a de facto standard for adding observable instrumentation to cloud-native applications. This means companies don’t need to spend valuable time developing a mechanism for collecting critical application data and can spend more time delivering new features instead.
+It’s akin to how Kubernetes became the standard for container orchestration. This broad adoption has made it easier for organizations to implement container deployments since they don’t need to build their own enterprise-grade orchestration platform. Using Kubernetes as the analog for what it can become, it’s easy to see the benefits it can provide to the entire industry.&lt;/p&gt;
+&lt;h3 id=&#34;learn&#34;&gt;Learn&lt;/h3&gt;
+&lt;p&gt;Learn more about OpenTelemetry from the official &lt;a href=&#34;https://opentelemetry.io/docs/&#34;&gt;documentation&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

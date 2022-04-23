@@ -671,6 +671,33 @@ This is the multi-page printable view of this section.
     </ul>
     
   
+    
+    
+	
+<li>20: <a href="#pg-a6d13f548cffeabb475a0025247c43e5">T</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>20.1: <a href="#pg-6ecb950958ab78ba0a18b7dbd1c903e3">OpenTelemetry</a></li>
+
+
+    
+  
+
+    </ul>
+    
+  
 
     </ul>
 
@@ -2919,6 +2946,141 @@ Because each zone is an independent entity, zone failures do not affect other zo
   
   
 
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-a6d13f548cffeabb475a0025247c43e5">20 - T</h1>
+    <div class="lead"><h2 id="telemetry">Telemetry</h2>
+</div>
+	<blockquote>
+<p>Data is the new oil.</p>
+<p>- Clive Humby</p>
+</blockquote>
+<p>Telemetry is the automatic recording and transmission of data from remote or inaccessible sources to an IT system in a different location for monitoring and analysis. Telemetry data may be relayed using radio, infrared, ultrasonic, GSM, satellite or cable, depending on the application (telemetry is not only used in software development, but also in meteorology, intelligence, medicine, and other fields).</p>
+<p>In the software development world, telemetry can offer insights on which features end users use most, detection of bugs and issues, and offering better visibility into performance without the need to solicit feedback directly from users.</p>
+<h3 id="how-telemetry-works">How Telemetry Works?</h3>
+<p>In a general sense, telemetry works through sensors at the remote source which measures physical (such as precipitation, pressure or temperature) or electrical (such as current or voltage) data. This is converted to electrical voltages that are combined with timing data. They form a data stream that is transmitted over a wireless medium, wired or a combination of both.</p>
+<p>At the remote receiver, the stream is disaggregated and the original data displayed or processed based on the user’s specifications.</p>
+<p>In the context of software development, the concept of telemetry is often confused with logging. But logging is a tool used in the development process to diagnose errors and code flows, and it’s focused on the internal structure of a website, app, or another development project. Once a project is released, however, telemetry is what you’re looking for to enable automatic collection of data from real-world use. Telemetry is what makes it possible to collect all that raw data that becomes valuable, actionable analytics.</p>
+<h3 id="benefits-of-telemetry">Benefits of Telemetry</h3>
+<p>The primary benefit of telemetry is the ability of an end user to monitor the state of an object or environment while physically far remote from it. Once you’ve shipped a product, you can’t be physically present, peering over the shoulders of thousands (or millions) of users as they engage with your product to find out what works, what’s easy, and what’s cumbersome. Thanks to telemetry, those insights can be delivered directly into a dashboard for you to analyze and act on.</p>
+<p>Because telemetry provides insights into how well your product is working for your end users – as they use it – it’s an incredibly valuable tool for ongoing performance monitoring and management. Plus, you can use the data you’ve gathered from version 1.0 to drive improvements and prioritize updates for your release of version 2.0.</p>
+<p>Telemetry enables you to answer questions such as:</p>
+<ul>
+<li>
+<p>Are your customers using the features you expect? How are they engaging with your product?</p>
+</li>
+<li>
+<p>How frequently are users engaging with your app, and for what duration?</p>
+</li>
+<li>
+<p>What settings options to users select most? Do they prefer certain display types, input modalities, screen orientation, or other device configurations?</p>
+</li>
+<li>
+<p>What happens when crashes occur? Are crashes happening more frequently when certain features or functions are used? What’s the context surrounding a crash?</p>
+</li>
+</ul>
+<p>Obviously, the answers to these and the many other questions that can be answered with telemetry are invaluable to the development process, enabling you to make continuous improvements and introduce new features that, to your end users, may seem as though you’ve been reading their minds – which you have been, thanks to telemetry.</p>
+<h3 id="challenges-of-telemetry">Challenges of Telemetry</h3>
+<p>Telemetry is clearly a fantastic technology, but it’s not without its challenges. The most prominent challenge – and a commonly occurring issue – is not with telemetry itself, but with your end users and their willingness to allow what some see as Big Brother-esque spying. In short, some users immediately turn it off when they notice it, meaning any data generated from their use of your product won’t be gathered or reported.</p>
+<p>That means the experience of those users won’t be accounted for when it comes to planning your future roadmap, fixing bugs, or addressing other issues in your app. Although this isn’t necessarily a problem by itself, the issue is that users who tend to disallow these types of technologies can tend to fall into the more tech-savvy portion of your user base. According to Jack Schofield, can result in the dumbing-down of software. Other users, on the other hand, take no notice to telemetry happening behind the scenes or simply ignore it if they do.</p>
+<p>It’s a problem without a clear solution — and it doesn’t negate the overall power of telemetry for driving development — but one to keep in mind as you analyze your data.</p>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-6ecb950958ab78ba0a18b7dbd1c903e3">20.1 - OpenTelemetry</h1>
+    <div class="lead">An open-source standard for logs, metrics, and traces.</div>
+	<h3 id="what-is-opentelemetry">What is OpenTelemetry?</h3>
+<p>OpenTelemetry (also referred to as OTel) is an open-source observability framework made up of a collection of tools, APIs, and SDKs. Otel enables IT teams to instrument, generate, collect, and export telemetry data for analysis and to understand software performance and behavior.</p>
+<p>Having a common format for how observability data is collected and sent is where OpenTelemetry comes into play. As a Cloud Native Computing Foundation (CNCF) incubating project, OTel aims to provide unified sets of vendor-agnostic libraries and APIs — mainly for collecting data and transferring it somewhere. Since the project’s start, many vendors have come on board to help make rich data collection easier and more consumable.</p>
+<h3 id="what-is-telemetry-data">What is telemetry data?</h3>
+<p>Capturing data is critical to understanding how your applications and infrastructure are performing at any given time. This information is gathered from remote, often inaccessible points within your ecosystem and processed by some sort of tool or equipment. Monitoring begins here. The data is incredibly plentiful and difficult to store over long periods due to capacity limitations — a reason why private and public cloud storage services have been a boon to DevOps teams.</p>
+<p>Logs, metrics, and traces make up the bulk of all telemetry data.</p>
+<ul>
+<li>
+<p><strong>Logs</strong> are important because you’ll naturally want an event-based record of any notable anomalies across the system. Structured, unstructured, or in plain text, these readable files can tell you the results of any transaction involving an endpoint within your multicloud environment. However, not all logs are inherently reviewable — a problem that’s given rise to external log analysis tools.</p>
+</li>
+<li>
+<p><strong>Metrics</strong> are numerical data points represented as counts or measures that are often calculated or aggregated over a period of time. Metrics originate from several sources including infrastructure, hosts, and third-party sources. While logs aren’t always accessible, most metrics tend to be reachable via query. Timestamps, values, and even event names can preemptively uncover a growing problem that needs remediation.</p>
+</li>
+<li>
+<p><strong>Traces</strong> are the act of following a process (for example, an API request or other system activity) from start to finish, showing how services connect. Keeping a watch over this pathway is critical to understanding how your ecosystem works, if it’s working effectively, and if any troubleshooting is necessary. Span data is a hallmark of tracing — which includes information such as unique identifiers, operation names, timestamps, logs, events, and indexes.</p>
+</li>
+</ul>
+<h3 id="how-does-opentelemetry-work">How does OpenTelemetry work?</h3>
+<p>OTel is a specialized protocol for collecting telemetry data and exporting it to a target system. Since the CNCF project itself is open source, the end goal is making data collection more system-agnostic than it currently is. But how is that data generated?</p>
+<p>The data life cycle has multiple steps from start to finish. Here are the steps the solution takes, and the data it generates along the way:</p>
+<ul>
+<li>Instruments your code with APIs, telling system components what metrics to gather and how to gather them</li>
+<li>Pools the data using SDKs, and transports it for processing and exporting</li>
+<li>Breaks down the data, samples it, filters it to reduce noise or errors, and enriches it using multi-source contextualization</li>
+<li>Converts and exports the data</li>
+<li>Conducts more filtering in time-based batches, then moves the data onward to a predetermined backend.</li>
+</ul>
+<h3 id="opentelemetry-components">OpenTelemetry components</h3>
+<p>OTel consists of a few different components as depicted in the following figure. Let’s take a high-level look at each one from left to right:</p>
+<p align = "center">
+<img src = "https://marvel-b1-cdn.bc0a.com/f00000000236551/dt-cdn.net/wp-content/uploads/2020/07/OT.png" alt="OpenTelemetry Components" >
+</p>
+<p align = "center">
+OpenTelemetry Components
+</p>   
+<br/>
+<h5 id="apis">APIs</h5>
+<p>These are core components and language-specific (such as Java, Python, .Net, and so on). APIs provide the basic “plumbing” for your application.</p>
+<h5 id="sdk">SDK</h5>
+<p>This is also a language-specific component and is the middleman that provides the bridge between the APIs and the exporter. The SDK allows for additional configuration, such as request filtering and transaction sampling.</p>
+<h5 id="in-process-exporter">In-process exporter</h5>
+<p>This allows you to configure which backend(s) you want it sent to. The exporter decouples the instrumentation from the backend configuration. This makes it easy to switch backends without the pain of re-instrumenting your code.</p>
+<h5 id="collector">Collector</h5>
+<p>The collector receives, processes, and exports telemetry data. While not technically required, it is an extremely useful component to the OpenTelemetry architecture because it allows greater flexibility for receiving and sending the application telemetry to the backend(s).
+The collector has two deployment models:</p>
+<ol>
+<li>An agent that resides on the same host as the application (for example, binary, DaemonSet, sidecar, and so on)</li>
+<li>A standalone process completely separate from the application
+Since the collector is just a specification for collecting and sending telemetry, it still requires a backend to receive and store the data.</li>
+</ol>
+<h3 id="benefits-of-opentelemetry">Benefits of OpenTelemetry</h3>
+<p>OTel provides a de facto standard for adding observable instrumentation to cloud-native applications. This means companies don’t need to spend valuable time developing a mechanism for collecting critical application data and can spend more time delivering new features instead.
+It’s akin to how Kubernetes became the standard for container orchestration. This broad adoption has made it easier for organizations to implement container deployments since they don’t need to build their own enterprise-grade orchestration platform. Using Kubernetes as the analog for what it can become, it’s easy to see the benefits it can provide to the entire industry.</p>
+<h3 id="learn">Learn</h3>
+<p>Learn more about OpenTelemetry from the official <a href="https://opentelemetry.io/docs/">documentation</a></p>
+
+</div>
+
+
+
+    
+	
   
 
     
