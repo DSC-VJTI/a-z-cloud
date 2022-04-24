@@ -339,9 +339,40 @@ A customer can also provide a tiny url of his/her choice. We can allow customer 
 How many times has a short URL been used ? How should we store these statistics?
 Since we used "HTTP 302 Redirect" status to the browser instead of "HTTP 301 Redirect", thus each redirection for tiny url will reach service’s backend. We can push this data(tiny url, users etc.) to a Kafka queue and perform analytics in real time.
 
+### How does GCP support such a URL shortener service?
+
+**url-shortener** is a small API that provides basic REST endpoints to shorten a URL, get information about the URL, update the URL, and get statistics on most accessed URLs.
+
+The technology behind it:
+- Golang 1.17
+- Gin Web Framework
+- Google Firestore
+- Google PubSub
+- Redis
+- NanoID
+- Swagger
+
+**Architecture**
+<p align = "center">
+<img src = "https://raw.githubusercontent.com/erickhgm/url-shortener/develop/doc/arquitecture.png" >
+</p>
+<p align = "center">
+Written in Hexagonal Architecture
+</p>   
+<br/>
+
+- Requests can come from many types of devices.
+- Cloud Run is a fully managed serverless platform which already has an integrated load balance.
+- Cloud Run will automatically scale to the number of container instances needed to handle all incoming requests.
+- All request to get a URL will be checked in the cache first and any new URL that is generated will cached with a configurable TTL.
+- All request to get a URL that is not found in the cache will be queried on the NoSQL and any new URL that is generated will be stored on the NoSQL.
+- For each redirect request, a message will be sent to a pubsub topic to record that we had one more access.
+- Here, we have an Apache Beam pipeline running in Dataflow, to group all messages by Id in a fixed time window, that will update the NoSQL database.
+
 ### References:
 1. [Geeks for Geeks](https://www.geeksforgeeks.org/system-design-url-shortening-service/)
 2. [Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR)
+3. [Learn how to implement a URL shortener using Go and GCP services](https://golangexample.com/a-small-api-that-provides-basic-rest-endpoints-to-shorten-a-url-get-information-about-the-url/)
 
 
 
