@@ -435,10 +435,40 @@ Initially, we could use a simple Round Robin approach that distributes incoming 
 <h3 id="analytics">Analytics</h3>
 <p>How many times has a short URL been used ? How should we store these statistics?
 Since we used &ldquo;HTTP 302 Redirect&rdquo; status to the browser instead of &ldquo;HTTP 301 Redirect&rdquo;, thus each redirection for tiny url will reach service’s backend. We can push this data(tiny url, users etc.) to a Kafka queue and perform analytics in real time.</p>
+<h3 id="how-does-gcp-support-such-a-url-shortener-service">How does GCP support such a URL shortener service?</h3>
+<p><strong>url-shortener</strong> is a small API that provides basic REST endpoints to shorten a URL, get information about the URL, update the URL, and get statistics on most accessed URLs.</p>
+<p>The technology behind it:</p>
+<ul>
+<li>Golang 1.17</li>
+<li>Gin Web Framework</li>
+<li>Google Firestore</li>
+<li>Google PubSub</li>
+<li>Redis</li>
+<li>NanoID</li>
+<li>Swagger</li>
+</ul>
+<p><strong>Architecture</strong></p>
+<p align = "center">
+<img src = "https://raw.githubusercontent.com/erickhgm/url-shortener/develop/doc/arquitecture.png" >
+</p>
+<p align = "center">
+Written in Hexagonal Architecture
+</p>   
+<br/>
+<ul>
+<li>Requests can come from many types of devices.</li>
+<li>Cloud Run is a fully managed serverless platform which already has an integrated load balance.</li>
+<li>Cloud Run will automatically scale to the number of container instances needed to handle all incoming requests.</li>
+<li>All request to get a URL will be checked in the cache first and any new URL that is generated will cached with a configurable TTL.</li>
+<li>All request to get a URL that is not found in the cache will be queried on the NoSQL and any new URL that is generated will be stored on the NoSQL.</li>
+<li>For each redirect request, a message will be sent to a pubsub topic to record that we had one more access.</li>
+<li>Here, we have an Apache Beam pipeline running in Dataflow, to group all messages by Id in a fixed time window, that will update the NoSQL database.</li>
+</ul>
 <h3 id="references">References:</h3>
 <ol>
 <li><a href="https://www.geeksforgeeks.org/system-design-url-shortening-service/">Geeks for Geeks</a></li>
 <li><a href="https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR">Grokking the System Design Interview</a></li>
+<li><a href="https://golangexample.com/a-small-api-that-provides-basic-rest-endpoints-to-shorten-a-url-get-information-about-the-url/">Learn how to implement a URL shortener using Go and GCP services</a></li>
 </ol>
 
 </div>
