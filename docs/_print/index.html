@@ -736,6 +736,25 @@ This is the multi-page printable view of this section.
     </ul>
     
   
+    
+    
+	
+<li>23: <a href="#pg-387c8e01ec6afd5da5d09ec9e9e3a7d4">W</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
 
     </ul>
 
@@ -3530,6 +3549,129 @@ Written in Hexagonal Architecture
 </li>
 </ul>
 <p>Windows Subsystem For Linux 2 (<a href="https://docs.microsoft.com/en-us/windows/wsl/about">WSL2</a>) is a novel example of operating system virtualization by which Windows and a Linux-based OS can be used side-by-side in the Windows host operating system.</p>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-387c8e01ec6afd5da5d09ec9e9e3a7d4">23 - W</h1>
+    <div class="lead"><h2 id="webassembly-wasm">WebAssembly (WASM)</h2>
+</div>
+	<blockquote>
+<p>The Dawn of a New Era!</p>
+</blockquote>
+<p>WebAssembly is a new type of code that can be run in modern web browsers — it is a low-level assembly-like language with a compact binary format that runs with near-native performance and provides languages such as C/C++, C# and Rust with a compilation target so that they can run on the web. It is also designed to run alongside JavaScript, allowing both to work together.</p>
+<p align="center">
+    <img src="wasm.png" alt="WASM" />
+</p>
+<p>WebAssembly has huge implications for the web platform — it provides a way to run code written in multiple languages on the web at near native speed, with client apps running on the web that previously couldn&rsquo;t have done so.</p>
+<p>WebAssembly is designed to complement and run alongside JavaScript — using the WebAssembly JavaScript APIs, you can load WebAssembly modules into a JavaScript app and share functionality between the two. This allows you to take advantage of WebAssembly&rsquo;s performance and power and JavaScript&rsquo;s expressiveness and flexibility in the same apps, even if you don&rsquo;t know how to write WebAssembly code.</p>
+<h3 id="how-wasm-works">How WASM Works?</h3>
+<p align="center">
+    <img src="wasm-working.png" alt="Working" />
+</p>
+<p>Wasm programs are deployed in two stages. First, a Wasm module is generated from the source code:</p>
+<ul>
+<li>
+<p>Write the application in your preferred language.</p>
+</li>
+<li>
+<p>Create a pre-compiled Wasm module.</p>
+</li>
+<li>
+<p>Distribute the module—ideally, using a CDN for low latency.</p>
+</li>
+</ul>
+<p>Once the Wasm module is built, it can be run anywhere with a few lines of JavaScript glue:</p>
+<ul>
+<li>
+<p>Load the Wasm module.</p>
+</li>
+<li>
+<p>Create an instance of the module.</p>
+</li>
+<li>
+<p>Call the instance’s functions.</p>
+</li>
+</ul>
+<p><strong>Compilation</strong></p>
+<p>You can write a Wasm module in any language that supports it or in the text assembly directly. For instance, take this C file called answer.c:</p>
+<pre tabindex="0"><code>int answer() {
+ return 42;
+}
+</code></pre><p>To generate a standalone .wasm module, you can use emscripten. Emscripten is a C and C++ compiler that generates JavaScript files and WebAssembly binaries:</p>
+<p><code>emcc answer.c -O2 -s SIDE_MODULE=1 -o answer.wasm</code></p>
+<p>The result of the compilation is a file called answer.wasm. This file can now be loaded in a browser, as a server component.</p>
+<p>For the most part, emscripten’s emcc can be used as a drop-in replacement for GNU’s gcc. Therefore, it can compile any portable C or C++ library and bring it to the Web.</p>
+<p><strong>Running in the browser</strong></p>
+<p>To run a Wasm module in the browser, the .wasm file must be loaded, instantiated, and invoked. You can choose among the multiple loading methods described in the JavaScript API.</p>
+<p>For example, this script loads answer.wasm in the browser and shows the output (the number “42”) in an alert box:</p>
+<pre tabindex="0"><code>fetch(&#39;answer.wasm&#39;).then(response =&gt;
+ response.arrayBuffer())
+ .then(bytes =&gt;
+ WebAssembly.instantiate(bytes))
+ .then(result =&gt;
+ alert(result.instance.exports.answer()));
+</code></pre><p><strong>Running outside the browser</strong></p>
+<p>The primary motivation behind WebAssembly was to enable developers to run advanced applications in browsers. Nevertheless, nothing prevents you from running Wasm modules on servers.</p>
+<p>For instance, you can run answer.wasm in Node.JS with just a few lines of code:</p>
+<pre tabindex="0"><code>const fs = require(&#39;fs&#39;);
+const run = async () =&gt; {
+ const buffer = fs.readFileSync(&#34;./answer.wasm&#34;);
+ const result = await WebAssembly.instantiate(buffer);
+ console.log(result.instance.exports.answer());
+};
+run();
+</code></pre><h3 id="examples-of-webassembly">Examples of WebAssembly</h3>
+<p>WebAssembly programs can go where no JavaScript has gone before, namely media edition, image recognition, transcoding, VR and high-end games, emulation, or desktop-tier applications.</p>
+<p>More use cases include:</p>
+<ul>
+<li>Recording and encoding audio.</li>
+<li>Encoding video.</li>
+<li>Rendering 3d objects in real time.</li>
+<li>Re-encoding images on the fly.</li>
+<li>Editing and annotating PDFs.</li>
+<li>Createing a fully featured text editor.</li>
+<li>Visualizing data in real time.</li>
+<li>Doing real time physics simulation.</li>
+</ul>
+<p>WebAssembly has been successfully deployed in the real world, too:</p>
+<ul>
+<li>eBay implemented a universal barcode scanner.</li>
+<li>Google Earth can run in any browser now, thanks to WebAssembly.</li>
+<li>The Unity and the Unreal game engines have been ported to WebAssembly. You can even run the Unreal Epic Zen Garden demo.</li>
+<li>The Doom 3 engine has also been ported to WebAssembly. You can play the demo online.</li>
+<li>Alternatively, you can create custom games in the browser with Construct3.</li>
+</ul>
+<h3 id="key-takeaways">Key Takeaways</h3>
+<ul>
+<li>With around 40 languages that can compile to WebAssembly, developers can finally use their favorite language on the Web.</li>
+<li>WebAssembly does not replace JavaScript; in fact, some JavaScript code is required to load WebAssembly modules.</li>
+<li>WebAssembly runs in all major browsers and in all platforms. Developers can reasonably assume WebAssembly support is anywhere JavaScript is available.</li>
+<li>WebAssembly can also run in servers.</li>
+</ul>
 
 </div>
 
