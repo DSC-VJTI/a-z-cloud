@@ -32,7 +32,7 @@ A few examples of XaaS include:
 3. [**Function-as-a-Service (FaaS)**](https://dsc-vjti.github.io/a-z-cloud/docs/f/)
 4. **Software as a Service (SaaS)**          
 	SaaS stands for "Software as a Service," and it is the most common type of XaaS business. In this version, a provider hosts applications and software in the cloud and then offers them to consumers on a subscription basis. Cloud users do not manage the cloud infrastructure and platform where the application runs. This eliminates the need to install and run the application on the cloud user's own computers, which simplifies maintenance and support.
-You probably use or have used Gmail, Google Docs, Salesforce, Showpad,… before. it is actually Software running in the cloud. These SaaS-product all run in the cloud so you can open them anywhere you are and you never need to install them.
+You probably use or have used Gmail, Google Docs, Salesforce, Showpad,… before. It is actually Software running in the cloud. These SaaS-product all run in the cloud so you can open them anywhere you are and you never need to install them.
 
 5. **Disaster-Recovery-as-a-Service (DRaaS)**                     
 	This complex service includes backup, recovery system tools, and full replication of all of the data, apps, and business processes. Actually, DRaaS clones the main infrastructure, and continuously updates it. In the case of a failure or disaster, the company’s work will continue in this additional infrastructure until the main system is restored. DRaaS is one of the main components of a business continuity strategy — BCM, Business Continuity Management.
@@ -65,7 +65,7 @@ HaaS creates opportunities for almost all categories of citizens to get qualifie
 11. **Transportation-as-a-Service (TaaS)**                
 	Important trends of modern society are mobility and freedom of transportation at different distances. There are numerous apps popping up connected with transport, so a part of this industry is transforming into an -aaS model. The most vivid examples are:                         
     - Carsharing (you can rent a car at any place via a special app and drive anywhere you need, paying for the time you use a car, or for the distance you cover)
-    - Uber taxi services (you order a taxi via an app, which calculates the cost of the rout in advance). Uber is planning to test flying taxis and self-driving planes in the near future.
+    - Uber taxi services (you order a taxi via an app, which calculates the cost of the rout in advance).
 
 12. **Storage-as-a-Service (STaaS)**                     
 	Storage as a Service (STaaS) is the practice of using public cloud storage resources to store your data. Using STaaS is more cost efficient than building private storage infrastructure, especially when you can match data types to cloud storage offerings.
