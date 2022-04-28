@@ -72,7 +72,7 @@ The following is the corresponding JSON obtained from a [YAML to JSON convertor]
 }
 ```
 
-As we can, double quotes were added everywhere, comments were removed, and escape sequences were used for multiline strings. Because of lists and maps in YAML, a JSON file is a valid YAML file.
+As we can see, double quotes were added everywhere, comments were removed, and escape sequences were used for multiline strings. Because of its support for lists and maps in YAML, a JSON file is a valid YAML file.
 
 ### Learn More
 
