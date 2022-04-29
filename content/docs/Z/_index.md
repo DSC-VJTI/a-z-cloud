@@ -16,8 +16,6 @@ Zero clients are often used in a virtual desktop infrastructure (VDI) environmen
 
 ### How do zero clients work?
 
-![Zero Clients' Working]()
-
 <p align="center">
     <img src="https://www.sunde.net.pk/wp-content/uploads/2016/03/NetPoint-Sharing-solution-architecture.png" alt="Zero Clients' Working" />
 </p>
