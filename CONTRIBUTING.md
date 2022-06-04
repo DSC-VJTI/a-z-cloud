@@ -3,17 +3,28 @@
 We'd love to accept your patches and contributions to this project. There are
 just a few small guidelines you need to follow.
 
-## Contributor License Agreement
+## General Guidelines (for ```/content/docs/```)
 
-Contributions to this project must be accompanied by a Contributor License
-Agreement. You (or your employer) retain the copyright to your contribution;
-this simply gives us permission to use and redistribute your contributions as
-part of the project. Head over to <https://cla.developers.google.com/> to see
-your current agreements on file or to sign a new one.
+- Add a _References_ section towards the end of Markdown whenever external sources have been referred or used verbatim (except quotes).
+- Add a caption or explanation for images whenever used. Always add alternative (alt) text for accessibility.
+- Have an idea about Hugo [shortcodes](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes).
+- As this project uses the Hugo template - Docsy, you have access to several [shortcodes](https://www.docsy.dev/docs/adding-content/shortcodes/) that can make implementation of some formatting easy for you.
 
-You generally only need to submit a CLA once, so if you've already submitted one
-(even if it was for a different project), you probably don't need to do it
-again.
+## Follow Conventional Commits
+
+Pull requests should have a title that follows the specification, otherwise, merging is blocked. If you are not familiar with the specification simply ask maintainers to modify. You can also use this cheatsheet if you want:
+
+- `fix: ` prefix in the title indicates that PR is a bug fix and PATCH release must be triggered.
+- `feat: ` prefix in the title indicates that PR is a feature and MINOR release must be triggered.
+- `docs: ` prefix in the title indicates that PR is only related to the documentation and there is no need to trigger release.     
+Since this repository is mainly a documentation project; such commits are considered as features. Whereas changes in the README or other supporting Markdown files for the project are considered to be documentation changes.
+- `chore: ` prefix in the title indicates that PR is only related to cleanup in the project and there is no need to trigger release.
+- `test: ` prefix in the title indicates that PR is only related to tests and there is no need to trigger release.
+- `refactor: ` prefix in the title indicates that PR is only related to refactoring and there is no need to trigger release.
+
+What about MAJOR release? just add `!` to the prefix, like `fix!: ` or `refactor!: `
+
+Prefix that follows specification is not enough though. Remember that the title must be clear and descriptive with usage of [imperative mood](https://chris.beams.io/posts/git-commit/#imperative).
 
 ## Code reviews
 
@@ -26,3 +37,8 @@ information on using pull requests.
 
 This project follows
 [Google's Open Source Community Guidelines](https://opensource.google.com/conduct/).
+
+## License
+When you submit changes, your submissions are understood to be under the same [Apache 2.0 License](https://github.com/asyncapi/asyncapi/blob/master/LICENSE) that covers the project.
+
+Happy contributing :heart:
