@@ -1,6 +1,7 @@
 # A-Z Cloud
 
-Learn the A-Z of cloud in 26 days!  
+<img src=".github/assets/a-z-cloud-hero.png" alt="A-Z Cloud: Learn the A-Z of cloud in 26 days!" height=33% width=33% />
+
 An initiative by the Cloud Computing Core Team at [GDSC VJTI](https://gdscvjti.tech)
 
 ## Running the website locally
